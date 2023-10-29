@@ -1,0 +1,7 @@
+@font-face {
+    font-family: samarkand;
+    src: url('../src/assets/SamarkanNormal-Gg5D.ttf');
+}
+#samarkand{
+    font-family: samarkand;
+}
