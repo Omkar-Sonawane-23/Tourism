@@ -6,3 +6,6 @@ to Show The Famous Place's Details With a Beautiful Ui.
 - Open Terminal & type 
 - `npm i`
 - `npm start`
+    
+# Join the Discord
+https://discord.gg/uD7x8Mah
