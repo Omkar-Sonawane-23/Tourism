@@ -5,7 +5,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-3 shadow-md fixed">
+    <nav className="flex items-center justify-between flex-wrap p-3 shadow-md">
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@500&display=swap');

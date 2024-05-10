@@ -10,9 +10,9 @@ const Homeque = () => {
   };
 
   return (
-    <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center items-center'>
+    <section className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center'>
       {data.map((ele, i) => (
-        <div key={i} className='w-full sm:w-[20rem] h-[25rem] m-[5rem] relative flex flex-col justify-center items-center'>
+        <div key={i} className='w-full sm:w-[20rem] h-[25rem] m-[4rem]  relative flex flex-col justify-center items-center'>
           <div className='w-full h-[30rem] overflow-hidden rounded-[30px]'>
             <img src={data[i].image} className='rounded-[30px] w-full h-[30rem] bg-cover' alt="Heritage Image" />
           </div>
