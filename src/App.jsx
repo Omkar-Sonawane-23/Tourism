@@ -12,7 +12,7 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/home" element={<Homeque />} />
+        <Route path="/places" element={<Homeque />} />
         <Route path='/explore' element={<Explore/>}/>
         <Route path="/detail" element={<DetailView />} /> {/* Corrected the placement of element prop */}
         <Route path='/' element={<Home/>}/>
