@@ -6,6 +6,7 @@ import Explore from './pages/Explore'
 import Homeque from './components/Homeque';
 import DetailView from './components/DetailView';
 import "./App.css"
+import About from './pages/About';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/explore' element={<Explore/>}/>
         <Route path="/detail" element={<DetailView />} /> {/* Corrected the placement of element prop */}
         <Route path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes>
     </BrowserRouter>
   );
