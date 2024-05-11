@@ -1,22 +1,42 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import bg from '../assets/bg.jpg'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import bg from '../assets/bg.jpg';
 
 const Home = () => {
-    return (
-        <section className='mt-[5px]'>
-            <img src="https://img.freepik.com/premium-vector/mumbai-skyline-landscape-view-city-mumbai-with-characteristics-buildings-monuments_743272-109.jpg?w=4320" className='w-[100vw] h-[100vh] fixed' alt="" />
-            <div className='absolute w-full bottom-[5rem]'>
-                <div className='flex flex-col justify-center items-center mb-[10rem]'>
-                    <span className='text-[3rem]'>Welcome,</span><span className='text-[2rem]'> to</span><h1 className='text-[5rem] ml-[25px] font-[Agbalumo]'>Bharat <span id='samarkand'>Yatra</span></h1>
-                </div>
-                <div className='flex justify-center items-center gap-[15rem]'>
-                    <button className='text-[25px] w-[10rem] h-[2.9rem] rounded-xl bg-[black] text-[white] hover:text-[green] duration-[0.4s]' type="button">Explore</button>
-                    <Link to='/home'><button className='text-[25px] w-[10rem] h-[2.9rem] rounded-xl bg-[black] text-[white] hover:text-[green] duration-[0.4s]' type="button">Places</button></Link>
-                </div>
-            </div>
-        </section>
-    )
-}
+  return (
+    <section className='relative min-h-screen'>
+      <img
+        src="https://img.freepik.com/premium-vector/mumbai-skyline-landscape-view-city-mumbai-with-characteristics-buildings-monuments_743272-109.jpg?w=4320"
+        className='absolute inset-0 w-full h-full object-cover'
+        alt=""
+      />
+      <div className='absolute bottom-[50%] left-[50%] -translate-x-[50%] flex flex-col justify-end items-center px-4'>
+        <div className='text-center mb-10'>
+          <span className='text-4xl md:text-2xl sm:text-xl'>Welcome,</span>
+          <span className='text-4xl md:text-xl sm:text-lg'>to</span>
+          <h1 className='text-5xl font-Agbalumo md:text-3xl sm:text-2xl'>
+            Bharat <span id='samarkand'>Yatra</span>
+          </h1>
+        </div>
+        <div className='flex justify-center items-center gap-8 sm:gap-4'>
+          <button
+            className='text-lg md:text-base sm:text-sm btn-style bg-black text-white hover:bg-gray-100 text-gray-800 py-2 px-6 rounded-full border border-gray-300 shadow-sm transition duration-300'
+            type="button"
+          >
+            Explore
+          </button>
+          <Link to='/home'>
+            <button
+              className='text-lg md:text-base sm:text-sm btn-style bg-black text-white hover:bg-gray-100 text-gray-800 py-2 px-6 rounded-full border border-gray-300 shadow-sm transition duration-300'
+              type="button"
+            >
+              Places
+            </button>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Home
+export default Home;
