@@ -7,6 +7,7 @@ import Homeque from './components/Homeque';
 import DetailView from './components/DetailView';
 import "./App.css"
 import Login from './components/Login';
+import Signup from './components/Signup';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/detail" element={<DetailView />} /> {/* Corrected the placement of element prop */}
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/>
       </Routes>
     </BrowserRouter>
   );
