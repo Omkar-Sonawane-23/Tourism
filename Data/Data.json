@@ -13,6 +13,12 @@
             "description": "Varanasi, one of the oldest cities in the world, is a spiritual hub in India. It is famous for its ghats on the Ganges River, religious rituals, temples, and vibrant cultural heritage."
         },
         {
+            "name": "Bihar",
+            "category": "State",
+            "image": "../public/bihar.jpg",
+            "description": "Bihar is well known for Nalanda University which is the oldest university of the world beside this Bihar is also known for its Hardwork."
+        },
+        {
             "name": "Jaipur",
             "category": "City",
             "image": "https://images.pexels.com/photos/3581368/pexels-photo-3581368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

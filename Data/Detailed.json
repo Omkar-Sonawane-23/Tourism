@@ -1,6 +1,31 @@
 {
     "destinations": [
         {
+            "name": "BIHAR",
+            "category": "State",
+            "image": "../public/bihar.jpg",
+            "description": "Bodh Gaya, Nalanda University ( Oldest University of the World ), An ancient city, Madhubani in Bihar is known for the richness in art and culture , Valmiki National Park",
+            "location": "Bihar, India",
+            "bestTimeToVisit": "November to Mid-March",
+            "popularActivities": ["Nalanda University", "Bodh Gaya", "Madhubani","Rajgir","Valmiki National Park"],
+            "nearbyAttractions": ["Siliguri", "Patna", "Patna Museums"],
+            "travelTips": ["Book before travelling", "Book ACs Ticket"],
+            "happeningEvents": [
+                {
+                    "eventName": "Chhath Puja",
+                    "date": "November",
+                    "description": "Chhath is an ancient Hindu festival native to the Indian subcontinent, more specifically, the Indian states of Bihar.",
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0f/JanakpurChhathParvaFestival.jpg"
+                },
+                {
+                    "eventName": "Durga Puja",
+                    "date": "October",
+                    "description": "Durga Puja is a huge celebration in Bihar .",
+                    "image": "https://qph.cf2.quoracdn.net/main-qimg-76ca29d11f84dcece84667807302f78d-lq"
+                }
+            ]
+        },
+        {
             "name": "Taj Mahal",
             "category": "Historical",
             "image": "https://images.pexels.com/photos/5608221/pexels-photo-5608221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
