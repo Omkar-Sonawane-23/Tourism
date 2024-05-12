@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/home" element={<Homeque />} />
         <Route path='/explore' element={<Explore/>}/>
-        <Route path="/detail" element={<DetailView />} /> {/* Corrected the placement of element prop */}
+        <Route path="/detail" element={<DetailView />} />
         <Route path='/' element={<Home/>}/>
       </Routes>
     </BrowserRouter>

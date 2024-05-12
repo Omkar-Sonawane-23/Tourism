@@ -6,7 +6,7 @@ const Homeque = () => {
   const data = Data.destinations;
 
   return (
-    <section className="grid grid-cols-1 mt-20 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 sm:px-8 md:px-12 lg:px-16">
+    <section className="grid grid-cols-1 mt-36 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 sm:px-8 md:px-12 lg:px-16">
       {data.map((destination, index) => (
         <div key={index} className="group w-full relative overflow-hidden rounded-3xl hover:scale-105 transition-all duration-300">
           <Link to={`/detail/?id=${index}`}>
