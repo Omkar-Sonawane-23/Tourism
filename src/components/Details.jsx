@@ -16,7 +16,7 @@ const Details = () => {
     const eventDetails = id !== null ? data[id].happeningEvents : [];
 
     return (
-        <div className='absolute top-[100vh] flex justify-center items-center flex-col w-screen'>
+        <div className='absolute top-[100vh] flex justify-center items-center flex-col '>
             <h1 className='m-auto text-[3rem] text-center'>Checkout Latest Events</h1>
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
@@ -43,7 +43,7 @@ const Details = () => {
                         ))}
                     </div>
                     <div className='flex flex-col justify-center items-center'>
-                        <div className='backdrop-blur-lg bg-white opacity-60 rounded-[20px] w-[75rem] h-[170px] mt-[5rem] flex justify-center items-center'>
+                        <div className='backdrop-blur-lg bg-white opacity-60 rounded-[20px] w-[95vw] h-[170px] mt-[5rem] flex justify-center items-center ml-[8rem]'>
                             <h1 className='text-center text-[3rem] text-[black] m-10'>Travel Tips : </h1>
                             <div className='flex flex-col justify-right items-right m-10'>
                                 {data[0].travelTips.map((tip, index) => (
