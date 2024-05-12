@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section className="relative">
       <img src={AboutBg} className="w-full h-screen object-cover" alt="" />
-      <div className="absolute inset-0 flex items-center justify-between  m-4 ">
+      <div className="absolute inset-0 flex items-center justify-end m-4 ">
         <div className="max-w-lg mr-10 m-10">
           <div className="text-right  ">
             <h1 className="text-4xl  font-secondary font-semibold leading-tight mb-6 underline  text-center">About Us</h1>
