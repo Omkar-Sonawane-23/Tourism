@@ -6,11 +6,11 @@ const Explore = () => {
         <div>
             <div>
                 <select name="By Place" id="">
-                    <option value="1">maharastra</option>
+                    <option value="1">Maharastra</option>
                     <option value="2">Gujarat</option>
                     <option value="3">Himachal</option>
-                    <option value="4">kashmir</option>
-                    <option value="5">jammu</option>
+                    <option value="4">Kashmir</option>
+                    <option value="5">Jammu</option>
                     <option value="6"></option>
                     <option value="7"></option>
                     <option value="8"></option>
