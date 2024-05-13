@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
+   
     <section className='flex justify-evenly items-evenly shadow-xl fixed top-0 w-full bg-white z-10 '>
       <style>
   @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@500&display=swap');
@@ -16,6 +17,7 @@ function Navbar() {
             <li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">About Us</a></li>
         </div>
     </section>
+    
   )
 }
 
