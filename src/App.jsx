@@ -7,27 +7,20 @@ import Homeque from "./components/Homeque";
 import DetailView from "./components/DetailView";
 import NotFound from "./pages/NotFound";
 import "./App.css";
-import ContactUs from "./pages/ContactUs";
-import { ModeProvider } from '../src/components/ModeContext';
-
+import ContactUs from "../src/pages/ContactUs";
 
 function App() {
   return (
-    
     <BrowserRouter>
-    <ModeProvider> 
-    <Navbar />
-    </ModeProvider>
+      <Navbar />
       <Routes>
         <Route path="/home" element={<Homeque />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/detail" element={<DetailView />} />
         <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} />
-        <Route path="contact" element={<ContactUs/>} />
+        <Route path="*" element={<NotFound />} /> <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </BrowserRouter>
-    
   );
 }
 
