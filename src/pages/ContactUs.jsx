@@ -51,7 +51,24 @@ const ContactUs = () => {
                             <label htmlFor="message" style={{ fontWeight: 'bold' }}>Message</label>
                             <textarea id="message" name="message" value={formData.message} onChange={handleChange} style={{ width: '100%', padding: '10px', border: '1px solid #ccc', borderRadius: '4px', boxSizing: 'border-box', height: '150px' }}></textarea>
                         </div>
-                        <button type="submit" style={{ display: 'block', width: '100%', backgroundColor: '#007bff', color: '#fff', border: 'none', padding: '10px 20px', fontSize: '16px', borderRadius: '4px', cursor: 'pointer', transition: 'background-color 0.3s' }}>Submit</button>
+                        <button 
+  
+  style={{
+    backgroundColor: 'orange',
+    color: 'white',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    fontSize: '16px',
+    fontWeight: 'bold',
+    outline: 'none',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
+    transition: 'background-color 0.3s ease',
+  }}
+>
+  Submit
+</button>
                     </form>
                 )}
             </div>

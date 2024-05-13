@@ -12,16 +12,19 @@ import "./App.css";
 
 function App() {
   return (
+    
     <BrowserRouter>
     <ModeProvider>
       <Navbar />
+     
       <Routes>
-        <Route path="/places" element={<Homeque />} />
+        <Route path="/home" element={<Homeque />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/detail" element={<DetailView />} />
         <Route path="/" element={<Home />} />
-        <Route path="notfound" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
         <Route path="contact" element={<ContactUs />} />
+
       </Routes>
       </ModeProvider>
     </BrowserRouter>
