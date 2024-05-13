@@ -7,7 +7,6 @@ import Homeque from "./components/Homeque";
 import DetailView from "./components/DetailView";
 import NotFound from "./pages/NotFound";
 import "./App.css";
-
 function App() {
   return (
     <BrowserRouter>
