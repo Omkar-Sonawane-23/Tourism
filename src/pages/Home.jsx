@@ -1,8 +1,20 @@
-import React from 'react'
+import React,{useState, useEffect}from 'react'
+import Loader from './Loader';
 import { Link } from 'react-router-dom'
 import bg from '../assets/bg.jpg'
 
 const Home = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(()=>{
+            setIsLoading(false);
+        },2000);
+    },[]);
+
+    if(isLoading){
+        return <Loader/>
+    }
     return (
         <section className='mt-[5px]'>
             <img src="https://img.freepik.com/premium-vector/mumbai-skyline-landscape-view-city-mumbai-with-characteristics-buildings-monuments_743272-109.jpg?w=4320" className='w-[100vw] h-[100vh] fixed' alt="" />
@@ -19,4 +31,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home 
