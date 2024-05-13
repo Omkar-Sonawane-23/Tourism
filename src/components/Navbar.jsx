@@ -4,12 +4,10 @@ import ModeContext from './ModeContext';
 
 function Navbar() {
   const { mode, toggleMode } = useContext(ModeContext);
-
-  const navbarStyle = {
+      const navbarStyle = {
     backgroundColor: mode === 'light' ? 'white' : 'black',
     color: mode === 'light' ? 'black' : 'white',
   };
-
   return (
     <section className={`flex justify-evenly items-evenly shadow-xl fixed top-0 w-full z-10`} style={navbarStyle}>
       <div className='align-left my-auto flex'>
@@ -17,8 +15,8 @@ function Navbar() {
       </div>
       <div className='flex my-auto'>
         <Link to='/'><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Home</a></li></Link>
-        <Link to='/places'><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Places</a></li></Link>
-        <Link to='contact'><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Contact Us</a></li></Link>
+        <li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Places</a></li>
+            <li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">About Us</a></li>
         <button 
   onClick={toggleMode} 
   style={{
