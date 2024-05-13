@@ -17,7 +17,7 @@ const Details = () => {
 
     return (
         <div className='absolute top-[100vh] flex justify-center items-center flex-col w-screen'>
-            <h1 className='m-auto text-[3rem] text-center'>Checkout Latest Events</h1>
+            <h1 className='mt-[120px] text-[3rem] text-center' >Checkout Latest Events</h1>
             <section className="text-gray-600 body-font">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="flex flex-wrap -m-4 justify-center items-center">

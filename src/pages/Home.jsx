@@ -11,7 +11,9 @@ const Home = () => {
                     <span className='text-[3rem]'>Welcome,</span><span className='text-[2rem]'> to</span><h1 className='text-[5rem] ml-[25px] font-[Agbalumo]'>Bharat <span id='samarkand'>Yatra</span></h1>
                 </div>
                 <div className='flex justify-center items-center gap-[15rem]'>
+                    <Link to='/explore'>
                     <button className='text-[25px] w-[10rem] h-[2.9rem] rounded-xl bg-[black] text-[white] hover:text-[green] duration-[0.4s]' type="button">Explore</button>
+                    </Link>
                     <Link to='/home'><button className='text-[25px] w-[10rem] h-[2.9rem] rounded-xl bg-[black] text-[white] hover:text-[green] duration-[0.4s]' type="button">Places</button></Link>
                 </div>
                 

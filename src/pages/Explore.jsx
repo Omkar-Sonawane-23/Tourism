@@ -1,8 +1,12 @@
 import React from 'react'
+import styled from 'styled-components';
+const Box = styled.section`
+    margin-top: 80px;
+`;
 
 const Explore = () => {
   return (
-    <section>
+    <Box>
         <div>
             <div>
                 <select name="By Place" id="">
@@ -31,7 +35,7 @@ const Explore = () => {
                 </select>
             </div>
         </div>
-    </section>
+    </Box>
   )
 }
 
