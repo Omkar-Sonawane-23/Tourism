@@ -3,15 +3,17 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom'
 
+
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Places', href: '/home', current: false },
   { name: 'Explore', href: '#', current: false },
-  { name: 'About Us', href: '#', current: false },
+  { name: 'About Us', href: '/about', current: false },
 ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
+
 }
 
 export default function Navbar() {
