@@ -16,6 +16,7 @@ const Home = () => {
                     </Link>
                     <Link to='/home'><button className='text-[25px] w-[10rem] h-[2.9rem] rounded-xl bg-[black] text-[white] hover:text-[green] duration-[0.4s]' type="button">Places</button></Link>
                 </div>
+                
             </div>
         </section>
     )
