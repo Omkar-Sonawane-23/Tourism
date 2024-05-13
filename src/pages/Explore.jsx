@@ -2,7 +2,7 @@ import React from 'react'
 
 const Explore = () => {
   return (
-    <section>
+    <section style={{ marginTop:'80px'}} >
         <div>
             <div>
                 <select name="By Place" id="">

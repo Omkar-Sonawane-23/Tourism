@@ -424,6 +424,83 @@
                     "image": "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/11/Pongal-festival-Chennai.jpg"
                 }
             ]
-        }
+        },
+        {
+            "name": "Gangtok",
+            "category": "Mountainous and Adventurous",
+            "image": "https://chikucab.com/blog/wp-content/uploads/2020/01/Gangtok5-768x538.jpg",
+            "description": "Gangtok, the capital of Sikkim, is nestled in the Himalayan mountains and offers breathtaking views, serene monasteries, and adventurous activities. It's a perfect destination for nature lovers and adventure enthusiasts alike.",
+            "location": "Gangtok, Sikkim, India",
+            "bestTimeToVisit": "March to June and September to November",
+            "popularActivities": [
+              "Visiting the Enchey Monastery for spiritual solace",
+              "Exploring the vibrant markets of MG Marg for local handicrafts and souvenirs",
+              "Taking a cable car ride to enjoy panoramic views of the city",
+              "Trekking to Tsomgo Lake or Nathu La Pass for a thrilling experience"
+            ],
+            "nearbyAttractions": [
+              "Rumtek Monastery",
+              "Baba Harbhajan Singh Temple",
+              "Tashi Viewpoint"
+            ],
+            "travelTips": [
+              "Carry warm clothing as the weather can be chilly, especially in the evenings.",
+              "Try local Tibetan delicacies like Momos, Thukpa, and Gundruk for a taste of authentic cuisine.",
+              "Respect the local customs and traditions, especially when visiting monasteries and religious sites."
+            ],
+            "happeningEvents": [
+              {
+                "eventName": "Losar Festival",
+                "date": "February/March",
+                "description": "The Tibetan New Year festival celebrated with traditional dances, music, and rituals.",
+                "image": "https://th.bing.com/th/id/OIP.uUGkfFiH7y-_zHKk3ziXpgAAAA?rs=1&pid=ImgDetMain"
+              },
+              {
+                "eventName": "Saga Dawa",
+                "date": "May/June",
+                "description": "A significant Buddhist festival commemorating the birth, enlightenment, and death of Buddha, celebrated with prayers, rituals, and processions.",
+                "image": "https://ruralindiaonline.org/media/images/01-_AMI1711-RM.width-1400.jpg"
+              }
+            ]
+          },
+      
+          {
+            "name": "Shillong",
+            "category": "Scenic and Cultural",
+            "image": "https://mediaim.expedia.com/destination/2/824399a951227d476051a30c1f2f32ba.jpg",
+            "description": "Shillong, the capital of Meghalaya, is known for its breathtaking natural beauty, rolling hills, and vibrant culture. It's often referred to as the 'Scotland of the East' due to its picturesque landscapes.",
+            "location": "Shillong, Meghalaya, India",
+            "bestTimeToVisit": "March to June and October to November",
+            "popularActivities": [
+              "Exploring the living root bridges of Cherrapunji",
+              "Taking a boat ride in Umiam Lake",
+              "Visiting the Don Bosco Museum for an insight into Northeast Indian culture",
+              "Exploring the bustling markets of Police Bazar for local handicrafts and artifacts"
+            ],
+            "nearbyAttractions": [
+              "Elephant Falls",
+              "Mawlynnong Village",
+              "Shillong Peak"
+            ],
+            "travelTips": [
+              "Pack warm clothing as the weather can be chilly, especially in the evenings.",
+              "Try local delicacies like Jadoh, Doh Khleh, and Momos for a taste of authentic Khasi cuisine.",
+              "Respect the local Khasi customs and traditions when visiting villages and sacred sites."
+            ],
+            "happeningEvents": [
+              {
+                "eventName": "Shad Suk Mynsiem",
+                "date": "April",
+                "description": "A vibrant harvest festival celebrated by the Khasi tribe with traditional music, dance, and rituals to give thanks for a bountiful harvest.",
+                "image": "https://www.auchitya.com/wp-content/uploads/2020/10/SHAD_SUK_MYNSIEM.jpg"
+              },
+              {
+                "eventName": "Wangala Festival",
+                "date": "November",
+                "description": "A significant festival of the Garo tribe celebrating the harvest season with traditional dances, music, and rituals.",
+                "image": "https://images.news18.com/ibnlive/uploads/2021/11/drum-festival-163663449516x9.jpg"
+              }
+            ]
+          }
     ]
 }

@@ -28,7 +28,7 @@ const DetailView = () => {
                         <h1 className='top-[250px] left-[40vw] text-[80px] font-roboto leading-[6rem] font-bold'>{data.name}</h1>
                         <p className='font-bold'>{data.location}</p>
                         <p className='text-[1.5rem] italic'>{data.description}</p>
-                        <div className='backdrop-blur-lg bg-white opacity-60 rounded-[20px] w-[75rem] h-[170px] mt-[5rem] grid grid-cols-2'>
+                        <div className='backdrop-blur-lg bg-white opacity-60 rounded-[20px] w-[75rem] h-[290px] mt-[5rem] grid grid-cols-2'>
                             <h1 className='text-[1.25rem] m-5'><a className='font-bold'>Category :</a> {data.category}</h1>
                             <h1 className='text-[1.25rem] m-5'><a className='font-bold'>Best Time to Visit :</a> {data.bestTimeToVisit}</h1>
                             <div className='grid grid-rows-3 leading-[1rem] m-5'>
