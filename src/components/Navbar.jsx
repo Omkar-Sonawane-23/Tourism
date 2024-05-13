@@ -11,9 +11,10 @@ function Navbar() {
             <h1 className='text-[3rem] ml-[25px] font-[Agbalumo]'>Bharat <span id='samarkand'>Yatra</span></h1>
         </div>
         <div className='flex my-auto'>
-            <Link to='/'><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Home</a></li></Link>
-            <li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Places</a></li>
-            <li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">About Us</a></li>
+        <Link to='/'><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Home</a></li></Link>
+          
+          <Link to='/places'><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Places</a></li>  </Link>
+          <Link to='contact'><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Contact Us</a></li></Link>
         </div>
     </section>
   )
