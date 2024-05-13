@@ -16,7 +16,7 @@ function Navbar() {
       <div className='flex my-auto'>
         <Link to='/'><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Home</a></li></Link>
         <li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Places</a></li>
-            <li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">About Us</a></li>
+           <Link to='contact'> <li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Contact Us</a></li></Link>
         <button 
   onClick={toggleMode} 
   style={{

@@ -6,29 +6,28 @@ import Explore from "./pages/Explore";
 import Homeque from "./components/Homeque";
 import DetailView from "./components/DetailView";
 import NotFound from "./pages/NotFound";
+import "./App.css";
 import ContactUs from "./pages/ContactUs";
-import { ModeProvider } from "../src/components/ModeContext";
+import { ModeProvider } from '../src/components/ModeContext';
 
 
 function App() {
   return (
     
     <BrowserRouter>
-    <ModeProvider>
-      <Navbar />
-      </ModeProvider>
+    <ModeProvider> 
+    <Navbar />
+    </ModeProvider>
       <Routes>
         <Route path="/home" element={<Homeque />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/detail" element={<DetailView />} />
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
-        
-        <Route path="contact" element={<ContactUs />} />
-
+        <Route path="contact" element={<ContactUs/>} />
       </Routes>
-      
     </BrowserRouter>
+    
   );
 }
 
