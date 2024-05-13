@@ -95,7 +95,7 @@ function NotFound() {
         </div>
         <div className="mt-6">
           <Link
-            to="/"
+            to="notfound"
             className="text-gray-500 font-mono text-xl bg-gray-200 p-3 rounded-md hover:shadow-md"
           >
             Go back
