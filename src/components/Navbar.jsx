@@ -1,6 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+const navigation = [
+  { name: 'Home', href: '/', current: true },
+  { name: 'Places', href: '/home', current: false },
+  { name: 'Explore', href: '#', current: false },
+  { name: 'About Us', href: '/about', current: false },
+];
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ');
+}
+
 function Navbar() {
   return (
     <section className='flex justify-evenly items-evenly shadow-xl fixed top-0 w-full bg-white z-10 '>
