@@ -1,38 +1,22 @@
-import React from 'react'
+import React from 'react';
+import Carousel from '../components/Carousel';
+import './Explore.css'
 
 const Explore = () => {
-  return (
-    <section>
-        <div>
-            <div>
-                <select name="By Place" id="">
-                    <option value="1">maharastra</option>
-                    <option value="2">Gujarat</option>
-                    <option value="3">Himachal</option>
-                    <option value="4">kashmir</option>
-                    <option value="5">jammu</option>
-                    <option value="6"></option>
-                    <option value="7"></option>
-                    <option value="8"></option>
-                    <option value="9"></option>
-                </select>
-            </div>
-            <div>
-            <select name="By Catagory" id="">
-                    <option value="1">Historical</option>
-                    <option value="2">Thriller</option>
-                    <option value="3">Romantic</option>
-                    <option value="4">Calmer</option>
-                    <option value="5">jammu</option>
-                    <option value="6"></option>
-                    <option value="7"></option>
-                    <option value="8"></option>
-                    <option value="9"></option>
-                </select>
-            </div>
-        </div>
-    </section>
-  )
-}
+  const images = [
+    'https://wallpaperaccess.com/full/5773.jpg',
+    'https://wallpaperaccess.com/full/8207022.jpg',
+    'https://wallpaperaccess.com/full/4455652.jpg',
+    // Add more image URLs as needed
+  ];
 
-export default Explore
+  return (
+    <div>
+      <h1>My Component</h1>
+      <Carousel images={images} />
+      <button className='btn'>Learn More</button>
+    </div>
+  );
+};
+
+export default Explore;
