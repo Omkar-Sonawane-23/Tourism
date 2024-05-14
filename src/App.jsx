@@ -1,3 +1,4 @@
+
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
@@ -8,6 +9,7 @@ import DetailView from "./components/DetailView";
 import NotFound from "./pages/NotFound";
 import "./App.css";
 import AboutUs from './pages/AboutUs';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
         <Route path='/about' element={<AboutUs />} />
+
       </Routes>
     </BrowserRouter>
   );
