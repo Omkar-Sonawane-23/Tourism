@@ -1,0 +1,40 @@
+{
+    "destinations": [
+        {
+            "name": "Taj Mahal",
+            "category": "Historical",
+            "image": "https://images.pexels.com/photos/7263897/pexels-photo-7263897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "description": "The Taj Mahal, an iconic ivory-white marble mausoleum, is one of the Seven Wonders of the World. It was built by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal."
+        },
+        {
+            "name": "Varanasi",
+            "category": "Spiritual",
+            "image": "https://images.pexels.com/photos/4297805/pexels-photo-4297805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "description": "Varanasi, one of the oldest cities in the world, is a spiritual hub in India. It is famous for its ghats on the Ganges River, religious rituals, temples, and vibrant cultural heritage."
+        },
+        {
+            "name": "Jaipur",
+            "category": "City",
+            "image": "https://images.pexels.com/photos/3581368/pexels-photo-3581368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "description": "Jaipur, the capital city of Rajasthan, is known as the Pink City due to its distinctive pink-colored buildings. It boasts magnificent forts, palaces, museums, and a rich Rajasthani culture."
+        },
+        {
+            "name": "Goa Beaches",
+            "category": "Beaches",
+            "image": "https://images.pexels.com/photos/18663180/pexels-photo-18663180/free-photo-of-woman-posing-on-a-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "description": "Goa, known for its picturesque beaches, is a popular beach destination in India. Visitors can enjoy golden sands, water sports, vibrant nightlife, and delicious seafood."
+        },
+        {
+            "name": "Kerala Backwaters",
+            "category": "Nature",
+            "image": "https://images.pexels.com/photos/5398766/pexels-photo-5398766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "description": "Kerala's backwaters are a network of serene waterways, lagoons, and lakes. Travelers can enjoy houseboat rides, lush green landscapes, and experience the unique coastal lifestyle."
+        },
+        {
+            "name": "Rishikesh",
+            "category": "Adventure",
+            "image": "https://images.pexels.com/photos/2829336/pexels-photo-2829336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "description": "Rishikesh, located in the foothills of the Himalayas, is a yoga and adventure sports hub. It offers opportunities for white-water rafting, trekking, yoga retreats, and spiritual exploration."
+        }
+    ]
+}

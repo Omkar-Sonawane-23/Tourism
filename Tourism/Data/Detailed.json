@@ -226,9 +226,9 @@
             ]
           },
           {
-            "name": "Ajanta and Ellora Cave",
+            "name": "Ajanta and Ellora Caves",
             "category": "Historical",
-            "image": "https://media.gettyimages.com/id/535246494/photo/ajanta-caves-in-maharashtra-india.jpg?s=612x612&w=0&k=20&c=CVGMDZrL3nye6_3aAwvVN899hexhq3qOR2KN7qrdLpA=",
+            "image": "https://images.pexels.com/photos/1462809/pexels-photo-1462809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "description": "The Ajanta and Ellora Caves are a UNESCO World Heritage Site, featuring ancient rock-cut caves with exquisite sculptures, paintings, and architecture. These caves showcase the rich cultural and artistic heritage of ancient India.",
             "location": "Aurangabad, Maharashtra, India",
             "bestTimeToVisit": "November to February",
@@ -240,13 +240,13 @@
                     "eventName": "Ellora Ajanta Festival",
                     "date": "November",
                     "description": "A cultural festival featuring classical music and dance performances, celebrating the artistic heritage of the region.",
-                    "image": "https://utsav.gov.in/public/uploads/event_cover_image/event_1385/1665501836215053208.jpg"
+                    "image": "https://www.maharashtratourism.gov.in/sites/default/files/2021-08/Ellora_Ajanta_Festival.jpg"
                 },
                 {
                     "eventName": "Ganesh Chaturthi",
                     "date": "August/September",
                     "description": "The vibrant and grand celebration of Lord Ganesha's festival with processions, music, and decorations.",
-                    "image": "https://images.unsplash.com/photo-1528293319334-2b98c83a27fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGdhbmVzaCUyMGNoYXR1cnRoaXxlbnwwfHwwfHx8MA%3D%3D"
+                    "image": "https://images.indianexpress.com/2021/09/ganesh-chaturthi-2021.jpg"
                 }
             ]
         },
@@ -303,7 +303,7 @@
         {
             "name": "Puri",
             "category": "Spiritual and Beach",
-            "image": "https://media.istockphoto.com/id/1069137628/photo/top-of-the-jagannath-temple-puri-odisha-india.jpg?s=612x612&w=0&k=20&c=QIj54CAlnD_CKzb1roAVms9f2fdWnqwOb3BMSMvbee4=",
+            "image": "https://images.pexels.com/photos/1063584/pexels-photo-1063584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "description": "Puri, located on the Bay of Bengal, is a sacred city for Hindus and a popular beach destination. It is famous for the Jagannath Temple, pristine beaches, and the annual Rath Yatra festival.",
             "location": "Puri, Odisha, India",
             "bestTimeToVisit": "November to February",
@@ -315,20 +315,20 @@
                     "eventName": "Rath Yatra",
                     "date": "June/July",
                     "description": "The grand chariot festival of Lord Jagannath, Balabhadra, and Subhadra, where deities are taken on a procession in elaborately decorated chariots.",
-                    "image": "https://img.freepik.com/free-vector/lord-jagannath-balabhadra-subhadra-annual-rathayatra-odisha-festival-card-design_1035-23674.jpg?w=740&t=st=1715679860~exp=1715680460~hmac=849d3958e3c8b09041c96ae7ad484a1a133bed1cd724ec99d60cab0f01fab17b"
+                    "image": "https://www.tripsavvy.com/thmb/gxb4ReU6uE9EnTNK2JEEwvrrAFQ=/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/Puri-0cc539eef1c647f8a5b1b481877f25aa.jpg"
                 },
                 {
                     "eventName": "Konark Dance Festival",
                     "date": "December",
                     "description": "A celebration of classical dance forms against the backdrop of the magnificent Sun Temple, showcasing India's rich cultural heritage.",
-                    "image": "https://odishatourism.gov.in/content/dam/tourism/home/upcoming-events/konark_dance_festival/Banner_kdf.jpg"
+                    "image": "https://odishatourguide.com/wp-content/uploads/2019/08/Konark-Dance-Festival-2021-5.jpg"
                 }
             ]
         },
         {
             "name": "Shimla",
             "category": "Hill Station",
-            "image": "https://images.pexels.com/photos/3574440/pexels-photo-3574440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "image": "https://images.pexels.com/photos/2232600/pexels-photo-2232600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             "description": "Shimla, the capital city of Himachal Pradesh, is a charming hill station nestled in the Himalayas. It is known for its scenic beauty, colonial architecture, and pleasant weather, making it a popular destination for nature lovers and adventure enthusiasts.",
             "location": "Shimla, Himachal Pradesh, India",
             "bestTimeToVisit": "March to June and September to November",
@@ -340,13 +340,13 @@
                     "eventName": "Summer Festival",
                     "date": "May/June",
                     "description": "A colorful festival showcasing folk music, dance performances, local handicrafts, and flower exhibitions.",
-                    "image": "https://utsav.gov.in/public/uploads/event_picture_image/event_196/16531126872011690404.jpg"
+                    "image": "https://himachaltourism.gov.in/wp-content/uploads/2018/09/Summer-Festival-Shimla.jpg"
                 },
                 {
                     "eventName": "Ice Skating Carnival",
                     "date": "December/January",
                     "description": "One of the oldest ice skating carnivals in Asia, held at the natural ice rink in Shimla.",
-                    "image": "https://utsav.gov.in/public/uploads/event_cover_image/event_823/16613414791023970833.jpg"
+                    "image": "https://i.ytimg.com/vi/31E4eY-1pQc/maxresdefault.jpg"
                 }
             ]
         },
@@ -423,56 +423,6 @@
                     "description": "The harvest festival of Tamil Nadu celebrated with traditional rituals, cooking of Pongal dish, and cultural events.",
                     "image": "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/11/Pongal-festival-Chennai.jpg"
                 }
-            ]
-        },
-        {
-            "name": "Shillong",
-            "category": "Hill Station and Tea Gardens",
-            "image": "https://media.istockphoto.com/id/1372352947/photo/downtown-city-view-with-dramatic-cloudy-sky-at-evening-from-mountain-top.jpg?s=612x612&w=0&k=20&c=aVyAq5PAdxCVsve08lAye42SHplXGw8uwuNciRvl-SE=",
-            "description": "Shillong, the capital of Meghalaya, is known for its hills and mountains, wildlife, trekking, relaxation, food, and culture. Shillong is also called the Scotland of the East because the rolling hills around the town reminded the British of Scotland.",
-            "location": "Shillong, Meghalaya, India",
-            "bestTimeToVisit": "September and May",
-            "popularActivities": ["Trekking in the calm trails", "Waterfall rappelling at Elephant Falls", "Visiting the Don Bosco Museum", "Visiting Shillong View Point"],
-            "nearbyAttractions": ["Cherrapunjee", "Elephant Falls", "Umiam Lake"],
-            "travelTips": ["Always carry an umbrella.", "Lots of shops are cash-only, so you should bring cash", "Attend classical music and dance performances at cultural centers."],
-            "happeningEvents": [
-                {
-                    "eventName": "Shad Suk Mynsiem",
-                    "date": "April",
-                    "description": "Thanksgiving dance which is held in April for three days. Men and women dress up in traditional finery and celebrate wholeheartedly.",
-                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBOa1QjUowHvpRXnkl5LSM75Q7VsJxUnvBKQ&s"
-                },
-                {
-                    "eventName": "Shillong Autumn Festival",
-                    "date": "October to November",
-                    "description": "A cultural celebration that takes place in Shillong, the capital of Meghalaya, India, on the banks of Umiam Lake.",
-                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQaj7GR2BDA3RP9eUUz_aZB_LsQWWMG-_YVw&s"
-                }
-            ]
-        },
-        {
-            "name": "Sikkim",
-            "category": "Hilly Town and Scenic Beauty",
-            "image": "http://sikkimstdc.com/Images/POIIDImages/8/Gallery/9.jpeg?T=636178315940740000",
-            "description": "Sikkim, a state in the Eastern Himalayas of India, is known for its biodiversity, including alpine and subtropical climates, and as being a host of Mount Kanchenjunga, the world's third highest peak.",
-            "location": "Sikkim, India",
-            "bestTimeToVisit": " March to May",
-            "popularActivities": ["Visiting monasteries", "Trekking", "Adventure sports"],
-            "nearbyAttractions": ["Gangtok", "Nathula", "Khangchendzonga National Park"],
-            "travelTips": ["Allow your body time to adjust to the altitude ", "Try local cuisine", "Pack a few woolen clothes"],
-            "happeningEvents": [
-                {
-                    "eventName": "Maghe Sankranti",
-                    "date": "January",
-                    "description": " A bathing festival called Makkar is observed, when people take a dip at the confluence of the Tista and Rangit.",
-                    "image": "https://cdn.s3waas.gov.in/s38757150decbd89b0f5442ca3db4d0e0e/uploads/bfi_thumb/2018112865-olwa474coj69bdkp2uee1zzd4pcyvt04bed1up9ll6.jpg"
-                },
-                {
-                    "eventName": "Losar Festival",
-                    "date": "February",
-                    "description": "Tibetan New Year celebrations with traditional dances, rituals, and cultural programs.",
-                    "image": "https://visitindia.co/wp-content/uploads/2024/02/Losar-Festival-in-Sikkim-2024-Date-History-Traditions-and-Celebrations-1536x864.webp"
-                  }
             ]
         }
     ]
