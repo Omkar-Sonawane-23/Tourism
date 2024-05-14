@@ -53,7 +53,7 @@
         {
             "name": "Kerala Backwaters",
             "category": "Nature",
-            "image": "https://images.pexels.com/photos/2780309/pexels-photo-2780309.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Kerala_Backwaters%2C_India.JPG",
             "description": "Kerala's backwaters are a network of serene waterways, lagoons, and lakes. Travelers can enjoy houseboat rides, lush green landscapes, and experience the unique coastal lifestyle.",
             "location": "Kerala, India",
             "bestTimeToVisit": "November to February",
@@ -128,7 +128,7 @@
         {
             "name": "Rishikesh",
             "category": "Adventure",
-            "image": "https://images.pexels.com/photos/5450672/pexels-photo-5450672.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Rishikesh_India_%28183707027%29.jpeg",
             "description": "Rishikesh, situated in the foothills of the Himalayas, is a hub for adventure seekers and spiritual enthusiasts. Known for its yoga and meditation centers, it offers thrilling activities like white-water rafting and trekking.",
             "location": "Uttarakhand, India",
             "bestTimeToVisit": "March to June",
@@ -228,7 +228,7 @@
           {
             "name": "Ajanta and Ellora Caves",
             "category": "Historical",
-            "image": "https://images.pexels.com/photos/1462809/pexels-photo-1462809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "image": "https://en.wikipedia.org/wiki/Ellora_Caves#/media/File:Ellora_Caves,_India,_Kailasanatha_Temple_2.jpg",
             "description": "The Ajanta and Ellora Caves are a UNESCO World Heritage Site, featuring ancient rock-cut caves with exquisite sculptures, paintings, and architecture. These caves showcase the rich cultural and artistic heritage of ancient India.",
             "location": "Aurangabad, Maharashtra, India",
             "bestTimeToVisit": "November to February",
@@ -240,7 +240,7 @@
                     "eventName": "Ellora Ajanta Festival",
                     "date": "November",
                     "description": "A cultural festival featuring classical music and dance performances, celebrating the artistic heritage of the region.",
-                    "image": "https://www.maharashtratourism.gov.in/sites/default/files/2021-08/Ellora_Ajanta_Festival.jpg"
+                    "image": "https://en.wikipedia.org/wiki/Ellora_Caves#/media/File:Ellora_Caves,_India,_Kailasanatha_Temple_2.jpg"
                 },
                 {
                     "eventName": "Ganesh Chaturthi",
