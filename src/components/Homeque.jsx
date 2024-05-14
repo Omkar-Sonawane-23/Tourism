@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FaArrowUp } from 'react-icons/fa';
 import Data from "../../Data/Detailed.json";
 
 const Homeque = () => {
   const data = Data.destinations;
+  const [showScrollButton, setShowScrollButton] = useState(false);
 
   const showdetail = (index) => {
     console.log(index);
   };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowScrollButton(true);
+    } else {
+      setShowScrollButton(false);
+    }
+  };
+
+  window.addEventListener('scroll', handleScroll);
 
   return (
     <section className='grid grid-cols-3 gap-4'>
@@ -26,8 +42,14 @@ const Homeque = () => {
         </div>
 
       ))}
+      {showScrollButton && (
+        <button className="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full shadow" onClick={scrollToTop}>
+          <FaArrowUp />
+        </button>
+      )}
     </section>
   );
 };
 
 export default Homeque;
+
