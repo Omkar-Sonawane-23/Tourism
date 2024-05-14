@@ -31,7 +31,7 @@ const Homeque = () => {
           <Link to={`/detail/?id=${i}`} key={i}>
             <button
               onClick={() => showdetail(i)}
-              className="w-[80px] h-[30px]  border-2 rounded-xl text-[white] backdrop-blur hover:text-[1.25rem] cursor-pointer text-[white] hover:w-[100px] hover:h-[50px] duration-[0.4s] mt-[5rem]
+              className="w-[80px] h-[30px]  border-2 rounded-xl text-[white] backdrop-blur  cursor-pointer text-[white]  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out transform
               "
             >
               Explore
