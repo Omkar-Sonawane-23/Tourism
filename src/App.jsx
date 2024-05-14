@@ -1,12 +1,15 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Explore from './pages/Explore'
-import Homeque from './components/Homeque';
-import DetailView from './components/DetailView';
-import "./App.css"
-import About from './pages/About';
+
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Explore from "./pages/Explore";
+import Homeque from "./components/Homeque";
+import DetailView from "./components/DetailView";
+import NotFound from "./pages/NotFound";
+import "./App.css";
+import AboutUs from './pages/AboutUs';
+
 
 function App() {
   return (
@@ -14,10 +17,12 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/home" element={<Homeque />} />
-        <Route path='/explore' element={<Explore/>}/>
-        <Route path="/detail" element={<DetailView />} /> {/* Corrected the placement of element prop */}
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
+        <Route path="/explore" element={<Explore />} />
+        <Route path="/detail" element={<DetailView />} />
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path='/about' element={<AboutUs />} />
+
       </Routes>
     </BrowserRouter>
   );
