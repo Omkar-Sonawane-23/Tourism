@@ -12,10 +12,10 @@ function Navbar() {
         </div>
         <div className='flex my-auto'>
             <Link to='/'><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Home</a></li></Link>
-            <li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Places</a></li>
-            <li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">About Us</a></li>
-            <li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="/login">Login </a></li>
-            <li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="/signup">Sign up </a></li>
+            <Link to=""><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Places</a></li></Link>
+            <Link to=""><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">About Us</a></li></Link>
+            <Link to="/login"><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Login </a></li></Link>
+            <Link t0="/signup"><li className='list-none text-xl hover:text-gray-500 m-[10px]'><a href="">Sign up </a></li></Link>
         </div>
     </section>
   )
