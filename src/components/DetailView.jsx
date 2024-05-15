@@ -3,53 +3,64 @@ import Details from './Details';
 import Detailed from '../../Data/Detailed.json';
 
 const DetailView = () => {
-    const [data, setData] = useState(null);
+  const [data, setData] = useState(null);
 
-    useEffect(() => {
-        const id = extractIdFromPathname();
-        if (id !== null) {
-            setData(Detailed.destinations[id]);
-        }
-    }, []);
-
-    function extractIdFromPathname() {
-        const searchParams = new URLSearchParams(window.location.search);
-        const id = searchParams.get("id");
-        console.log(id);
-        return id ? parseInt(id, 10) : null;
+  useEffect(() => {
+    const id = extractIdFromPathname();
+    if (id !== null) {
+      setData(Detailed.destinations[id]);
     }
+  }, []);
 
-    return (
-        <section>
-            {data && (
-                <div className=''>
-                    <img src={data.image} className='w-[100vw] h-[100vh] fixed' />
-                    <div className='absolute z-[2] text-center w-[70vw] flex justify-center items-center flex-col top-[15rem] left-[15rem]' >
-                        <h1 className='top-[250px] left-[40vw] text-[80px] font-roboto leading-[6rem] font-bold'>{data.name}</h1>
-                        <p className='font-bold'>{data.location}</p>
-                        <p className='text-[1.5rem] italic'>{data.description}</p>
-                        <div className='backdrop-blur-lg bg-white opacity-60 rounded-[20px] w-[75rem] h-[170px] mt-[5rem] grid grid-cols-2'>
-                            <h1 className='text-[1.25rem] m-5'><a className='font-bold'>Category :</a> {data.category}</h1>
-                            <h1 className='text-[1.25rem] m-5'><a className='font-bold'>Best Time to Visit :</a> {data.bestTimeToVisit}</h1>
-                            <div className='grid grid-rows-3 leading-[1rem] m-5'>
-                                <h1 className='text-[1.25rem]'><a className='font-bold leading-5'>popular activities :</a></h1>
-                                {data.popularActivities.map((activity, index) => {
-                                    return <li key={index} className=' text-left ml-[15rem]'><a>{activity}</a></li>;
-                                })}
-                            </div>
-                            <div className='grid grid-rows-3 leading-[1rem] m-5'>
-                                <h1 className='text-[1.25rem]'><a className='font-bold leading-5'>Nearby Attraction :</a></h1>
-                                {data.nearbyAttractions.map((attraction, index) => {
-                                    return <li key={index} className=' text-left ml-[15rem]'><a>{attraction}</a></li>;
-                                })}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )}
-            <Details />
-        </section>
-    );
+  function extractIdFromPathname() {
+    const searchParams = new URLSearchParams(window.location.search);
+    const id = searchParams.get("id");
+    return id ? parseInt(id, 10) : null;
+  }
+
+  return (
+    <section className="relative overflow-hidden">
+      {data && (
+        <div className='relative flex flex-col lg:flex-row items-center justify-center'>
+          <img src={data.image} className='w-full lg:w-1/2 h-auto object-cover z-0' alt={data.name} />
+          <div className='lg:w-1/2 lg:ml-10 px-4 py-8 lg:py-0 bg-white bg-opacity-90 backdrop-blur-lg rounded-lg lg:sticky lg:top-20'>
+            <h1 className='text-4xl sm:text-5xl lg:text-6xl text-gray-900 font-bold text-center mb-4'>{data.name}</h1>
+            <p className='text-gray-700 text-lg italic mb-4'>{data.location}</p>
+            <p className='text-gray-700 text-lg mb-8 max-w-md px-4 text-center'>{data.description}</p>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+              <div>
+                <h2 className='text-lg font-bold mb-2'>Category:</h2>
+                <p className='text-gray-700'>{data.category}</p>
+              </div>
+              <div>
+                <h2 className='text-lg font-bold mb-2'>Best Time to Visit:</h2>
+                <p className='text-gray-700'>{data.bestTimeToVisit}</p>
+              </div>
+            </div>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4'>
+              <div>
+                <h2 className='text-lg font-bold mb-2'>Popular Activities:</h2>
+                <ul className='list-disc pl-4'>
+                  {data.popularActivities.map((activity, index) => (
+                    <li key={index} className='text-gray-700'>{activity}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h2 className='text-lg font-bold mb-2'>Nearby Attractions:</h2>
+                <ul className='list-disc pl-4'>
+                  {data.nearbyAttractions.map((attraction, index) => (
+                    <li key={index} className='text-gray-700'>{attraction}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      <Details />
+    </section>
+  );
 }
 
 export default DetailView;
