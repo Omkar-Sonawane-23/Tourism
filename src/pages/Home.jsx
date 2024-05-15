@@ -8,7 +8,7 @@ const Home = () => {
         <img
           src="https://img.freepik.com/premium-vector/mumbai-skyline-landscape-view-city-mumbai-with-characteristics-buildings-monuments_743272-109.jpg?w=4320"
           className="w-full h-full object-cover"
-          alt=""
+          alt="Mumbai skyline, a view of the city with its characteristic buildings and monuments"
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center">
           <div className="mb-10 text-center">
@@ -19,12 +19,14 @@ const Home = () => {
             </h1>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
-            <button
-              className="text-lg md:text-xl lg:text-2xl w-40 md:w-48 lg:w-64 h-8 md:h-10 lg:h-14 rounded-xl bg-black text-white hover:text-[green] duration-[0.4s]"
-              type="button"
-            >
-              Explore
-            </button>
+            <Link to="/explore">
+              <button
+                className="text-lg md:text-xl lg:text-2xl w-40 md:w-48 lg:w-64 h-8 md:h-10 lg:h-14 rounded-xl bg-black text-white hover:text-[green] duration-[0.4s]"
+                type="button"
+              >
+                Explore
+              </button>
+            </Link>
             <Link to="/home">
               <button
                 className="text-lg md:text-xl lg:text-2xl w-40 md:w-48 lg:w-64 h-8 md:h-10 lg:h-14 rounded-xl bg-black text-white hover:text-[green] duration-[0.4s]"
