@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Data from "../../Data/Data.json";
 
@@ -11,46 +11,46 @@ const Homeque = () => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 3);
     }, 3000);
 
-    return () => clearInterval(intervalId); // Cleanup the interval on component unmount
+    return () => clearInterval(intervalId); 
   }, [3]);
 
-  console.log("Current Image Index:", currentImageIndex); // Log current index for debugging
-
-  const showDetail = (index) => {
+  console.log("Current Image Index:", currentImageIndex); 
+  
+  const showdetail = (index) => {
     console.log(index);
   };
 
   return (
-    <section className="grid grid-cols-3 gap-4">
+    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center">
       {data.map((destination, i) => (
-        <div
-          key={i}
-          className="w-[20rem] h-[25rem] m-[5rem] relative flex flex-col justify-center items-center"
-        >
-          <div className="w-[20rem] h-[30rem] overflow-hidden rounded-[30px]">
+        <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform"
+         key={i}>
             <img
               src={destination.image[currentImageIndex]}
-              className="rounded-[30px] w-[25rem] h-[30rem] bg-cover"
+              className="absolute inset-0 h-full w-full object-cover"
               alt={destination.name}
             />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+          <h3 className="z-10 mt-3 text-4xl  font-bold text-white text-center">
+            {data[i].name}
+          </h3>
+          <div className="z-10 gap-y-1 pt-4 overflow-hidden text-center text-sm leading-6 text-gray-300">
+            {data[i].description}
           </div>
-          <div className="w-[20rem] h-[20rem] bg-[black] mt-[-30rem] z-[2] opacity-[30%] rounded-[30px] h-[20rem] flex flex-col justify-center items-center">
-            <h1 className="text-[4rem] mt-[0px] text-center leading-[60px] z-[2] text-[white]">
-              {destination.name}
-            </h1>
-            <p className="text-[white] z-[2] w-[18rem]">
-              {destination.description}
-            </p>
-          </div>
+
+          <div className="z-10 mt-4 justify-center text-center items-center">
           <Link to={`/detail/?id=${i}`} key={i}>
             <button
-              onClick={() => showDetail(i)}
-              className="w-[80px] h-[30px] border-2 rounded-xl text-[black] backdrop-blur hover:text-[1.25rem] cursor-pointer text-[white] hover:w-[100px] hover:h-[50px] duration-[0.4s] mt-[5rem]"
+              onClick={() => showdetail(i)}
+              className="w-[80px] h-[30px]  border-2 rounded-xl text-[white] backdrop-blur  cursor-pointer text-[white]  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out transform
+              "
             >
               Explore
             </button>
           </Link>
-        </div>
+          </div>
+
+        </article>
       ))}
     </section>
   );
