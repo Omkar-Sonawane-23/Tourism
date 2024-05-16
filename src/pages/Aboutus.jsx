@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutUs.css";
+import "./Aboutus.css";
 import Bg from "/gssoc2024/Tourism/src/assets/AboutUsBg.jpg";
 const Aboutus = () => {
   // handle the request
