@@ -6,7 +6,6 @@ import Explore from "./pages/Explore";
 import Homeque from "./components/Homeque";
 import DetailView from "./components/DetailView";
 import NotFound from "./pages/NotFound";
-import ContactUs from "./pages/ContactUs";
 import "./App.css";
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
         <Route path="/detail" element={<DetailView />} />
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/contact" element={<ContactUs />} />
+        {/* <Route path="/contact" element={<ContactUs />} /> */}
       </Routes>
     </BrowserRouter>
   );
