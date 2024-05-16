@@ -1,6 +1,6 @@
 import React from "react";
-import "./aboutus.css";
 import Bg from "/gssoc2024/Tourism/src/assets/bg.jpg";
+import "./aboutus.css"
 const Aboutus = () => {
   // handle the request
   var recipientEmail = "recipient@example.com"; // Replace with the desired email address
@@ -27,6 +27,7 @@ const Aboutus = () => {
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+        
       </style>
       <div className="container">
         <h1 className="head">About Us</h1>
