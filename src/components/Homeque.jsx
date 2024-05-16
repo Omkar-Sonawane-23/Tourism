@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 import Data from "../../Data/Detailed.json";
 
 const Homeque = () => {
@@ -10,6 +10,7 @@ const Homeque = () => {
   };
 
   return (
+
     <section className='max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 grid gird-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10 '>
       {data.map((ele, i) => (
         <div key={i} className='px-4 shadow dark:bg-gray-800 dark:border-gray-700'>
@@ -26,9 +27,6 @@ const Homeque = () => {
         </div>
           
 
-      ))}
-      
-    </section>
     
   );
 };
