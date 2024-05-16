@@ -6,7 +6,6 @@ const Homeque = () => {
   const data = Data.destinations;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 3);
@@ -46,10 +45,10 @@ const Homeque = () => {
             >
               Explore
             </button>
+            
           </Link>
-          </div>
-
-        </article>
+        </div>
+       </article>
       ))}
     </section>
   );
