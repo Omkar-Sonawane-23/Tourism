@@ -1,5 +1,5 @@
 import React from "react";
-import "./s.css";
+import "./AboutUs.css";
 import Bg from "/gssoc2024/Tourism/src/assets/AboutUsBg.jpg";
 const Aboutus = () => {
   // handle the request
@@ -116,6 +116,7 @@ const Aboutus = () => {
         </div>
       </div>
     </>
+    
   );
 };
 
