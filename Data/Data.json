@@ -1,3 +1,4 @@
+
 {
     "destinations": [
         {
@@ -27,14 +28,20 @@
         {
             "name": "Kerala Backwaters",
             "category": "Nature",
-            "image": "https://images.pexels.com/photos/5398766/pexels-photo-5398766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Kerala_Backwaters%2C_India.JPG",
             "description": "Kerala's backwaters are a network of serene waterways, lagoons, and lakes. Travelers can enjoy houseboat rides, lush green landscapes, and experience the unique coastal lifestyle."
         },
         {
             "name": "Rishikesh",
             "category": "Adventure",
-            "image": "https://images.pexels.com/photos/2829336/pexels-photo-2829336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Rishikesh_India_%28183707027%29.jpeg",
             "description": "Rishikesh, located in the foothills of the Himalayas, is a yoga and adventure sports hub. It offers opportunities for white-water rafting, trekking, yoga retreats, and spiritual exploration."
+        },
+        {
+            "name": "Ajanta and Ellora Caves",
+            "category": "Historical",
+            "image": "https://en.wikipedia.org/wiki/Ellora_Caves#/media/File:Ellora_Caves,_India,_Kailasanatha_Temple_2.jpg",
+            "description": "The Ajanta and Ellora Caves are a UNESCO World Heritage Site, featuring ancient rock-cut caves with exquisite sculptures, paintings, and architecture. These caves showcase the rich cultural and artistic heritage of ancient India."
         }
     ]
 }

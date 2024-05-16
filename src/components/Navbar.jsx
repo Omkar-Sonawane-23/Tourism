@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
+
     <section className='flex justify-between items-center shadow-xl fixed top-0 w-full bg-white z-10 py-4 px-8'>
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@500&display=swap');

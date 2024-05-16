@@ -10,38 +10,24 @@ const Homeque = () => {
   };
 
   return (
-    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center">
+
+    <section className='max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 grid gird-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10 '>
       {data.map((ele, i) => (
-        <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform"
-         key={i}>
-          <img
-            src={data[i].image}
-            alt=""
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-          <h3 className="z-10 mt-3 text-4xl  font-bold text-white text-center">
-            {data[i].name}
-          </h3>
-          <div className="z-10 gap-y-1 pt-4 overflow-hidden text-center text-sm leading-6 text-gray-300">
-            {data[i].description}
+        <div key={i} className='px-4 shadow dark:bg-gray-800 dark:border-gray-700'>
+          <div className=' bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between h-full'>
+            <img src={data[i].image} className='transform transiton duration-300 hover:scale-105 hover:cursor-pointer' alt="Heritage Image" />
+          
+            <h1 className='font-bold text-lg flex items-center mt-2'>{data[i].name}</h1>
+            <p className='text-gray-900 mb-2 hover:text-indigo-600 inline-block'>{data[i].description}</p>
+          <div className='flex items-center'>
+            <Link to={`/detail/?id=${i}`} key={i}>
+              <button onClick={() => showdetail(i)} className='text-white bg-[#002d74] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800'>Explore</button>
+            </Link></div>
           </div>
+        </div>
+          
 
-          <div className="z-10 mt-4 justify-center text-center items-center">
-          <Link to={`/detail/?id=${i}`} key={i}>
-            <button
-              onClick={() => showdetail(i)}
-              className="w-[80px] h-[30px]  border-2 rounded-xl text-[white] backdrop-blur  cursor-pointer text-[white]  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out transform
-              "
-            >
-              Explore
-            </button>
-          </Link>
-          </div>
-
-        </article>
-      ))}
-    </section>
+    
   );
 };
 
