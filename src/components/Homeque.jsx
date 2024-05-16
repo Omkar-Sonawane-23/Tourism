@@ -1,24 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Data from "../../Data/Detailed.json";
+import Data from "../../Data/Data.json";
 
 const Homeque = () => {
   const data = Data.destinations;
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 3);
+    }, 3000);
+
+    return () => clearInterval(intervalId); 
+  }, [3]);
+  
   const showdetail = (index) => {
     console.log(index);
   };
 
   return (
     <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center">
-      {data.map((ele, i) => (
+      {data.map((destination, i) => (
         <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform"
          key={i}>
-          <img
-            src={data[i].image}
-            alt=""
-            className="absolute inset-0 h-full w-full object-cover"
-          />
+            <img
+              src={destination.image[currentImageIndex]}
+              className="absolute inset-0 h-full w-full object-cover"
+              alt={destination.name}
+            />
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
           <h3 className="z-10 mt-3 text-4xl  font-bold text-white text-center">
             {data[i].name}
