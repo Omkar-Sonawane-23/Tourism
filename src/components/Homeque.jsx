@@ -1,32 +1,54 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Data from "../../Data/Detailed.json";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Data from "../../Data/Data.json";
 
 const Homeque = () => {
   const data = Data.destinations;
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 3);
+    }, 3000);
+
+    return () => clearInterval(intervalId); 
+  }, [3]);
+  
+  const showdetail = (index) => {
+    console.log(index);
+  };
 
   return (
-    <section className="grid grid-cols-1 mt-36 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 sm:px-8 md:px-12 lg:px-16">
-      {data.map((destination, index) => (
-        <div key={index} className="group w-full relative overflow-hidden rounded-3xl hover:scale-105 transition-all duration-300">
-          <Link to={`/detail/?id=${index}`}>
+    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center">
+      {data.map((destination, i) => (
+        <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform"
+         key={i}>
             <img
-              src={destination.image}
-              className="w-full h-48 sm:h-64 md:h-72 lg:h-80 object-cover"
-              alt="Heritage Image"
+              src={destination.image[currentImageIndex]}
+              className="absolute inset-0 h-full w-full object-cover"
+              alt={destination.name}
             />
-            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-300 rounded-3xl flex flex-col justify-center items-center p-4">
-              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white text-center leading-relaxed mb-2 line-clamp-2">{destination.name}</h1>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white text-center line-clamp-3">{destination.description}</p>
-            </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+          <h3 className="z-10 mt-3 text-4xl  font-bold text-white text-center">
+            {data[i].name}
+          </h3>
+          <div className="z-10 gap-y-1 pt-4 overflow-hidden text-center text-sm leading-6 text-gray-300">
+            {data[i].description}
+          </div>
+
+          <div className="z-10 mt-4 justify-center text-center items-center">
+          <Link to={`/detail/?id=${i}`} key={i}>
+            <button
+              onClick={() => showdetail(i)}
+              className="w-[80px] h-[30px]  border-2 rounded-xl text-[white] backdrop-blur  cursor-pointer text-[white]  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out transform
+              "
+            >
+              Explore
+            </button>
+            
           </Link>
-          <button
-            onClick={() => console.log(index)}
-            className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8 lg:bottom-10 lg:left-10  bg-white text-black border-2 border-transparent rounded-lg px-4 py-2 uppercase text-xs sm:text-sm md:text-base font-medium cursor-pointer hover:bg-black hover:text-white hover:border-white transition-all duration-300"
-          >
-            Explore
-          </button>
         </div>
+       </article>
       ))}
     </section>
   );

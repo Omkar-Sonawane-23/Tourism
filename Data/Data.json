@@ -1,40 +1,174 @@
 {
     "destinations": [
-        {
-            "name": "Taj Mahal",
-            "category": "Historical",
-            "image": "https://images.pexels.com/photos/7263897/pexels-photo-7263897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "The Taj Mahal, an iconic ivory-white marble mausoleum, is one of the Seven Wonders of the World. It was built by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal."
-        },
-        {
-            "name": "Varanasi",
-            "category": "Spiritual",
-            "image": "https://images.pexels.com/photos/4297805/pexels-photo-4297805.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Varanasi, one of the oldest cities in the world, is a spiritual hub in India. It is famous for its ghats on the Ganges River, religious rituals, temples, and vibrant cultural heritage."
-        },
-        {
-            "name": "Jaipur",
-            "category": "City",
-            "image": "https://images.pexels.com/photos/3581368/pexels-photo-3581368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Jaipur, the capital city of Rajasthan, is known as the Pink City due to its distinctive pink-colored buildings. It boasts magnificent forts, palaces, museums, and a rich Rajasthani culture."
-        },
-        {
-            "name": "Goa Beaches",
-            "category": "Beaches",
-            "image": "https://images.pexels.com/photos/18663180/pexels-photo-18663180/free-photo-of-woman-posing-on-a-beach.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Goa, known for its picturesque beaches, is a popular beach destination in India. Visitors can enjoy golden sands, water sports, vibrant nightlife, and delicious seafood."
-        },
-        {
-            "name": "Kerala Backwaters",
-            "category": "Nature",
-            "image": "https://images.pexels.com/photos/5398766/pexels-photo-5398766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Kerala's backwaters are a network of serene waterways, lagoons, and lakes. Travelers can enjoy houseboat rides, lush green landscapes, and experience the unique coastal lifestyle."
-        },
-        {
-            "name": "Rishikesh",
-            "category": "Adventure",
-            "image": "https://images.pexels.com/photos/2829336/pexels-photo-2829336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Rishikesh, located in the foothills of the Himalayas, is a yoga and adventure sports hub. It offers opportunities for white-water rafting, trekking, yoga retreats, and spiritual exploration."
-        }
+      {
+        "name": "Taj Mahal",
+        "category": "Historical",
+        "image": [
+          "https://images.pexels.com/photos/5608221/pexels-photo-5608221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg",
+          "https://c4.wallpaperflare.com/wallpaper/839/1000/912/world-1920x1080-taj-mahal-taj-wallpaper-preview.jpg"
+        ],
+        "description": "The Taj Mahal, an iconic ivory-white marble mausoleum, is one of the Seven Wonders of the World. It was built by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal."
+      },
+      {
+        "name": "Goa Beaches",
+        "category": "Beaches",
+        "image": [
+          "https://img.freepik.com/premium-photo/umbrella-chair-beach-with-palm-tree-sea-beach_1339-125629.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1714176000&semt=ais",
+          "https://gogoacarrentals.com/wp-content/uploads/2019/03/Candolim-Beach.jpg",
+          "https://assets.cntraveller.in/photos/60ba253f0f3a5367ec9fe958/16:9/w_1360,h_765,c_limit/GoaWhat-I-learnt-Ranjan-Pal-1366x768.jpg"
+        ],
+        "description": "Goa, known for its picturesque beaches, is a popular beach destination in India. Visitors can enjoy golden sands, water sports, vibrant nightlife, and delicious seafood."
+      },
+      {
+        "name": "Kerala Backwaters",
+        "category": "Nature",
+        "image": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Houseboats_at_Kerala_Backwaters.jpg/640px-Houseboats_at_Kerala_Backwaters.jpg",
+          "https://www.tripsavvy.com/thmb/UoylMLyzOBPdDp34ForEiJd9m3s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-522478216-5ab12c4e3de4230036949cee.jpg",
+          "https://placesinpixel.com/wp-content/uploads/2019/08/kerala-backwaters-1.jpg"
+        ],
+        "description": "Kerala's backwaters are a network of serene waterways, lagoons, and lakes. Travelers can enjoy houseboat rides, lush green landscapes, and experience the unique coastal lifestyle."
+      },
+      {
+        "name": "Varanasi",
+        "category": "Spiritual",
+        "image": [
+          "https://images.pexels.com/photos/8112531/pexels-photo-8112531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://www.planetware.com/wpimages/2020/02/india-varanasi-best-places-to-visit-ganges-river.jpg",
+          "https://travelogyindia.b-cdn.net/blog/wp-content/uploads/2018/09/Temple-Varanasi.jpg"
+        ],
+        "description": "Varanasi, one of the oldest cities in the world, is a spiritual hub in India. It is famous for its ghats on the Ganges River, religious rituals, temples, and vibrant cultural heritage."
+      },
+      {
+        "name": "Jaipur",
+        "category": "City",
+        "image": [
+          "https://cdn.pixabay.com/photo/2021/04/06/11/22/hawa-mahal-6156123_1280.jpg",
+          "https://m.economictimes.com/thumb/msid-70104165,width-1200,height-900,resizemode-4,imgsize-1445127/jaipur_gettyimages.jpg",
+          "https://media.tacdn.com/media/attractions-content--1x-1/10/65/bd/ac.jpg"
+        ],
+        "description": "Jaipur, the capital city of Rajasthan, is known as the Pink City due to its distinctive pink-colored buildings. It boasts magnificent forts, palaces, museums, and a rich Rajasthani culture."
+      },
+      {
+        "name": "Rishikesh",
+        "category": "Adventure",
+        "image": [
+          "https://images.pexels.com/photos/2829336/pexels-photo-2829336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://media1.thrillophilia.com/filestore/pf3hv3jqvrjtt5rotnpr3v6a6y2d_1575268796_shutterstock_1136356946.jpg?w=400&dpr=2",
+          "https://www.treksandtrails.org/system/images/000/505/572/ae722695fba0950a54b99232d1c323a4/original/Rishikesh-rafting.jpg?1649594343"
+        ],
+        "description": "Rishikesh, located in the foothills of the Himalayas, is a yoga and adventure sports hub. It offers opportunities for white-water rafting, trekking, yoga retreats, and spiritual exploration."
+      },
+      {
+        "name": "Andaman Islands",
+        "category": "Islands",
+        "image": [
+          "https://images.pexels.com/photos/749115/pexels-photo-749115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ299HvvoRLCbPzk6yHqVUSSxHc2mMN7R0VRm0wGuY5Xg&s",
+          "https://www.andamanislands.com/uploads/andamanislands/blog/main/5fa40347e356f155_history_of_andaman_islands.jpg"
+        ],
+        "description": "The Andaman Islands, a tropical paradise in the Bay of Bengal, boast pristine beaches, vibrant coral reefs, and a rich marine life. Perfect for beach lovers and water sports enthusiasts."
+      },
+      {
+        "name": "Udaipur",
+        "category": "Heritage",
+        "image": [
+          "https://images.pexels.com/photos/788943/pexels-photo-788943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://static.toiimg.com/thumb/msid-82304823,width-748,height-499,resizemode=4,imgsize-647878/.jpg",
+          "https://www.thehosteller.com/_next/image?url=https%3A%2F%2Fstatic.thehosteller.com%2Fhostel%2Fimages%2Fcover%20photo.jpg%2Fcover%20photo-1696914123916.jpg&w=2048&q=75"
+        ],
+        "description": "Udaipur, the 'City of Lakes,' is known for its majestic palaces, serene lakes, and vibrant markets. It offers a glimpse into Rajasthan's royal history and architectural marvels."
+      },
+      {
+        "name": "Darjeeling",
+        "category": "Hill Station",
+        "image": [
+          "https://cdn.s3waas.gov.in/s322fb0cee7e1f3bde58293de743871417/uploads/2020/09/2020092224.jpg",
+          "https://static.toiimg.com/thumb/msid-104684413,width-748,height-499,resizemode=4,imgsize-65830/.jpg",
+          "https://i0.wp.com/travelgangtok.com/blog/wp-content/uploads/2023/09/darjeeling-half-day-private.jpg?fit=550%2C364&ssl=1"
+        ],
+        "description": "Darjeeling, nestled in the Himalayan foothills, is a charming hill station known for its tea plantations, scenic landscapes, and the iconic Darjeeling Himalayan Railway."
+      },
+      {
+        "name": "Ajanta and Ellora Caves",
+        "category": "Historical",
+        "image": [
+          "https://cdn.britannica.com/70/153470-050-F4594C27/Ajanta-Caves-Maharashtra-India.jpg",
+          "https://www.pilgrimagetour.in/blog/wp-content/uploads/2024/01/Best-Time-to-Visit-Ajanta-Caves.jpg",
+          "https://static.toiimg.com/thumb/msid-102582207,width-748,height-499,resizemode=4,imgsize-190114/.jpg"
+        ],
+        "description": "The Ajanta and Ellora Caves are a UNESCO World Heritage Site, featuring ancient rock-cut caves with exquisite sculptures, paintings, and architecture."
+      },
+      {
+        "name": "Mumbai",
+        "category": "Metropolitan",
+        "image": [
+          "https://media.istockphoto.com/id/1307189136/photo/gateway-of-india-mumbai-maharashtra-monument-landmark-famous-place-magnificent-view-without.jpg?s=612x612&w=0&k=20&c=gGzzkXY5bAVbRbokzrjvkt7Ve-Z3yzSVN04NaMqyBB8=",
+          "https://th-i.thgim.com/public/incoming/jnhksh/article67461156.ece/alternates/FREE_1200/iStock-1679852831.jpg",
+          "https://static.toiimg.com/photo/103532002.cms"
+        ],
+        "description": "Mumbai, the financial and entertainment capital of India, is a bustling metropolis known for its diverse culture, iconic landmarks, Bollywood film industry, and vibrant nightlife."
+      },
+      {
+        "name": "Kolkata",
+        "category": "Cultural and Culinary",
+        "image": [
+          "https://images.pexels.com/photos/3965543/pexels-photo-3965543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://lp-cms-production.imgix.net/2019-06/GettyImages-143559567_high.jpg",
+          "https://www.savaari.com/blog/wp-content/uploads/2022/08/Kolkata-1.jpg"
+        ],
+        "description": "Kolkata, the cultural capital of India, is known for its rich history, artistic heritage, intellectual pursuits, and delectable cuisine. It's a city of joy with a blend of tradition and modernity."
+      },
+      {
+        "name": "Puri",
+        "category": "Spiritual and Beach",
+        "image": [
+          "https://assets.traveltriangle.com/blog/wp-content/uploads/2015/12/The-Jagannath-Temple-in-Puri.jpg",
+          "https://www.holidify.com/images/bgImages/PURI.jpg",
+          "https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/cover-places-Near-Puri_15th-jan.jpg"
+        ],
+        "description": "Puri, located on the Bay of Bengal, is a sacred city for Hindus and a popular beach destination. It is famous for the Jagannath Temple, pristine beaches, and the annual Rath Yatra festival."
+      },
+      {
+        "name": "Shimla",
+        "category": "Hill Station",
+        "image": [
+          "https://www.trawell.in/admin/images/upload/487035497Shimla_Main.jpg",
+          "https://c.ndtvimg.com/2022-01/j49ev9ig_shimla-snow-pti_625x300_24_January_22.jpg",
+          "https://images.cnbctv18.com/wp-content/uploads/2022/08/Shimla-shutterstock-1019x573.jpg"
+        ],
+        "description": "Shimla, the capital city of Himachal Pradesh, is a charming hill station nestled in the Himalayas. It is known for its scenic beauty, colonial architecture, and pleasant weather, making it a popular destination for nature lovers and adventure enthusiasts."
+      },
+      {
+        "name": "Srinagar",
+        "category": "Scenic Beauty and Lakes",
+        "image": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgn3MCVm_arCutzia10WJVrblfOvbvi2QTt9UmP4AQ2A&s",
+          "https://img.veenaworld.com/wp-content/uploads/2023/01/Things-To-Do-in-Srinagar.jpg",
+          "https://facts.net/wp-content/uploads/2023/07/38-facts-about-srinagar-1688457299.jpeg"
+        ],
+        "description": "Srinagar, the summer capital of Jammu and Kashmir, is renowned for its breathtaking natural beauty, including Dal Lake, Mughal gardens, and snow-capped mountains. It offers serene houseboat stays and a peaceful atmosphere."
+      },
+      {
+        "name": "Munnar",
+        "category": "Hill Station and Tea Gardens",
+        "image": [
+          "https://t4.ftcdn.net/jpg/01/28/57/63/360_F_128576315_ejpjSy7S7fsH275jCDuUtykU1O3B6rUb.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Munnar_hill_station_.JPG/1200px-Munnar_hill_station_.JPG",
+          "https://oneday.travel/wp-content/uploads/one-day-munnar-local-sightseeing-tour-package-with-top-station-by-private-car-header-1568x1045.jpg"
+        ],
+        "description": "Munnar, located in the Western Ghats of Kerala, is a picturesque hill station known for its lush tea gardens, misty mountains, and serene atmosphere. It's a paradise for nature lovers and adventure seekers."
+      },
+      {
+        "name": "Chennai",
+        "category": "Metropolitan and Cultural Hub",
+        "image": [
+          "https://www.fabhotels.com/blog/wp-content/uploads/2019/02/MGR-Film-City.jpg",
+          "https://www.incredibleindia.org/content/dam/incredible-india-v2/images/places/chennai/Original.jpg/jcr:content/renditions/cq5dam.web.1800.737.jpeg",
+          "https://upload.wikimedia.org/wikipedia/commons/3/32/Chennai_Central.jpg"
+        ],
+        "description": "Chennai, the capital city of Tamil Nadu, is a bustling metropolis known for its rich heritage, vibrant arts scene, classical music and dance, and delectable cuisine. It's a blend of tradition and modernity."
+      }
     ]
 }
