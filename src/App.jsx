@@ -6,6 +6,7 @@ import Explore from "./pages/Explore";
 import Homeque from "./components/Homeque";
 import DetailView from "./components/DetailView";
 import NotFound from "./pages/NotFound";
+import ContactUs from "./pages/ContactUs";
 import "./App.css";
 import AboutUs from './pages/AboutUs';
 
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
         <Route path='/about' element={<AboutUs />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </BrowserRouter>
   );
