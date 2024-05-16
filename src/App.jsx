@@ -8,6 +8,7 @@ import DetailView from "./components/DetailView";
 import NotFound from "./pages/NotFound";
 import ContactUs from "./pages/ContactUs";
 import "./App.css";
+import Aboutus from "./pages/Aboutus";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/explore" element={<Explore />} />
         <Route path="/detail" element={<DetailView />} />
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Aboutus />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
