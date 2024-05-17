@@ -1,9 +1,45 @@
 @font-face {
-    font-family: samarkand;
-    src: url('../src/assets/SamarkanNormal-Gg5D.ttf');
+  font-family: samarkand;
+  src: url("../src/assets/SamarkanNormal-Gg5D.ttf");
 }
-#samarkand{
-    font-family: samarkand;
+#samarkand {
+  font-family: samarkand;
+}
+
+#loader {
+  margin-top: 32vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#fact{
+  width:20vw;
+  color:#222222;
+  text-align:center;
+}
+
+#loadLogo{
+  width:20vw;
+  text-align:center;
+}
+
+#factHead{
+  text-align:center;
+  width:20vw;
+  font-family:"Arial";
+  font-weight: bold;
+}
+
+#logo{
+  margin-left:auto;
+  margin-right:auto;
+  height:70px;
+  width: 70px;
+  border-radius: 50%;
 }
 
 ::-webkit-scrollbar {
