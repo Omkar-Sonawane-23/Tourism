@@ -37,6 +37,9 @@ function Navbar() {
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
             <Link to="/about">About Us</Link>
           </li>
+          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
+            <Link to="/Faq">FAQs</Link>
+          </li>
         </ul>
       </div>
       <div className="md:hidden">

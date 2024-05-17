@@ -7,6 +7,7 @@ import Homeque from "./components/Homeque";
 import DetailView from "./components/DetailView";
 import NotFound from "./pages/NotFound";
 import "./App.css";
+import {Faq} from "./components/Faq";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/detail" element={<DetailView />} />
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/Faq" element={<Faq />} />
         {/* <Route path="/contact" element={<ContactUs />} /> */}
       </Routes>
     </BrowserRouter>
