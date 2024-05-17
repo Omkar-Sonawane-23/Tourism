@@ -1,7 +1,6 @@
 import { React, useState, useEffect } from "react";
 import Data from "../../Data/Detailed.json";
 import { Link } from "react-router-dom";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 const data = Data.destinations;
@@ -143,6 +142,19 @@ const Explore = () => {
         ))}
       </div>
       <br />
+      <h2 className="text-lg font-bold mb-2 block">Popular Places</h2>
+      <div className="flex flex-wrap gap-2">
+        {places.map((place, index) => (
+          <button
+            value={place}
+            key={index}
+            className="px-4 py-2 bg-gray-200 rounded-md"
+            onClick={handleStateChange}
+          >
+            {place}
+          </button>
+        ))}
+      </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center">
         {filteredPlaces.map((place, index) => (
