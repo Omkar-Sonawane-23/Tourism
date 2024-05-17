@@ -35,7 +35,7 @@ function Navbar() {
             <Link to="/home">Places</Link>
           </li>
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
-            <Link to="/about">About Us</Link>
+            <Link to="/aboutus">About Us</Link>
           </li>
         </ul>
       </div>
