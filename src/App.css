@@ -67,3 +67,53 @@
     font-family: "Poppins", sans-serif;
 
 }
+
+.pagination-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 10px;
+    box-shadow: 0 0 4px rgba(249, 115, 22, 1);
+    border: 1px solid rgba(249, 115, 22, 1);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.page-btn {
+    list-style-type: none;
+}
+.page-btn-link {
+    padding: 10px;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    color: rgba(249, 115, 22, 1);
+}
+.page-btn-link:not(.active):hover {
+    background-color: rgb(244, 219, 200);
+}
+.active {
+    background-color: rgba(249, 115, 22, 1);
+    color: white;
+    font-weight: 600;
+    border-radius: 50%;
+}
+.prev, .next {
+    width: max-content;
+    border-radius: 5px;
+}
+.disabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
+.break {
+    color: rgba(249, 115, 22, 1);
+    pointer-events: none;
+    border: none;
+    font-weight: 600;
+}
