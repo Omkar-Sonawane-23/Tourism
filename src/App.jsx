@@ -8,6 +8,8 @@ import DetailView from "./components/DetailView";
 import NotFound from "./pages/NotFound";
 import "./App.css";
 import AboutUs from "./pages/AboutUs";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/explore" element={<Explore />} />
         <Route path="/detail" element={<DetailView />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
         {/* <Route path="/contact" element={<ContactUs />} /> */}
