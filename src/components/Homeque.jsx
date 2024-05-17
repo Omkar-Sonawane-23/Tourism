@@ -76,10 +76,11 @@ const Homeque = () => {
       ))}
       {showScrollButton && (
         <button
-          className="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full shadow"
+          className="fixed bottom-4 right-4 text-white py-2 px-4 rounded-full shadow bg-[#f97316] hover:bg-[#d75b03] transition duration-500 ease-in-out transform"
           onClick={scrollToTop}
+
         >
-          <FaArrowUp />
+          <FaArrowUp  />
         </button>
       )}
     </section>
