@@ -5,6 +5,29 @@
 #samarkand{
     font-family: samarkand;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* color of the scroll bar */
+::-webkit-scrollbar-thumb {
+    background: rgba(249, 115, 22, 1);
+}
+
+/* color on the sides of the scroll bar */
+
+::-webkit-scrollbar-track {
+    background:white;
+}
+
+/* radius of the scroll bar */
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+
+}
+
 .about{
     font-family: "Poppins", sans-serif;
+
 }
