@@ -13,6 +13,7 @@ import AboutUs from "./pages/AboutUs";
 function App() {
   return (
     <BrowserRouter>
+    <Navbar/>
       <Routes>
         <Route path="/home" element={<Homeque />} />
         <Route path="/explore" element={<Explore />} />
