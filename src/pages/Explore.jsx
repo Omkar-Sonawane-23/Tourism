@@ -1,8 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Places from './Places';
+import data from '../../Data/Data.json'
 
 const Explore = () => {
   const [selectedFilter, setSelectedFilter] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % data.destinations.length);
+    }, 5000); // Change image every 5 seconds (adjust as needed)
+
+    return () => clearInterval(interval);
+  }, []);
 
   const handleFilterChange = (event) => {
     setSelectedFilter(event.target.value);
@@ -12,10 +22,15 @@ const Explore = () => {
 
   return (
     <section className="flex flex-col justify-center items-center h-screen mt-[500px] md:mt-8">
-      <div className="max-w-screen-lg w-full">
-        <h2 className="text-2xl text-center font-semibold mb-4">Explore</h2>
+      <div
+        className="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-70"
+        style={{ backgroundImage: `url(${data.destinations[currentIndex]?.image[0]})` }}
+      >
       </div>
-      <div className="max-w-screen-lg w-full mb-4">
+      <div className="max-w-screen-lg w-full">
+        <h2 className="text-2xl text-center font-semibold mb-4 relative z-10">Explore</h2>
+      </div>
+      <div className="max-w-screen-lg w-full mb-4 relative z-10">
         <select
           value={selectedFilter}
           onChange={handleFilterChange}
