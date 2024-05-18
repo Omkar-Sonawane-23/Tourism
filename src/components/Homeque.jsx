@@ -36,7 +36,7 @@ const Homeque = () => {
   }, []);
 
   const showdetail = (index) => {
-    console.log(index);
+    // console.log(index);
   };
 
   const scrollToTop = () => {
