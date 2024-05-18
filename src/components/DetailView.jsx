@@ -23,7 +23,8 @@ const DetailView = () => {
       {data && (
         <div className="flex flex-col items-center  justify-center w-11/12 h-full">
           <img src={data.image} alt={data.title} />
-          <h1 className="text-3xl font-bold mt-5">{data.location}</h1>
+          <h1 className="text-4xl font-bold mt-5">{data.name}</h1>
+          <h3 className="text-xl font-semibold mt-4">{data.location}</h3>
           <p className="text-lg sm:text-lg md:text-xl mt-5 text-justify">{data.description}</p>
 
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4  gap-5 gap-y-4 mt-5 w-full"
