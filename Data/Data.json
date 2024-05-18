@@ -169,6 +169,81 @@
           "https://upload.wikimedia.org/wikipedia/commons/3/32/Chennai_Central.jpg"
         ],
         "description": "Chennai, the capital city of Tamil Nadu, is a bustling metropolis known for its rich heritage, vibrant arts scene, classical music and dance, and delectable cuisine. It's a blend of tradition and modernity."
-      }
+      },
+      {
+        "name": "Leh Ladakh ",
+        "category": "Adventure and Scenic Beauty",
+        "image": [
+          "https://img.nayatrip.com/images/place/big/ladakh.jpg",
+          "https://cdn.pixabay.com/photo/2017/05/10/13/39/ladakh-2300904_640.jpg",
+          "https://media.istockphoto.com/id/1218830644/photo/beautiful-lake.jpg?s=612x612&w=0&k=20&c=r5or5KmtrZE5P93cDPG2FzxWQxhZA0qeTInoXJ7qXxA="
+        ],
+        "description": "Leh-Ladakh is renowned for its stunning landscapes, high-altitude mountain passes, and Buddhist monasteries."
+      },
+      
+
+    {
+        "name": "Pondicherry (Puducherry)",
+        "category": "Colonial Heritage and Beaches",
+        "image": [
+            "https://www.abhibus.com/blog/wp-content/uploads/2023/04/Best-Places-to-Visit-in-Pondicherry-in-3-days.jpg",
+            "https://curlytales.com/wp-content/uploads/2016/09/Pondicherry-1024x538.jpg",
+            "https://hikerwolf.com/wp-content/uploads/2020/03/WhatsApp-Image-2020-03-31-at-3.18.20-PM-1.jpeg"
+        ],
+        "description": "Pondicherry, a former French colony, is known for its charming colonial architecture, serene beaches, and spiritual centers like Sri Aurobindo Ashram and Auroville."
+    },
+    {
+        "name": "Amritsar, Punjab",
+        "category": "Spiritual and Historical",
+        "image": [
+            "https://cdn.britannica.com/06/162706-050-E566DC89/Harmandir-Sahib-Teja-Singh-Samudri-Hall-Clock.jpg",
+            "https://punjabtourism.punjab.gov.in/destination/destibnation-amritsar-15.jpg",
+            "https://punjabtourism.punjab.gov.in/destination/destibnation-amritsar-1.jpg"
+        ],
+        "description": "Amritsar is home to the Golden Temple (Harmandir Sahib), the holiest shrine of Sikhism. It also has historical significance due to the Jallianwala Bagh massacre memorial and the Wagah Border ceremony."
+    },
+    {
+        "name": "Khajuraho, Madhya Pradesh",
+        "category": "Historical and Architectural",
+        "image": [
+          "https://live.staticflickr.com/7122/7810078770_43a28d760a_b.jpg",
+            "https://i.ytimg.com/vi/o9GqYS6uvsE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC5d3Kc5LWBoI8LdU20yo-wxusRZQ",
+            "https://beyonder.travel/wp-content/uploads/2020/05/Khajuraho-Temples-scaled.jpg"
+        ],
+        "description": "Khajuraho is renowned for its group of Hindu and Jain temples, known for their exquisite erotic sculptures and intricate architecture, which date back to the Chandela dynasty."
+    },
+  
+    {
+        "name": "Gangtok, Sikkim",
+        "category": "Hill Station and Adventure",
+        "image": [
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKhxIm2-987or_TOopobEc5-onTeGGAlFonsH84q9BHQ&s",
+            "https://cdn.britannica.com/23/173823-050-E7E5BADB/area-Gangtok-Sikkim-India.jpg",
+            "https://img.traveltriangle.com/attachments/pictures/842716/original/Darjeeling-Cable-Car-1.jpg"
+        ],
+        "description": "Gangtok, the capital of Sikkim, offers breathtaking views of the Himalayas, lush green valleys, and Buddhist monasteries. It's a paradise for trekking, mountain biking, and exploring Tibetan culture."
+    },
+    {
+        "name": "Chandigarh",
+        "category": "Urban Planning and Gardens",
+        "image": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxwiA1z_nonn6v_JOu3WLaCcSMHqOefh3sA3bNPFgO0g&s",
+            "https://static2.tripoto.com/media/filter/tst/img/236312/TripDocument/1454609520_24633829142_478897d4dc_b.jpg",
+            "https://images.indianexpress.com/2020/02/rose-festival.jpg"
+           
+        ],
+        "description": "Chandigarh, India's first planned city designed by Le Corbusier, is known for its well-laid-out sectors, modernist architecture, and beautiful gardens like the Rock Garden and Rose Garden."
+    },
+    {
+        "name": "Mysore, Karnataka",
+        "category": "Heritage and Cultural",
+        "image": [
+            "https://www.holidaymonk.com/wp-content/uploads/2022/05/Mysore-Palace.webp",
+            "https://www.holidify.com/images/bgImages/MYSORE.jpg",
+            "https://karnatakatourism.org/wp-content/uploads/2020/05/Mysore-banner.jpg"
+        ],
+        "description": "Mysore, often called the City of Palaces, is famous for the opulent Mysore Palace, vibrant Dasara festival, and rich cultural heritage. It also boasts intricately carved temples and lush gardens."
+    }
+      
     ]
 }
