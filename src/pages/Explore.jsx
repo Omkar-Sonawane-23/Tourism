@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import Data from "../../Data/Detailed.json";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import GoToTop from "./GoToTop";
 
 const data = Data.destinations;
 
@@ -189,7 +190,9 @@ const Explore = () => {
           </article>
         ))}
       </div>
+      <GoToTop/>
     </section>
+    
   );
 };
 

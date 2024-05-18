@@ -1,429 +1,878 @@
 {
-    "destinations": [
+  "destinations": [
+    {
+      "name": "Taj Mahal",
+      "category": "Historical",
+      "image": "https://images.pexels.com/photos/5608221/pexels-photo-5608221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "The Taj Mahal, an iconic ivory-white marble mausoleum, is one of the Seven Wonders of the World. It was built by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal.",
+      "location": "Agra, Uttar Pradesh, India",
+      "bestTimeToVisit": "October to March",
+      "popularActivities": [
+        "Visiting the Taj Mahal",
+        "Exploring Agra Fort",
+        "Shopping for local handicrafts"
+      ],
+      "nearbyAttractions": [
+        "Fatehpur Sikri",
+        "Mehtab Bagh",
+        "Itimad-ud-Daulah"
+      ],
+      "travelTips": [
+        "Arrive early to avoid crowds.",
+        "Respect local customs.",
+        "Try Mughlai cuisine."
+      ],
+      "happeningEvents": [
         {
-            "name": "Taj Mahal",
-            "category": "Historical",
-            "image": "https://images.pexels.com/photos/5608221/pexels-photo-5608221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "The Taj Mahal, an iconic ivory-white marble mausoleum, is one of the Seven Wonders of the World. It was built by Mughal Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal.",
-            "location": "Agra, Uttar Pradesh, India",
-            "bestTimeToVisit": "October to March",
-            "popularActivities": ["Visiting the Taj Mahal", "Exploring Agra Fort", "Shopping for local handicrafts"],
-            "nearbyAttractions": ["Fatehpur Sikri", "Mehtab Bagh", "Itimad-ud-Daulah"],
-            "travelTips": ["Arrive early to avoid crowds.", "Respect local customs.", "Try Mughlai cuisine."],
-            "happeningEvents": [
-                {
-                    "eventName": "Taj Mahotsav",
-                    "date": "February",
-                    "description": "A 10-day cultural festival showcasing arts, crafts, music, dance, and cuisine.",
-                    "image": "https://www.tourmyindia.com/states/uttarpradesh/images/taj-mahotsav.jpg"
-                },
-                {
-                    "eventName": "Diwali Celebrations",
-                    "date": "October/November",
-                    "description": "Diwali, the Festival of Lights, is celebrated with fireworks and cultural performances.",
-                    "image": "https://resize.indiatvnews.com/en/resize/oldbucket/730_-/mainnational/IndiaTv7e48b1_Taj.jpg"
-                }
-            ]
+          "eventName": "Taj Mahotsav",
+          "date": "February",
+          "description": "A 10-day cultural festival showcasing arts, crafts, music, dance, and cuisine.",
+          "image": "https://www.tourmyindia.com/states/uttarpradesh/images/taj-mahotsav.jpg"
         },
         {
-            "name": "Goa Beaches",
-            "category": "Beaches",
-            "image": "https://images.pexels.com/photos/13208189/pexels-photo-13208189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Goa, known for its picturesque beaches, is a popular beach destination in India. Visitors can enjoy golden sands, water sports, vibrant nightlife, and delicious seafood.",
-            "location": "Goa, India",
-            "bestTimeToVisit": "November to February",
-            "popularActivities": ["Relaxing on the beaches", "Water sports", "Partying at beach shacks"],
-            "nearbyAttractions": ["Basilica of Bom Jesus", "Dudhsagar Waterfalls", "Anjuna Flea Market"],
-            "travelTips": ["Beware of strong currents while swimming.", "Try Goan cuisine.", "Explore vibrant nightlife."],
-            "happeningEvents": [
-                {
-                    "eventName": "Sunburn Festival",
-                    "date": "December",
-                    "description": "One of Asia's biggest electronic dance music festivals held on the beaches of Goa.",
-                    "image": "https://d12ld5anqxokoc.cloudfront.net/wp-content/uploads/2019/06/21120932/49761376_10156389879964608_2023743621567610880_o.jpg"
-                },
-                {
-                    "eventName": "Carnival",
-                    "date": "February/March",
-                    "description": "A lively, colorful event featuring parades, music, and dancing.",
-                    "image": "https://www.desicomments.com/wp-content/uploads/2017/01/Local-Men-Performing-Tradtional-Godemodni-Dance-Of-Goa-Carnival.jpg"
-                }
-            ]
-        },
-        {
-            "name": "Kerala Backwaters",
-            "category": "Nature",
-            "image": "https://images.pexels.com/photos/2780309/pexels-photo-2780309.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Kerala's backwaters are a network of serene waterways, lagoons, and lakes. Travelers can enjoy houseboat rides, lush green landscapes, and experience the unique coastal lifestyle.",
-            "location": "Kerala, India",
-            "bestTimeToVisit": "November to February",
-            "popularActivities": ["Houseboat cruise", "Visiting Kumarakom Bird Sanctuary", "Exploring villages"],
-            "nearbyAttractions": ["Periyar National Park", "Athirapally Waterfalls", "Fort Kochi"],
-            "travelTips": ["Book a houseboat in advance.", "Indulge in Kerala cuisine.", "Attend local temple festivals."],
-            "happeningEvents": [
-                {
-                    "eventName": "Nehru Trophy Boat Race",
-                    "date": "August",
-                    "description": "An annual snake boat race held in the Punnamada Lake in Alleppey.",
-                    "image": "https://images.indulgexpress.com/uploads/user/imagelibrary/2020/8/7/original/Aranmula-boat_race-_Kerala-India-1.jpg"
-                },
-                {
-                    "eventName": "Thrissur Pooram",
-                    "date": "April/May",
-                    "description": "A grand temple festival featuring a colorful procession of elephants and traditional music.",
-                    "image": "https://i1.wp.com/pinklungi.com/wp-content/uploads/2019/05/untitled-design-1-1.png?resize=1068%2C712&ssl=1"
-                }
-            ]
-        },
-        {
-            "name": "Varanasi",
-            "category": "Spiritual",
-            "image": "https://images.pexels.com/photos/8112531/pexels-photo-8112531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Varanasi, one of the oldest cities in the world, is a spiritual hub in India. It is famous for its ghats on the Ganges River, religious rituals, temples, and vibrant cultural heritage.",
-            "location": "Varanasi, Uttar Pradesh, India",
-            "bestTimeToVisit": "October to March",
-            "popularActivities": ["Ganga Aarti", "Boat ride on the Ganges", "Visiting Sarnath"],
-            "nearbyAttractions": ["Kashi Vishwanath Temple", "Banaras Hindu University", "New Vishwanath Temple"],
-            "travelTips": ["Respect local customs.", "Participate in yoga sessions.", "Explore narrow alleys for hidden temples."],
-            "happeningEvents": [
-                {
-                    "eventName": "Mahashivaratri",
-                    "date": "February/March",
-                    "description": "A major Hindu festival dedicated to Lord Shiva, celebrated with fasting and night-long vigils.",
-                    "image": "https://th.bing.com/th/id/OIP.Rrt8yXyWJfRYxtsTnz0zMAHaFj?pid=ImgDet&rs=1"
-                },
-                {
-                    "eventName": "Dev Deepawali",
-                    "date": "November",
-                    "description": "The 'Festival of Lights of the Gods,' celebrated with illuminated ghats and cultural performances.",
-                    "image": "https://www.filmingindo.com/wp-content/uploads/2018/04/dev-dipawali-varanasi.jpeg"
-                }
-            ]
-        },
-        {
-            "name": "Jaipur",
-            "category": "City",
-            "image": "https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Jaipur, the capital city of Rajasthan, is known as the Pink City due to its distinctive pink-colored buildings. It boasts magnificent forts, palaces, museums, and a rich Rajasthani culture.",
-            "location": "Jaipur, Rajasthan, India",
-            "bestTimeToVisit": "October to March",
-            "popularActivities": ["Exploring Amber Fort", "Visiting City Palace", "Shopping at Johari Bazaar"],
-            "nearbyAttractions": ["Jantar Mantar", "Nahargarh Fort", "Hawa Mahal"],
-            "travelTips": ["Try Rajasthani cuisine.", "Attend traditional dance performances.", "Visit during Jaipur Literature Festival."],
-            "happeningEvents": [
-                {
-                    "eventName": "Jaipur Literature Festival",
-                    "date": "January",
-                    "description": "The world's largest free literary festival featuring renowned authors, thinkers, and cultural performances.",
-                    "image": "https://cdn.lifestyleasia.com/wp-content/uploads/sites/7/2020/01/17185718/JLF-1820x910-1.jpg"
-                },
-                {
-                    "eventName": "Gangaur Festival",
-                    "date": "March/April",
-                    "description": "A colorful and important festival dedicated to Goddess Gauri, marked by processions and cultural events.",
-                    "image": "https://www.pinkpedia.com/wp-content/uploads/2020/04/gangaur4-2048x1365.jpg"
-                }
-            ]
-        },
-        {
-            "name": "Rishikesh",
-            "category": "Adventure",
-            "image": "https://images.pexels.com/photos/5450672/pexels-photo-5450672.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Rishikesh, situated in the foothills of the Himalayas, is a hub for adventure seekers and spiritual enthusiasts. Known for its yoga and meditation centers, it offers thrilling activities like white-water rafting and trekking.",
-            "location": "Uttarakhand, India",
-            "bestTimeToVisit": "March to June",
-            "popularActivities": ["Yoga and meditation", "White-water rafting", "Visit to The Beatles Ashram"],
-            "nearbyAttractions": ["Haridwar", "Neelkanth Mahadev Temple", "Triveni Ghat"],
-            "travelTips": ["Experience the Ganga Aarti.", "Explore local cafes.", "Attend yoga retreats."],
-            "happeningEvents": [
-              {
-                "eventName": "International Yoga Festival",
-                "date": "March",
-                "description": "A week-long festival attracting yogis and spiritual leaders from around the world.",
-                "image": "https://www.internationalyogafestival.org/assets/images/international-yoga-festival-rishikesh.jpg"
-              },
-              {
-                "eventName": "Ganga Dussehra",
-                "date": "May/June",
-                "description": "A festival celebrating the descent of the Ganges to Earth, marked by religious ceremonies and rituals.",
-                "image": "https://www.tourmyindia.com/states/uttarpradesh/images/ganga-dussehra-1.jpg"
-              }
-            ]
-          },
-          {
-            "name": "Andaman Islands",
-            "category": "Islands",
-            "image": "https://images.pexels.com/photos/749115/pexels-photo-749115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "The Andaman Islands, a tropical paradise in the Bay of Bengal, boast pristine beaches, vibrant coral reefs, and a rich marine life. Perfect for beach lovers and water sports enthusiasts.",
-            "location": "Andaman and Nicobar Islands, India",
-            "bestTimeToVisit": "November to March",
-            "popularActivities": ["Snorkeling and scuba diving", "Radhanagar Beach visit", "Cellular Jail tour"],
-            "nearbyAttractions": ["Neil Island", "Havelock Island", "Ross Island"],
-            "travelTips": ["Obtain necessary permits for island visits.", "Explore local seafood cuisine.", "Enjoy water activities."],
-            "happeningEvents": [
-              {
-                "eventName": "Island Tourism Festival",
-                "date": "December/January",
-                "description": "A celebration showcasing the cultural diversity of the Andaman and Nicobar Islands.",
-                "image": "https://www.andamantourism.gov.in/images/slider_images/itf-pic2.jpg"
-              },
-              {
-                "eventName": "Subhash Mela",
-                "date": "January",
-                "description": "A festival commemorating the birth anniversary of Netaji Subhas Chandra Bose, with cultural programs and exhibitions.",
-                "image": "https://www.andamantourism.gov.in/images/slider_images/subhas-mela-pic1.jpg"
-              }
-            ]
-          },
-          {
-            "name": "Udaipur",
-            "category": "Heritage",
-            "image": "https://images.pexels.com/photos/788943/pexels-photo-788943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Udaipur, the 'City of Lakes,' is known for its majestic palaces, serene lakes, and vibrant markets. It offers a glimpse into Rajasthan's royal history and architectural marvels.",
-            "location": "Udaipur, Rajasthan, India",
-            "bestTimeToVisit": "October to March",
-            "popularActivities": ["Boat ride on Lake Pichola", "Visit to City Palace", "Exploring Jag Mandir"],
-            "nearbyAttractions": ["Jaisalmer", "Mount Abu", "Chittorgarh"],
-            "travelTips": ["Attend a traditional Rajasthani dance performance.", "Shop for local handicrafts.", "Experience the royal hospitality."],
-            "happeningEvents": [
-              {
-                "eventName": "Mewar Festival",
-                "date": "March/April",
-                "description": "A festival celebrating the arrival of spring with cultural events, processions, and performances.",
-                "image": "https://www.rajasthantourplanner.com/blog/wp-content/uploads/2016/03/Mewar-Festival-Udaipur-Rajasthan.jpg"
-              },
-              {
-                "eventName": "Diwali Celebrations",
-                "date": "October/November",
-                "description": "Diwali festivities with illuminated palaces, cultural performances, and fireworks.",
-                "image": "https://www.holidify.com/images/cmsuploads/compressed/Udaipur_City_Palace_Flickr_Tyler_Dunlavy_20191118192934.jpg"
-              }
-            ]
-          },
-          {
-            "name": "Darjeeling",
-            "category": "Hill Station",
-            "image": "https://cdn.s3waas.gov.in/s322fb0cee7e1f3bde58293de743871417/uploads/2020/09/2020092224.jpg",
-            "description": "Darjeeling, nestled in the Himalayan foothills, is a charming hill station known for its tea plantations, scenic landscapes, and the iconic Darjeeling Himalayan Railway.",
-            "location": "West Bengal, India",
-            "bestTimeToVisit": "April to June and September to November",
-            "popularActivities": ["Toy Train ride", "Visit to Tiger Hill", "Explore tea estates"],
-            "nearbyAttractions": ["Gangtok", "Kalimpong", "Peace Pagoda"],
-            "travelTips": ["Witness the sunrise at Tiger Hill.", "Savor Darjeeling tea.", "Explore the vibrant local markets."],
-            "happeningEvents": [
-              {
-                "eventName": "Darjeeling Carnival",
-                "date": "December",
-                "description": "A winter carnival featuring cultural events, parades, and local performances.",
-                "image": "https://www.india.com/wp-content/uploads/2016/12/Darjeeling-Carnival.jpg"
-              },
-              {
-                "eventName": "Losar Festival",
-                "date": "February",
-                "description": "Tibetan New Year celebrations with traditional dances, rituals, and cultural programs.",
-                "image": "https://www.nativeplanet.com/img/2020/02/darjeeling-1582531461.jpg"
-              }
-            ]
-          },
-          {
-            "name": "Ajanta and Ellora Caves",
-            "category": "Historical",
-            "image": "https://images.pexels.com/photos/417088/pexels-photo-417088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-            "description": "The Ajanta and Ellora Caves are a UNESCO World Heritage Site, featuring ancient rock-cut caves with exquisite sculptures, paintings, and architecture. These caves showcase the rich cultural and artistic heritage of ancient India.",
-            "location": "Aurangabad, Maharashtra, India",
-            "bestTimeToVisit": "November to February",
-            "popularActivities": ["Exploring Ajanta Caves", "Visiting Ellora Caves", "Learning about ancient Indian art and history"],
-            "nearbyAttractions": ["Bibi Ka Maqbara", "Grishneshwar Jyotirlinga Temple", "Aurangabad Caves"],
-            "travelTips": ["Wear comfortable shoes for cave exploration.", "Engage a local guide for a better understanding of the historical significance.", "Respect the cultural and religious sites."],
-            "happeningEvents": [
-                {
-                    "eventName": "Ellora Ajanta Festival",
-                    "date": "November",
-                    "description": "A cultural festival featuring classical music and dance performances, celebrating the artistic heritage of the region.",
-                    "image": "https://www.maharashtratourism.gov.in/sites/default/files/2021-08/Ellora_Ajanta_Festival.jpg"
-                },
-                {
-                    "eventName": "Ganesh Chaturthi",
-                    "date": "August/September",
-                    "description": "The vibrant and grand celebration of Lord Ganesha's festival with processions, music, and decorations.",
-                    "image": "https://images.indianexpress.com/2021/09/ganesh-chaturthi-2021.jpg"
-                }
-            ]
-        },
-        {
-            "name": "Mumbai",
-            "category": "Metropolitan",
-            "image": "https://images.pexels.com/photos/265954/pexels-photo-265954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Mumbai, the financial and entertainment capital of India, is a bustling metropolis known for its diverse culture, iconic landmarks, Bollywood film industry, and vibrant nightlife.",
-            "location": "Mumbai, Maharashtra, India",
-            "bestTimeToVisit": "November to February",
-            "popularActivities": ["Gateway of India", "Marine Drive", "Siddhivinayak Temple", "Elephanta Caves", "Enjoying street food"],
-            "nearbyAttractions": ["Dharavi Slum Tour", "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (formerly Prince of Wales Museum)", "Haji Ali Dargah"],
-            "travelTips": ["Experience local trains for commuting.", "Try vada pav and pav bhaji, Mumbai's famous street food.", "Visit the Elephanta Caves for a historical excursion."],
-            "happeningEvents": [
-                {
-                    "eventName": "Kala Ghoda Arts Festival",
-                    "date": "February",
-                    "description": "A nine-day-long celebration of arts, crafts, music, dance, and theatre, transforming the Kala Ghoda area into a cultural hub.",
-                    "image": "https://www.kalaghodaassociation.com/images/overview/kala_ghoda_festival_og.jpg"
-                },
-                {
-                    "eventName": "Ganesh Visarjan",
-                    "date": "August/September",
-                    "description": "The grand procession and immersion of Lord Ganesha idols in the Arabian Sea, marking the end of Ganesh Chaturthi festival.",
-                    "image": "https://static.toiimg.com/photo/msid-70507601/70507601.jpg"
-                }
-            ]
-        },
-        {
-            "name": "Kolkata",
-            "category": "Cultural and Culinary",
-            "image": "https://images.pexels.com/photos/3965543/pexels-photo-3965543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Kolkata, the cultural capital of India, is known for its rich history, artistic heritage, intellectual pursuits, and delectable cuisine. It's a city of joy with a blend of tradition and modernity.",
-            "location": "Kolkata, West Bengal, India",
-            "bestTimeToVisit": "October to March",
-            "popularActivities": ["Visiting Victoria Memorial", "Exploring Howrah Bridge", "Attending Durga Puja festivities", "Indulging in street food at Park Street"],
-            "nearbyAttractions": ["Indian Museum", "Dakshineswar Kali Temple", "Science City Kolkata"],
-            "travelTips": ["Participate in local festivals and cultural events.", "Try sweets like Rasgulla and Sandesh.", "Explore the city's literary heritage at College Street."],
-            "happeningEvents": [
-                {
-                    "eventName": "Durga Puja",
-                    "date": "October",
-                    "description": "The grand celebration of Goddess Durga with artistic pandals, cultural performances, and religious rituals.",
-                    "image": "https://images.indianexpress.com/2020/10/Durga-Puja-Pandal-1.jpg"
-                },
-                {
-                    "eventName": "Kolkata International Film Festival",
-                    "date": "November",
-                    "description": "A prestigious film festival showcasing acclaimed movies and hosting renowned filmmakers from across the globe.",
-                    "image": "https://1.bp.blogspot.com/-BvIaYpBKw0Y/Xc6mST_g7vI/AAAAAAAABE0/D5bJ50KHq_AgYZ3GSYcr4qM2z6_ZTnZrwCEwYBhgL/s1600/Kolkata%2BInternational%2BFilm%2BFestival.jpg"
-                }
-            ]
-        },
-        {
-            "name": "Puri",
-            "category": "Spiritual and Beach",
-            "image": "https://images.pexels.com/photos/14862819/pexels-photo-14862819.jpeg",
-            "description": "Puri, located on the Bay of Bengal, is a sacred city for Hindus and a popular beach destination. It is famous for the Jagannath Temple, pristine beaches, and the annual Rath Yatra festival.",
-            "location": "Puri, Odisha, India",
-            "bestTimeToVisit": "November to February",
-            "popularActivities": ["Visiting Jagannath Temple", "Relaxing on Puri Beach", "Exploring Konark Sun Temple", "Attending Rath Yatra"],
-            "nearbyAttractions": ["Chilika Lake", "Gundicha Temple", "Pipili (Appliqué Village)"],
-            "travelTips": ["Respect the religious customs and traditions.", "Taste the local Odia cuisine.", "Enjoy sunrise and sunset at Puri Beach."],
-            "happeningEvents": [
-                {
-                    "eventName": "Rath Yatra",
-                    "date": "June/July",
-                    "description": "The grand chariot festival of Lord Jagannath, Balabhadra, and Subhadra, where deities are taken on a procession in elaborately decorated chariots.",
-                    "image": "https://www.tripsavvy.com/thmb/gxb4ReU6uE9EnTNK2JEEwvrrAFQ=/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/Puri-0cc539eef1c647f8a5b1b481877f25aa.jpg"
-                },
-                {
-                    "eventName": "Konark Dance Festival",
-                    "date": "December",
-                    "description": "A celebration of classical dance forms against the backdrop of the magnificent Sun Temple, showcasing India's rich cultural heritage.",
-                    "image": "https://odishatourguide.com/wp-content/uploads/2019/08/Konark-Dance-Festival-2021-5.jpg"
-                }
-            ]
-        },
-        {
-            "name": "Shimla",
-            "category": "Hill Station",
-            "image": "https://images.pexels.com/photos/7338829/pexels-photo-7338829.jpeg",
-            "description": "Shimla, the capital city of Himachal Pradesh, is a charming hill station nestled in the Himalayas. It is known for its scenic beauty, colonial architecture, and pleasant weather, making it a popular destination for nature lovers and adventure enthusiasts.",
-            "location": "Shimla, Himachal Pradesh, India",
-            "bestTimeToVisit": "March to June and September to November",
-            "popularActivities": ["Exploring The Ridge", "Visiting Jakhoo Temple", "Toy Train Ride to Kalka", "Trekking in nearby hills"],
-            "nearbyAttractions": ["Kufri", "Chail", "Christ Church"],
-            "travelTips": ["Pack warm clothing, even in summer.", "Try local Himachali cuisine like Sidu and Babru.", "Enjoy the panoramic views from Scandal Point."],
-            "happeningEvents": [
-                {
-                    "eventName": "Summer Festival",
-                    "date": "May/June",
-                    "description": "A colorful festival showcasing folk music, dance performances, local handicrafts, and flower exhibitions.",
-                    "image": "https://himachaltourism.gov.in/wp-content/uploads/2018/09/Summer-Festival-Shimla.jpg"
-                },
-                {
-                    "eventName": "Ice Skating Carnival",
-                    "date": "December/January",
-                    "description": "One of the oldest ice skating carnivals in Asia, held at the natural ice rink in Shimla.",
-                    "image": "https://i.ytimg.com/vi/31E4eY-1pQc/maxresdefault.jpg"
-                }
-            ]
-        },
-        {
-            "name": "Srinagar",
-            "category": "Scenic Beauty and Lakes",
-            "image": "https://images.pexels.com/photos/2451474/pexels-photo-2451474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Srinagar, the summer capital of Jammu and Kashmir, is renowned for its breathtaking natural beauty, including Dal Lake, Mughal gardens, and snow-capped mountains. It offers serene houseboat stays and a peaceful atmosphere.",
-            "location": "Srinagar, Jammu and Kashmir, India",
-            "bestTimeToVisit": "April to October",
-            "popularActivities": ["Shikara Ride on Dal Lake", "Visiting Mughal Gardens (Shalimar Bagh, Nishat Bagh)", "Exploring Shankaracharya Temple", "Shopping for Kashmiri handicrafts"],
-            "nearbyAttractions": ["Gulmarg", "Pahalgam", "Betaab Valley"],
-            "travelTips": ["Experience staying in a houseboat on Dal Lake.", "Taste traditional Kashmiri Wazwan cuisine.", "Buy Pashmina shawls and local spices as souvenirs."],
-            "happeningEvents": [
-                {
-                    "eventName": "Tulip Festival",
-                    "date": "April",
-                    "description": "A vibrant festival held in Indira Gandhi Memorial Tulip Garden, showcasing a wide variety of tulips in full bloom.",
-                    "image": "https://www.kashmirhills.com/wp-content/uploads/2017/04/tulip-garden-srinagar.jpg"
-                },
-                {
-                    "eventName": "Shikara Festival",
-                    "date": "June",
-                    "description": "A celebration of the traditional Shikara boats with cultural events, handicraft displays, and boat races on Dal Lake.",
-                    "image": "https://www.tourmyindia.com/jammu-kashmir/uploads/2016/08/Srinagar-Shikara-Festival.jpg"
-                }
-            ]
-        },
-        {
-            "name": "Munnar",
-            "category": "Hill Station and Tea Gardens",
-            "image": "https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Munnar, located in the Western Ghats of Kerala, is a picturesque hill station known for its lush tea gardens, misty mountains, and serene atmosphere. It's a paradise for nature lovers and adventure seekers.",
-            "location": "Munnar, Kerala, India",
-            "bestTimeToVisit": "September to March",
-            "popularActivities": ["Visiting Tea Gardens", "Trekking to Anamudi Peak", "Exploring Attukal Waterfalls", "Boat Ride in Kundala Lake"],
-            "nearbyAttractions": ["Eravikulam National Park", "Mattupetty Dam", "Pallivasal Falls"],
-            "travelTips": ["Pack warm clothing for chilly evenings.", "Taste freshly brewed tea at local tea factories.", "Enjoy the panoramic views from Top Station."],
-            "happeningEvents": [
-                {
-                    "eventName": "Neelakurinji Bloom",
-                    "date": "Once in 12 years (next in 2030)",
-                    "description": "A rare natural phenomenon where the Neelakurinji flowers bloom, covering the hills in vibrant shades of blue and purple.",
-                    "image": "https://www.keralatourism.org/images/neelakurinji-kerala-tourism.jpg"
-                },
-                {
-                    "eventName": "Munnar Flower Show",
-                    "date": "April",
-                    "description": "A colorful event showcasing a variety of flowers, including rare orchids and blooming hybrids, attracting nature enthusiasts and gardeners.",
-                    "image": "https://www.keralatourism.org/images/flower-show-munnar.jpg"
-                }
-            ]
-        },
-        {
-            "name": "Chennai",
-            "category": "Metropolitan and Cultural Hub",
-            "image": "https://images.pexels.com/photos/259187/pexels-photo-259187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            "description": "Chennai, the capital city of Tamil Nadu, is a bustling metropolis known for its rich heritage, vibrant arts scene, classical music and dance, and delectable cuisine. It's a blend of tradition and modernity.",
-            "location": "Chennai, Tamil Nadu, India",
-            "bestTimeToVisit": "November to February",
-            "popularActivities": ["Marina Beach", "Visiting Kapaleeshwarar Temple", "Exploring Fort St. George", "Shopping for Kanchipuram Silk Sarees"],
-            "nearbyAttractions": ["San Thome Basilica", "Government Museum", "Elliots Beach"],
-            "travelTips": ["Stay hydrated due to the hot climate.", "Try traditional Tamil dishes like Dosa and Sambar.", "Attend classical music and dance performances at cultural centers."],
-            "happeningEvents": [
-                {
-                    "eventName": "Chennai Music Season",
-                    "date": "December to January",
-                    "description": "A month-long festival featuring classical music and dance concerts, attracting renowned artists and enthusiasts from around the world.",
-                    "image": "https://tamilnadu-favtourism.blogspot.com/2019/01/music-season-chennai-2019-20.html"
-                },
-                {
-                    "eventName": "Pongal Festival",
-                    "date": "January",
-                    "description": "The harvest festival of Tamil Nadu celebrated with traditional rituals, cooking of Pongal dish, and cultural events.",
-                    "image": "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/11/Pongal-festival-Chennai.jpg"
-                }
-            ]
+          "eventName": "Diwali Celebrations",
+          "date": "October/November",
+          "description": "Diwali, the Festival of Lights, is celebrated with fireworks and cultural performances.",
+          "image": "https://resize.indiatvnews.com/en/resize/oldbucket/730_-/mainnational/IndiaTv7e48b1_Taj.jpg"
         }
-    ]
+      ]
+    },
+    {
+      "name": "Goa Beaches",
+      "category": "Beaches",
+      "image": "https://images.pexels.com/photos/13208189/pexels-photo-13208189.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Goa, known for its picturesque beaches, is a popular beach destination in India. Visitors can enjoy golden sands, water sports, vibrant nightlife, and delicious seafood.",
+      "location": "Goa, India",
+      "bestTimeToVisit": "November to February",
+      "popularActivities": [
+        "Relaxing on the beaches",
+        "Water sports",
+        "Partying at beach shacks"
+      ],
+      "nearbyAttractions": [
+        "Basilica of Bom Jesus",
+        "Dudhsagar Waterfalls",
+        "Anjuna Flea Market"
+      ],
+      "travelTips": [
+        "Beware of strong currents while swimming.",
+        "Try Goan cuisine.",
+        "Explore vibrant nightlife."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Sunburn Festival",
+          "date": "December",
+          "description": "One of Asia's biggest electronic dance music festivals held on the beaches of Goa.",
+          "image": "https://d12ld5anqxokoc.cloudfront.net/wp-content/uploads/2019/06/21120932/49761376_10156389879964608_2023743621567610880_o.jpg"
+        },
+        {
+          "eventName": "Carnival",
+          "date": "February/March",
+          "description": "A lively, colorful event featuring parades, music, and dancing.",
+          "image": "https://www.desicomments.com/wp-content/uploads/2017/01/Local-Men-Performing-Tradtional-Godemodni-Dance-Of-Goa-Carnival.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Kerala Backwaters",
+      "category": "Nature",
+      "image": "https://images.pexels.com/photos/2780309/pexels-photo-2780309.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Kerala's backwaters are a network of serene waterways, lagoons, and lakes. Travelers can enjoy houseboat rides, lush green landscapes, and experience the unique coastal lifestyle.",
+      "location": "Kerala, India",
+      "bestTimeToVisit": "November to February",
+      "popularActivities": [
+        "Houseboat cruise",
+        "Visiting Kumarakom Bird Sanctuary",
+        "Exploring villages"
+      ],
+      "nearbyAttractions": [
+        "Periyar National Park",
+        "Athirapally Waterfalls",
+        "Fort Kochi"
+      ],
+      "travelTips": [
+        "Book a houseboat in advance.",
+        "Indulge in Kerala cuisine.",
+        "Attend local temple festivals."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Nehru Trophy Boat Race",
+          "date": "August",
+          "description": "An annual snake boat race held in the Punnamada Lake in Alleppey.",
+          "image": "https://images.indulgexpress.com/uploads/user/imagelibrary/2020/8/7/original/Aranmula-boat_race-_Kerala-India-1.jpg"
+        },
+        {
+          "eventName": "Thrissur Pooram",
+          "date": "April/May",
+          "description": "A grand temple festival featuring a colorful procession of elephants and traditional music.",
+          "image": "https://i1.wp.com/pinklungi.com/wp-content/uploads/2019/05/untitled-design-1-1.png?resize=1068%2C712&ssl=1"
+        }
+      ]
+    },
+    {
+      "name": "Varanasi",
+      "category": "Spiritual",
+      "image": "https://images.pexels.com/photos/8112531/pexels-photo-8112531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Varanasi, one of the oldest cities in the world, is a spiritual hub in India. It is famous for its ghats on the Ganges River, religious rituals, temples, and vibrant cultural heritage.",
+      "location": "Varanasi, Uttar Pradesh, India",
+      "bestTimeToVisit": "October to March",
+      "popularActivities": [
+        "Ganga Aarti",
+        "Boat ride on the Ganges",
+        "Visiting Sarnath"
+      ],
+      "nearbyAttractions": [
+        "Kashi Vishwanath Temple",
+        "Banaras Hindu University",
+        "New Vishwanath Temple"
+      ],
+      "travelTips": [
+        "Respect local customs.",
+        "Participate in yoga sessions.",
+        "Explore narrow alleys for hidden temples."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Mahashivaratri",
+          "date": "February/March",
+          "description": "A major Hindu festival dedicated to Lord Shiva, celebrated with fasting and night-long vigils.",
+          "image": "https://th.bing.com/th/id/OIP.Rrt8yXyWJfRYxtsTnz0zMAHaFj?pid=ImgDet&rs=1"
+        },
+        {
+          "eventName": "Dev Deepawali",
+          "date": "November",
+          "description": "The 'Festival of Lights of the Gods,' celebrated with illuminated ghats and cultural performances.",
+          "image": "https://www.filmingindo.com/wp-content/uploads/2018/04/dev-dipawali-varanasi.jpeg"
+        }
+      ]
+    },
+    {
+      "name": "Jaipur",
+      "category": "City",
+      "image": "https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Jaipur, the capital city of Rajasthan, is known as the Pink City due to its distinctive pink-colored buildings. It boasts magnificent forts, palaces, museums, and a rich Rajasthani culture.",
+      "location": "Jaipur, Rajasthan, India",
+      "bestTimeToVisit": "October to March",
+      "popularActivities": [
+        "Exploring Amber Fort",
+        "Visiting City Palace",
+        "Shopping at Johari Bazaar"
+      ],
+      "nearbyAttractions": ["Jantar Mantar", "Nahargarh Fort", "Hawa Mahal"],
+      "travelTips": [
+        "Try Rajasthani cuisine.",
+        "Attend traditional dance performances.",
+        "Visit during Jaipur Literature Festival."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Jaipur Literature Festival",
+          "date": "January",
+          "description": "The world's largest free literary festival featuring renowned authors, thinkers, and cultural performances.",
+          "image": "https://cdn.lifestyleasia.com/wp-content/uploads/sites/7/2020/01/17185718/JLF-1820x910-1.jpg"
+        },
+        {
+          "eventName": "Gangaur Festival",
+          "date": "March/April",
+          "description": "A colorful and important festival dedicated to Goddess Gauri, marked by processions and cultural events.",
+          "image": "https://www.pinkpedia.com/wp-content/uploads/2020/04/gangaur4-2048x1365.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Rishikesh",
+      "category": "Adventure",
+      "image": "https://images.pexels.com/photos/5450672/pexels-photo-5450672.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Rishikesh, situated in the foothills of the Himalayas, is a hub for adventure seekers and spiritual enthusiasts. Known for its yoga and meditation centers, it offers thrilling activities like white-water rafting and trekking.",
+      "location": "Uttarakhand, India",
+      "bestTimeToVisit": "March to June",
+      "popularActivities": [
+        "Yoga and meditation",
+        "White-water rafting",
+        "Visit to The Beatles Ashram"
+      ],
+      "nearbyAttractions": [
+        "Haridwar",
+        "Neelkanth Mahadev Temple",
+        "Triveni Ghat"
+      ],
+      "travelTips": [
+        "Experience the Ganga Aarti.",
+        "Explore local cafes.",
+        "Attend yoga retreats."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "International Yoga Festival",
+          "date": "March",
+          "description": "A week-long festival attracting yogis and spiritual leaders from around the world.",
+          "image": "https://www.internationalyogafestival.org/assets/images/international-yoga-festival-rishikesh.jpg"
+        },
+        {
+          "eventName": "Ganga Dussehra",
+          "date": "May/June",
+          "description": "A festival celebrating the descent of the Ganges to Earth, marked by religious ceremonies and rituals.",
+          "image": "https://www.tourmyindia.com/states/uttarpradesh/images/ganga-dussehra-1.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Andaman Islands",
+      "category": "Islands",
+      "image": "https://images.pexels.com/photos/749115/pexels-photo-749115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "The Andaman Islands, a tropical paradise in the Bay of Bengal, boast pristine beaches, vibrant coral reefs, and a rich marine life. Perfect for beach lovers and water sports enthusiasts.",
+      "location": "Andaman and Nicobar Islands, India",
+      "bestTimeToVisit": "November to March",
+      "popularActivities": [
+        "Snorkeling and scuba diving",
+        "Radhanagar Beach visit",
+        "Cellular Jail tour"
+      ],
+      "nearbyAttractions": ["Neil Island", "Havelock Island", "Ross Island"],
+      "travelTips": [
+        "Obtain necessary permits for island visits.",
+        "Explore local seafood cuisine.",
+        "Enjoy water activities."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Island Tourism Festival",
+          "date": "December/January",
+          "description": "A celebration showcasing the cultural diversity of the Andaman and Nicobar Islands.",
+          "image": "https://www.andamantourism.gov.in/images/slider_images/itf-pic2.jpg"
+        },
+        {
+          "eventName": "Subhash Mela",
+          "date": "January",
+          "description": "A festival commemorating the birth anniversary of Netaji Subhas Chandra Bose, with cultural programs and exhibitions.",
+          "image": "https://www.andamantourism.gov.in/images/slider_images/subhas-mela-pic1.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Udaipur",
+      "category": "Heritage",
+      "image": "https://images.pexels.com/photos/788943/pexels-photo-788943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Udaipur, the 'City of Lakes,' is known for its majestic palaces, serene lakes, and vibrant markets. It offers a glimpse into Rajasthan's royal history and architectural marvels.",
+      "location": "Udaipur, Rajasthan, India",
+      "bestTimeToVisit": "October to March",
+      "popularActivities": [
+        "Boat ride on Lake Pichola",
+        "Visit to City Palace",
+        "Exploring Jag Mandir"
+      ],
+      "nearbyAttractions": ["Jaisalmer", "Mount Abu", "Chittorgarh"],
+      "travelTips": [
+        "Attend a traditional Rajasthani dance performance.",
+        "Shop for local handicrafts.",
+        "Experience the royal hospitality."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Mewar Festival",
+          "date": "March/April",
+          "description": "A festival celebrating the arrival of spring with cultural events, processions, and performances.",
+          "image": "https://www.rajasthantourplanner.com/blog/wp-content/uploads/2016/03/Mewar-Festival-Udaipur-Rajasthan.jpg"
+        },
+        {
+          "eventName": "Diwali Celebrations",
+          "date": "October/November",
+          "description": "Diwali festivities with illuminated palaces, cultural performances, and fireworks.",
+          "image": "https://www.holidify.com/images/cmsuploads/compressed/Udaipur_City_Palace_Flickr_Tyler_Dunlavy_20191118192934.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Darjeeling",
+      "category": "Hill Station",
+      "image": "https://cdn.s3waas.gov.in/s322fb0cee7e1f3bde58293de743871417/uploads/2020/09/2020092224.jpg",
+      "description": "Darjeeling, nestled in the Himalayan foothills, is a charming hill station known for its tea plantations, scenic landscapes, and the iconic Darjeeling Himalayan Railway.",
+      "location": "West Bengal, India",
+      "bestTimeToVisit": "April to June and September to November",
+      "popularActivities": [
+        "Toy Train ride",
+        "Visit to Tiger Hill",
+        "Explore tea estates"
+      ],
+      "nearbyAttractions": ["Gangtok", "Kalimpong", "Peace Pagoda"],
+      "travelTips": [
+        "Witness the sunrise at Tiger Hill.",
+        "Savor Darjeeling tea.",
+        "Explore the vibrant local markets."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Darjeeling Carnival",
+          "date": "December",
+          "description": "A winter carnival featuring cultural events, parades, and local performances.",
+          "image": "https://www.india.com/wp-content/uploads/2016/12/Darjeeling-Carnival.jpg"
+        },
+        {
+          "eventName": "Losar Festival",
+          "date": "February",
+          "description": "Tibetan New Year celebrations with traditional dances, rituals, and cultural programs.",
+          "image": "https://www.nativeplanet.com/img/2020/02/darjeeling-1582531461.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Ajanta and Ellora Caves",
+      "category": "Historical",
+      "image": "https://images.pexels.com/photos/417088/pexels-photo-417088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "description": "The Ajanta and Ellora Caves are a UNESCO World Heritage Site, featuring ancient rock-cut caves with exquisite sculptures, paintings, and architecture. These caves showcase the rich cultural and artistic heritage of ancient India.",
+      "location": "Aurangabad, Maharashtra, India",
+      "bestTimeToVisit": "November to February",
+      "popularActivities": [
+        "Exploring Ajanta Caves",
+        "Visiting Ellora Caves",
+        "Learning about ancient Indian art and history"
+      ],
+      "nearbyAttractions": [
+        "Bibi Ka Maqbara",
+        "Grishneshwar Jyotirlinga Temple",
+        "Aurangabad Caves"
+      ],
+      "travelTips": [
+        "Wear comfortable shoes for cave exploration.",
+        "Engage a local guide for a better understanding of the historical significance.",
+        "Respect the cultural and religious sites."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Ellora Ajanta Festival",
+          "date": "November",
+          "description": "A cultural festival featuring classical music and dance performances, celebrating the artistic heritage of the region.",
+          "image": "https://www.maharashtratourism.gov.in/sites/default/files/2021-08/Ellora_Ajanta_Festival.jpg"
+        },
+        {
+          "eventName": "Ganesh Chaturthi",
+          "date": "August/September",
+          "description": "The vibrant and grand celebration of Lord Ganesha's festival with processions, music, and decorations.",
+          "image": "https://images.indianexpress.com/2021/09/ganesh-chaturthi-2021.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Mumbai",
+      "category": "Metropolitan",
+      "image": "https://images.pexels.com/photos/265954/pexels-photo-265954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Mumbai, the financial and entertainment capital of India, is a bustling metropolis known for its diverse culture, iconic landmarks, Bollywood film industry, and vibrant nightlife.",
+      "location": "Mumbai, Maharashtra, India",
+      "bestTimeToVisit": "November to February",
+      "popularActivities": [
+        "Gateway of India",
+        "Marine Drive",
+        "Siddhivinayak Temple",
+        "Elephanta Caves",
+        "Enjoying street food"
+      ],
+      "nearbyAttractions": [
+        "Dharavi Slum Tour",
+        "Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (formerly Prince of Wales Museum)",
+        "Haji Ali Dargah"
+      ],
+      "travelTips": [
+        "Experience local trains for commuting.",
+        "Try vada pav and pav bhaji, Mumbai's famous street food.",
+        "Visit the Elephanta Caves for a historical excursion."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Kala Ghoda Arts Festival",
+          "date": "February",
+          "description": "A nine-day-long celebration of arts, crafts, music, dance, and theatre, transforming the Kala Ghoda area into a cultural hub.",
+          "image": "https://www.kalaghodaassociation.com/images/overview/kala_ghoda_festival_og.jpg"
+        },
+        {
+          "eventName": "Ganesh Visarjan",
+          "date": "August/September",
+          "description": "The grand procession and immersion of Lord Ganesha idols in the Arabian Sea, marking the end of Ganesh Chaturthi festival.",
+          "image": "https://static.toiimg.com/photo/msid-70507601/70507601.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Kolkata",
+      "category": "Cultural and Culinary",
+      "image": "https://images.pexels.com/photos/3965543/pexels-photo-3965543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Kolkata, the cultural capital of India, is known for its rich history, artistic heritage, intellectual pursuits, and delectable cuisine. It's a city of joy with a blend of tradition and modernity.",
+      "location": "Kolkata, West Bengal, India",
+      "bestTimeToVisit": "October to March",
+      "popularActivities": [
+        "Visiting Victoria Memorial",
+        "Exploring Howrah Bridge",
+        "Attending Durga Puja festivities",
+        "Indulging in street food at Park Street"
+      ],
+      "nearbyAttractions": [
+        "Indian Museum",
+        "Dakshineswar Kali Temple",
+        "Science City Kolkata"
+      ],
+      "travelTips": [
+        "Participate in local festivals and cultural events.",
+        "Try sweets like Rasgulla and Sandesh.",
+        "Explore the city's literary heritage at College Street."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Durga Puja",
+          "date": "October",
+          "description": "The grand celebration of Goddess Durga with artistic pandals, cultural performances, and religious rituals.",
+          "image": "https://images.indianexpress.com/2020/10/Durga-Puja-Pandal-1.jpg"
+        },
+        {
+          "eventName": "Kolkata International Film Festival",
+          "date": "November",
+          "description": "A prestigious film festival showcasing acclaimed movies and hosting renowned filmmakers from across the globe.",
+          "image": "https://1.bp.blogspot.com/-BvIaYpBKw0Y/Xc6mST_g7vI/AAAAAAAABE0/D5bJ50KHq_AgYZ3GSYcr4qM2z6_ZTnZrwCEwYBhgL/s1600/Kolkata%2BInternational%2BFilm%2BFestival.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Puri",
+      "category": "Spiritual and Beach",
+      "image": "https://images.pexels.com/photos/14862819/pexels-photo-14862819.jpeg",
+      "description": "Puri, located on the Bay of Bengal, is a sacred city for Hindus and a popular beach destination. It is famous for the Jagannath Temple, pristine beaches, and the annual Rath Yatra festival.",
+      "location": "Puri, Odisha, India",
+      "bestTimeToVisit": "November to February",
+      "popularActivities": [
+        "Visiting Jagannath Temple",
+        "Relaxing on Puri Beach",
+        "Exploring Konark Sun Temple",
+        "Attending Rath Yatra"
+      ],
+      "nearbyAttractions": [
+        "Chilika Lake",
+        "Gundicha Temple",
+        "Pipili (Appliqué Village)"
+      ],
+      "travelTips": [
+        "Respect the religious customs and traditions.",
+        "Taste the local Odia cuisine.",
+        "Enjoy sunrise and sunset at Puri Beach."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Rath Yatra",
+          "date": "June/July",
+          "description": "The grand chariot festival of Lord Jagannath, Balabhadra, and Subhadra, where deities are taken on a procession in elaborately decorated chariots.",
+          "image": "https://www.tripsavvy.com/thmb/gxb4ReU6uE9EnTNK2JEEwvrrAFQ=/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/Puri-0cc539eef1c647f8a5b1b481877f25aa.jpg"
+        },
+        {
+          "eventName": "Konark Dance Festival",
+          "date": "December",
+          "description": "A celebration of classical dance forms against the backdrop of the magnificent Sun Temple, showcasing India's rich cultural heritage.",
+          "image": "https://odishatourguide.com/wp-content/uploads/2019/08/Konark-Dance-Festival-2021-5.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Shimla",
+      "category": "Hill Station",
+      "image": "https://images.pexels.com/photos/7338829/pexels-photo-7338829.jpeg",
+      "description": "Shimla, the capital city of Himachal Pradesh, is a charming hill station nestled in the Himalayas. It is known for its scenic beauty, colonial architecture, and pleasant weather, making it a popular destination for nature lovers and adventure enthusiasts.",
+      "location": "Shimla, Himachal Pradesh, India",
+      "bestTimeToVisit": "March to June and September to November",
+      "popularActivities": [
+        "Exploring The Ridge",
+        "Visiting Jakhoo Temple",
+        "Toy Train Ride to Kalka",
+        "Trekking in nearby hills"
+      ],
+      "nearbyAttractions": ["Kufri", "Chail", "Christ Church"],
+      "travelTips": [
+        "Pack warm clothing, even in summer.",
+        "Try local Himachali cuisine like Sidu and Babru.",
+        "Enjoy the panoramic views from Scandal Point."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Summer Festival",
+          "date": "May/June",
+          "description": "A colorful festival showcasing folk music, dance performances, local handicrafts, and flower exhibitions.",
+          "image": "https://himachaltourism.gov.in/wp-content/uploads/2018/09/Summer-Festival-Shimla.jpg"
+        },
+        {
+          "eventName": "Ice Skating Carnival",
+          "date": "December/January",
+          "description": "One of the oldest ice skating carnivals in Asia, held at the natural ice rink in Shimla.",
+          "image": "https://i.ytimg.com/vi/31E4eY-1pQc/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Srinagar",
+      "category": "Scenic Beauty and Lakes",
+      "image": "https://images.pexels.com/photos/2451474/pexels-photo-2451474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Srinagar, the summer capital of Jammu and Kashmir, is renowned for its breathtaking natural beauty, including Dal Lake, Mughal gardens, and snow-capped mountains. It offers serene houseboat stays and a peaceful atmosphere.",
+      "location": "Srinagar, Jammu and Kashmir, India",
+      "bestTimeToVisit": "April to October",
+      "popularActivities": [
+        "Shikara Ride on Dal Lake",
+        "Visiting Mughal Gardens (Shalimar Bagh, Nishat Bagh)",
+        "Exploring Shankaracharya Temple",
+        "Shopping for Kashmiri handicrafts"
+      ],
+      "nearbyAttractions": ["Gulmarg", "Pahalgam", "Betaab Valley"],
+      "travelTips": [
+        "Experience staying in a houseboat on Dal Lake.",
+        "Taste traditional Kashmiri Wazwan cuisine.",
+        "Buy Pashmina shawls and local spices as souvenirs."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Tulip Festival",
+          "date": "April",
+          "description": "A vibrant festival held in Indira Gandhi Memorial Tulip Garden, showcasing a wide variety of tulips in full bloom.",
+          "image": "https://www.kashmirhills.com/wp-content/uploads/2017/04/tulip-garden-srinagar.jpg"
+        },
+        {
+          "eventName": "Shikara Festival",
+          "date": "June",
+          "description": "A celebration of the traditional Shikara boats with cultural events, handicraft displays, and boat races on Dal Lake.",
+          "image": "https://www.tourmyindia.com/jammu-kashmir/uploads/2016/08/Srinagar-Shikara-Festival.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Munnar",
+      "category": "Hill Station and Tea Gardens",
+      "image": "https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Munnar, located in the Western Ghats of Kerala, is a picturesque hill station known for its lush tea gardens, misty mountains, and serene atmosphere. It's a paradise for nature lovers and adventure seekers.",
+      "location": "Munnar, Kerala, India",
+      "bestTimeToVisit": "September to March",
+      "popularActivities": [
+        "Visiting Tea Gardens",
+        "Trekking to Anamudi Peak",
+        "Exploring Attukal Waterfalls",
+        "Boat Ride in Kundala Lake"
+      ],
+      "nearbyAttractions": [
+        "Eravikulam National Park",
+        "Mattupetty Dam",
+        "Pallivasal Falls"
+      ],
+      "travelTips": [
+        "Pack warm clothing for chilly evenings.",
+        "Taste freshly brewed tea at local tea factories.",
+        "Enjoy the panoramic views from Top Station."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Neelakurinji Bloom",
+          "date": "Once in 12 years (next in 2030)",
+          "description": "A rare natural phenomenon where the Neelakurinji flowers bloom, covering the hills in vibrant shades of blue and purple.",
+          "image": "https://www.keralatourism.org/images/neelakurinji-kerala-tourism.jpg"
+        },
+        {
+          "eventName": "Munnar Flower Show",
+          "date": "April",
+          "description": "A colorful event showcasing a variety of flowers, including rare orchids and blooming hybrids, attracting nature enthusiasts and gardeners.",
+          "image": "https://www.keralatourism.org/images/flower-show-munnar.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Chennai",
+      "category": "Metropolitan and Cultural Hub",
+      "image": "https://images.pexels.com/photos/259187/pexels-photo-259187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "description": "Chennai, the capital city of Tamil Nadu, is a bustling metropolis known for its rich heritage, vibrant arts scene, classical music and dance, and delectable cuisine. It's a blend of tradition and modernity.",
+      "location": "Chennai, Tamil Nadu, India",
+      "bestTimeToVisit": "November to February",
+      "popularActivities": [
+        "Marina Beach",
+        "Visiting Kapaleeshwarar Temple",
+        "Exploring Fort St. George",
+        "Shopping for Kanchipuram Silk Sarees"
+      ],
+      "nearbyAttractions": [
+        "San Thome Basilica",
+        "Government Museum",
+        "Elliots Beach"
+      ],
+      "travelTips": [
+        "Stay hydrated due to the hot climate.",
+        "Try traditional Tamil dishes like Dosa and Sambar.",
+        "Attend classical music and dance performances at cultural centers."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Chennai Music Season",
+          "date": "December to January",
+          "description": "A month-long festival featuring classical music and dance concerts, attracting renowned artists and enthusiasts from around the world.",
+          "image": "https://tamilnadu-favtourism.blogspot.com/2019/01/music-season-chennai-2019-20.html"
+        },
+        {
+          "eventName": "Pongal Festival",
+          "date": "January",
+          "description": "The harvest festival of Tamil Nadu celebrated with traditional rituals, cooking of Pongal dish, and cultural events.",
+          "image": "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/11/Pongal-festival-Chennai.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Leh Ladakh",
+      "category": "Adventure and Scenic Beauty",
+      "image": "https://img.nayatrip.com/images/place/big/ladakh.jpg",
+      "description": "Leh Ladakh is renowned for its stunning landscapes, high-altitude mountain passes, and Buddhist monasteries.",
+      "location": "Leh Ladakh, India",
+      "bestTimeToVisit": "June to September",
+      "popularActivities": [
+        "Nubra Valley",
+        "Pangong Lake",
+        "Khardung La Pass",
+        "Hemis Monastery"
+      ],
+      "nearbyAttractions": [
+        "Tso Moriri Lake",
+        "Shanti Stupa",
+        "Diskit Monastery"
+      ],
+      "travelTips": [
+        "Acclimatize to the high altitude before engaging in physical activities.",
+        "Carry sufficient warm clothing as temperatures can drop significantly, especially at night.",
+        "Stay hydrated and avoid overexertion."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Hemis Festival",
+          "date": "June/July",
+          "description": "Celebrated at Hemis Monastery, this festival features colorful masked dances, music, and cultural performances to commemorate the birth anniversary of Guru Padmasambhava.",
+          "image": "https://www.oyorooms.com/blog/wp-content/uploads/2018/08/cover-1.jpg"
+        },
+        {
+          "eventName": "Ladakh Marathon",
+          "date": "September",
+          "description": "One of the world's highest marathon events, it offers runners a unique opportunity to traverse through the breathtaking landscapes of Ladakh while promoting awareness about sustainable tourism.",
+          "image": "https://www.truerevo.com/cdn/shop/articles/edited_1_of_1.jpg?v=1549368755"
+        }
+      ]
+    },
+
+    {
+      "name": "Pondicherry (Puducherry)",
+      "category": "Colonial Heritage and Beaches",
+      "image": "https://solopassport.com/wp-content/uploads/2020/08/5-things-to-do-in-Pondicherry-1.jpeg",
+      "description": "Pondicherry, a former French colony, is known for its charming colonial architecture, serene beaches, and spiritual centers like Sri Aurobindo Ashram and Auroville.",
+      "location": "Pondicherry (Puducherry), India",
+      "bestTimeToVisit": "October to March",
+      "popularActivities": [
+        "Promenade Beach",
+        "Auroville",
+        "Sri Aurobindo Ashram",
+        "French Quarter Walk"
+      ],
+      "nearbyAttractions": [
+        "Paradise Beach",
+        "Arikamedu",
+        "Chunnambar Boat House"
+      ],
+      "travelTips": [
+        "Rent a bicycle to explore the French Quarter and nearby attractions.",
+        "Experience the tranquility of meditation at Auroville.",
+        "Sample French-influenced cuisine at local cafes and restaurants."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Bastille Day",
+          "date": "July",
+          "description": "Celebrated to mark the French Revolution, this event in Pondicherry features cultural programs, fireworks, and French cuisine.",
+          "image": "https://www.india-tours.com/images/festivals/bastille-day/bastille-day2.jpg"
+        },
+        {
+          "eventName": "Pondicherry Heritage Festival",
+          "date": "December/January",
+          "description": "A celebration of Pondicherry's rich cultural heritage through art exhibitions, heritage walks, music concerts, and culinary events.",
+          "image": "https://cdn.yehaindia.com/wp-content/uploads/2021/03/Pondicherry_cover.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Amritsar, Punjab",
+      "category": "Spiritual and Historical",
+      "image": "https://thedailyguardian.com/wp-content/uploads/2023/06/golden-temple-scaled.jpg",
+      "description": "Amritsar is home to the Golden Temple (Harmandir Sahib), the holiest shrine of Sikhism. It also has historical significance due to the Jallianwala Bagh massacre memorial and the Wagah Border ceremony.",
+      "location": "Amritsar, Punjab, India",
+      "bestTimeToVisit": "October to March",
+      "popularActivities": [
+        "Golden Temple",
+        "Wagah Border Ceremony",
+        "Jallianwala Bagh",
+        "Amritsari Cuisine"
+      ],
+      "nearbyAttractions": [
+        "Durgiana Temple",
+        "Partition Museum",
+        "Maharaja Ranjit Singh Museum"
+      ],
+      "travelTips": [
+        "Cover your head and remove your shoes before entering the Golden Temple complex.",
+        "Arrive early to secure a good viewing spot for the Wagah Border Ceremony.",
+        "Explore the local markets for traditional Punjabi attire and handicrafts."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Guru Nanak Jayanti",
+          "date": "November",
+          "description": "The birth anniversary of Guru Nanak Dev Ji, the founder of Sikhism, celebrated with religious processions (Nagar Kirtan), prayers, and community kitchens (Langar) serving free meals to all.",
+          "image": "https://images.moneycontrol.com/static-mcnews/2022/11/Collage-Maker-08-Nov-2022-07.30-PM.jpg"
+        },
+        {
+          "eventName": "Baisakhi",
+          "date": "April",
+          "description": "A harvest festival celebrated with great enthusiasm in Punjab, marking the Sikh New Year. It includes vibrant processions, traditional dances (Bhangra and Gidda), and special prayers at Gurudwaras.",
+          "image": "https://www.aljazeera.com/wp-content/uploads/2024/04/AFP__20240413__34PC8GC__v1__HighRes__IndiaReligionSikhism-1713003408.jpg?fit=1170%2C780&quality=80"
+        }
+      ]
+    },
+    {
+      "name": "Khajuraho, Madhya Pradesh",
+      "category": "Historical and Architectural",
+      "image": "https://media.istockphoto.com/id/528284252/photo/kjaruharo-temples-india.jpg?s=612x612&w=0&k=20&c=-iWM83PbINoAS5i_06cVjIDpe_yT0cE3uw0_iPoeWHM=",
+      "description": "Khajuraho is renowned for its group of Hindu and Jain temples, known for their exquisite erotic sculptures and intricate architecture, which date back to the Chandela dynasty.",
+      "location": "Khajuraho, Madhya Pradesh, India",
+      "bestTimeToVisit": "October to February",
+      "popularActivities": [
+        "Explore Khajuraho Temples",
+        "Light and Sound Show",
+        "Panna National Park Safari",
+        "Raneh Falls"
+      ],
+      "nearbyAttractions": ["Ajaygarh Fort", "Beni Sagar Dam", "Ranguan Lake"],
+      "travelTips": [
+        "Attend the mesmerizing Light and Sound Show at the Western Group of Temples for a deeper understanding of Khajuraho's history and mythology.",
+        "Carry sufficient water and snacks while exploring the temples and nearby attractions, as facilities may be limited.",
+        "Respect the cultural significance of the temples and dress modestly during your visit."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Khajuraho Dance Festival",
+          "date": "February",
+          "description": "A week-long cultural extravaganza showcasing classical dance performances by renowned artists against the backdrop of Khajuraho's ancient temples, celebrating India's rich cultural heritage.",
+          "image": "https://cdn.siasat.com/wp-content/uploads/2022/02/Khajuraho.jpg"
+        },
+        {
+          "eventName": "Shivratri",
+          "date": "March",
+          "description": "A Hindu festival dedicated to Lord Shiva, celebrated with fervor at Khajuraho's temples with special prayers, rituals, and processions.",
+          "image": "https://c8.alamy.com/comp/ERYM8C/lord-shiva-temple-khajuraho-madhya-pradesh-india-asia-ERYM8C.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Gangtok, Sikkim",
+      "category": "Hill Station and Adventure",
+      "image": "https://www.esikkimtourism.in/wp-content/uploads/2019/04/3rd-image.jpg",
+
+      "description": "Gangtok, the capital of Sikkim, offers breathtaking views of the Himalayas, lush green valleys, and Buddhist monasteries. It's a paradise for trekking, mountain biking, and exploring Tibetan culture.",
+      "location": "Gangtok, Sikkim, India",
+      "bestTimeToVisit": "March to June, September to November",
+      "popularActivities": [
+        "Visit Rumtek Monastery",
+        "Explore Tsomgo Lake",
+        "Trek to Nathula Pass",
+        "Paragliding"
+      ],
+      "nearbyAttractions": [
+        "Do Drul Chorten",
+        "Banjhakri Falls",
+        "Himalayan Zoological Park"
+      ],
+      "travelTips": [
+        "Carry warm clothing as temperatures can vary, especially at higher altitudes.",
+        "Apply for necessary permits in advance for Nathula Pass and other restricted areas.",
+        "Try local Sikkimese cuisine, such as momos and thukpa."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Losar Festival",
+          "date": "February",
+          "description": "The Tibetan New Year celebrated with traditional music, dance, and festivities in monasteries across Sikkim.",
+          "image": "https://www.hellovisit.in/uploads/0000/1/2023/02/06/losar-festival-in-sikkim-is-a-cultural-extravaganza-it-start-in-feb.png"
+        },
+        {
+          "eventName": "Saga Dawa",
+          "date": "May/June",
+          "description": "A major Buddhist festival commemorating the birth, enlightenment, and death of Buddha, observed with prayers, processions, and religious rituals.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbhZPEGtXjOOpGlT0F6guRow3gfU-jLs0rAm8teUdCng&s"
+        }
+      ]
+    },
+    {
+      "name": "Chandigarh",
+      "category": "Urban Planning and Gardens",
+      "image": "https://static2.tripoto.com/media/filter/tst/img/236312/TripDocument/1454609520_24633829142_478897d4dc_b.jpg",
+      "description": "Chandigarh, India's first planned city designed by Le Corbusier, is known for its well-laid-out sectors, modernist architecture, and beautiful gardens like the Rock Garden and Rose Garden.",
+      "location": "Chandigarh, India",
+      "bestTimeToVisit": "October to March",
+      "popularActivities": [
+        "Explore the Rock Garden",
+        "Stroll through Rose Garden",
+        "Boating at Sukhna Lake",
+        "Visit Capitol Complex"
+      ],
+      "nearbyAttractions": ["Pinjore Gardens", "Elante Mall", "Chhatbir Zoo"],
+      "travelTips": [
+        "Rent a bicycle to explore the city's wide roads and green spaces.",
+        "Visit the gardens early in the morning to avoid crowds and enjoy the fresh air.",
+        "Sample Punjabi cuisine at local eateries for an authentic experience."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Chandigarh Carnival",
+          "date": "November",
+          "description": "An annual cultural festival featuring parades, music, dance performances, and food stalls, celebrating the city's vibrant spirit.",
+          "image": "https://images.indianexpress.com/2022/11/NL-UTcarnival1-3col.jpg"
+        },
+        {
+          "eventName": "Rose Festival",
+          "date": "February",
+          "description": "Held at Zakir Hussain Rose Garden, this festival showcases a variety of roses along with cultural performances, competitions, and exhibitions.",
+          "image": "https://images.indianexpress.com/2020/02/rose-festival.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Mysore, Karnataka",
+      "category": "Heritage and Cultural",
+      "image": "https://www.holidaymonk.com/wp-content/uploads/2022/05/Mysore-Palace.webp",
+
+      "description": "Mysore, often called the City of Palaces, is famous for the opulent Mysore Palace, vibrant Dasara festival, and rich cultural heritage. It also boasts intricately carved temples and lush gardens.",
+      "location": "Mysore, Karnataka, India",
+      "bestTimeToVisit": "October to March",
+      "popularActivities": [
+        "Visit Mysore Palace",
+        "Explore Brindavan Gardens",
+        "Climb Chamundi Hill",
+        "Shop for Mysore Silk"
+      ],
+      "nearbyAttractions": [
+        "St. Philomena's Church",
+        "Mysore Zoo",
+        "Rail Museum"
+      ],
+      "travelTips": [
+        "Visit Mysore Palace in the evening to see it illuminated.",
+        "Attend the musical fountain show at Brindavan Gardens.",
+        "Try traditional Mysore Pak and other local delicacies."
+      ],
+      "happeningEvents": [
+        {
+          "eventName": "Mysore Dasara",
+          "date": "September/October",
+          "description": "A ten-day festival celebrating the victory of good over evil, featuring grand processions, cultural performances, and the illumination of Mysore Palace.",
+          "image": "https://www.hindustantimes.com/ht-img/img/2023/09/22/1600x900/Elephants-being-brought-for-Mysore-Dasara-celebrat_1695410242161.jpg"
+        },
+        {
+          "eventName": "Vairamudi Festival",
+          "date": "March",
+          "description": "A religious festival where the deity at the Cheluvanarayana Swamy Temple is adorned with a diamond-studded crown and taken on a grand procession.",
+          "image": "https://images.deccanherald.com/deccanherald/import/sites/dh/files/articleimages/2021/03/24/vairamudi-dh-965911-1616583877.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true"
+        }
+      ]
+    }
+  ]
 }
