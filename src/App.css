@@ -6,6 +6,7 @@
   font-family: samarkand;
   src: url("../src/assets/SamarkanNormal-Gg5D.ttf");
 }
+
 #samarkand {
   font-family: samarkand;
 }
@@ -69,9 +70,6 @@
 
 body {
     font-family: "Poppins", sans-serif;
-<<<<<<< HEAD
-=======
-
 }
 
 .pagination-container {
@@ -122,5 +120,4 @@ body {
     pointer-events: none;
     border: none;
     font-weight: 600;
->>>>>>> 3c9a9b5e3b24c2a9a1702081274884ac3db7c65d
 }

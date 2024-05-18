@@ -171,7 +171,7 @@ export const ContactUs = () => {
 
   return (
     <>
-      <div className="mb-10 mt-10">
+      <div className="mb-10 mt-24">
         <h1 className="text-2xl font-bold text-center mt-5 mb-5">Contact Us</h1>
 
         <p className="text-sm text-center max-md:text-xs">
