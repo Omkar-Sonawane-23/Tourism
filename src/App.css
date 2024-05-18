@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: samarkand;
   src: url("../src/assets/SamarkanNormal-Gg5D.ttf");
@@ -63,7 +67,6 @@
 
 }
 
-.about{
+body {
     font-family: "Poppins", sans-serif;
-
 }
