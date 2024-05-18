@@ -43,11 +43,14 @@ function Navbar() {
             <Link to="/contact">Contact Us</Link>
           </li>
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
+            <Link to="/register"><button className='btn'> Register </button></Link>
+          </li>
+          {/*<li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
             <Link to="/register">Register</Link>
           </li>
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
             <Link to="/login">Login</Link>
-          </li>
+        </li>*/}
           
         </ul>
       </div>
