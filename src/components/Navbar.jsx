@@ -43,11 +43,17 @@ function Navbar() {
             <Link to="/Faq">FAQs</Link>
           </li>          
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
+            <Link to="/register"><button className='btn'><img src="user.png" style={{
+              width:'22px',
+              Height:'20px',
+            }}/></button></Link>
+          </li>
+          {/*<li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
             <Link to="/register">Register</Link>
           </li>
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
             <Link to="/login">Login</Link>
-          </li>
+        </li>*/}
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
             <Link to="/contact">Contact Us</Link>
           </li>          

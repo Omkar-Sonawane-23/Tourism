@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import Details from './Details';
-import Detailed from '../../Data/Detailed.json';
+import React, { useEffect, useState } from "react";
+import Details from "./Details";
+import Detailed from "../../Data/Detailed.json";
 
 const DetailView = () => {
   const [data, setData] = useState(null);
@@ -19,48 +19,53 @@ const DetailView = () => {
   }
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="flex flex-col mt-20 items-center justify-center w-full h-full">
       {data && (
-        <div className='relative flex flex-col lg:flex-row items-center justify-center'>
-          <img src={data.image} className='w-full lg:w-1/2 h-auto object-cover z-0' alt={data.name} />
-          <div className='lg:w-1/2 lg:ml-10 px-4 py-8 lg:py-0 bg-white bg-opacity-90 backdrop-blur-lg rounded-lg lg:sticky lg:top-20'>
-            <h1 className='text-4xl sm:text-5xl lg:text-6xl text-gray-900 font-bold text-center mb-4'>{data.name}</h1>
-            <p className='text-gray-700 text-lg italic mb-4'>{data.location}</p>
-            <p className='text-gray-700 text-lg mb-8 max-w-md px-4 text-center'>{data.description}</p>
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-              <div>
-                <h2 className='text-lg font-bold mb-2'>Category:</h2>
-                <p className='text-gray-700'>{data.category}</p>
-              </div>
-              <div>
-                <h2 className='text-lg font-bold mb-2'>Best Time to Visit:</h2>
-                <p className='text-gray-700'>{data.bestTimeToVisit}</p>
-              </div>
+        <div className="flex flex-col items-center  justify-center w-11/12 h-full">
+          <img src={data.image} alt={data.title} />
+          <h1 className="text-4xl font-bold mt-5">{data.name}</h1>
+          <h3 className="text-xl font-semibold mt-4">{data.location}</h3>
+          <p className="text-lg sm:text-lg md:text-xl mt-5 text-justify">{data.description}</p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4  gap-5 gap-y-4 mt-5 w-full"
+          style={{alignItems:'flex-start'}}
+          >
+            <div className="flex flex-col p-4">
+              <h2 className="text-lg sm:text-lg md:text-xl font-bold">Category</h2>
+              <p className="text-lg sm:text-lg md:text-xl mt-2">{data.category}</p>
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4'>
-              <div>
-                <h2 className='text-lg font-bold mb-2'>Popular Activities:</h2>
-                <ul className='list-disc pl-4'>
-                  {data.popularActivities.map((activity, index) => (
-                    <li key={index} className='text-gray-700'>{activity}</li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h2 className='text-lg font-bold mb-2'>Nearby Attractions:</h2>
-                <ul className='list-disc pl-4'>
-                  {data.nearbyAttractions.map((attraction, index) => (
-                    <li key={index} className='text-gray-700'>{attraction}</li>
-                  ))}
-                </ul>
-              </div>
+            <div className="flex flex-col  p-4">
+              <h2 className="text-xl font-bold">Best time to visit</h2>
+              <p className="text-lg sm:text-lg md:text-xl mt-2">{data.bestTimeToVisit}</p>
+            </div>
+            <div className="flex flex-col  p-4">
+              <h2 className="text-xl font-bold">Popular activities</h2>
+              <ul className="list-disc text-justify">
+              {data.popularActivities.map((activity, index) => (
+                <li key={index} className="text-lg sm:text-lg md:text-xl mt-2">
+                  {activity}
+                </li>
+              ))}
+              </ul>
+            </div>
+            <div className="flex flex-col  p-4">
+              <h2 className="text-xl font-bold">Nearby attractions</h2>
+              <ul className="list-disc text-justify">
+
+              {data.nearbyAttractions.map((attraction, index) => (
+                <li key={index} className="text-lg sm:text-lg md:text-xl mt-2">
+                  {attraction}
+                </li>
+              ))}
+              </ul>
             </div>
           </div>
         </div>
       )}
+
       <Details />
     </section>
   );
-}
+};
 
-export default DetailView;
+export default DetailView;

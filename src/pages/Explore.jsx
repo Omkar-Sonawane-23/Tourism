@@ -15,7 +15,7 @@ const filterByCategory = (category) => {
 };
 
 const categories = [...new Set(data.map((item) => item.category))];
-console.log(categories);
+// console.log(categories);
 
 const places = [...new Set(data.map((item) => item.location))];
 
