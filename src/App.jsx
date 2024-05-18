@@ -8,6 +8,7 @@ import DetailView from "./components/DetailView";
 import NotFound from "./pages/NotFound";
 import { ContactUs } from "./pages/ContactUs"
 import "./App.css";
+import {Faq} from "./components/Faq";
 import AboutUs from "./pages/AboutUs";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -25,6 +26,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/Faq" element={<Faq />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </BrowserRouter>
