@@ -14,7 +14,7 @@ export const Design = ({question,answer}) => {
       <p style={{color:"black",paddingRight:"10px",paddingLeft:"30px"}}>{show?"-":"+"}</p>
       </div>
       {
-        show && <p style={{color:"black",background:"white",border:"1px solid black",paddingLeft:"10px"}}>{answer}</p>
+        show && <p style={{color:"black",background:"white",border:"1px solid black",padding:"20px"}}>{answer}</p>
       }
       
     </div>
