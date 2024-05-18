@@ -23,7 +23,7 @@ const Explore = () => {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [filteredPlaces, setFilteredPlaces] = useState([]);
-
+  const [active, setActive] = useState(false);
   useEffect(() => {
     console.log("Use effect running with", selectedState, selectedCategory);
     const places = data.filter(
@@ -40,6 +40,7 @@ const Explore = () => {
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);
+    setActive((cur) => !cur);
   };
 
   return (
@@ -131,11 +132,17 @@ const Explore = () => {
 
       <h2 className="text-lg font-bold mb-2">Popular Categories</h2>
       <div className="flex flex-wrap gap-2">
-        {categories.map((category, index) => (
+        {categories.map((category, index,e) => (
           <button
             value={category}
             key={index}
-            className="px-4 py-2 bg-gray-200 rounded-md"
+            className={`px-4 py-2 ${
+              selectedCategory === category
+                ? active
+                  ? "bg-emerald-500 text-white"
+                  : ""
+                : ""
+            }  rounded-md`}
             onClick={handleCategoryChange}
           >
             {category}
@@ -190,9 +197,8 @@ const Explore = () => {
           </article>
         ))}
       </div>
-      <GoToTop/>
+      <GoToTop />
     </section>
-    
   );
 };
 
