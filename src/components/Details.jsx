@@ -68,14 +68,14 @@ const Details = () => {
             ))}
           </div>
           <div className="border border-gray-200 hover:shadow-xl rounded-lg w-full sm:w-3/4 md:w-1/2 lg:w-1/3 mt-8 p-6 shadow-lg">
-            <h1 className="text-3xl text-gray-800 font-bold mb-6 text-center">
+            <h1 className="text-3xl text-gray-800 font-bold mb-4 text-center">
               Travel Tips:
             </h1>
             <ul className="text-lg text-gray-700 list-disc pl-5">
               {travelTips.map((tip, index) => (
                 <li
                   key={index}
-                  className="mb-2 p-3 hover:bg-gray-10 transition-colors duration-300"
+                  className="mb-1 p-3 hover:bg-gray-10 transition-colors duration-300"
                 >
                   <span className="hover:text-indigo-600 transition-colors duration-300">
                     {tip}
