@@ -38,12 +38,14 @@ const Home = () => {
               </h1>
             </div>
             <div className="flex justify-center items-center gap-[12rem] h-[5.9rem]">
-              <button
-                className="text-[25px] w-[10rem] h-[2.9rem] rounded-xl bg-[black] text-[white] hover:text-[green] duration-[0.4s]"
-                type="button"
-              >
-                Explore
-              </button>
+              <Link to="/explore">
+                <button
+                  className="text-[25px] w-[10rem] h-[2.9rem] rounded-xl bg-[black] text-[white] hover:text-[green] duration-[0.4s]"
+                  type="button"
+                >
+                  Explore
+                </button>
+              </Link>
               <Link to="/home">
                 <button
                   className="text-[25px] w-[10rem] h-[2.9rem] rounded-xl bg-[black] text-[white] hover:text-[green] duration-[0.4s]"
