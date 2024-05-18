@@ -7,38 +7,40 @@ import Pagination from "./Pagination";
 const Homeque = () => {
     // const data = Data.destinations;
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
+  
     const [currentData, setCurrentData] = useState([]);
     const [pageSum, setPageSum] = useState(0);
-
+  
     const [showScrollButton, setShowScrollButton] = useState(false);
-
+  
+  
     useEffect(() => {
-        const intervalId = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 3);
-        }, 3000);
-
-        return () => clearInterval(intervalId);
+      const intervalId = setInterval(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % 3);
+      }, 3000);
+  
+      return () => clearInterval(intervalId);
+  
     }, []);
-
+  
     useEffect(() => {
-        const handleScroll = () => {
-            setShowScrollButton(window.pageYOffset > 100);
-        };
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
+      const handleScroll = () => {
+        setShowScrollButton(window.pageYOffset > 100);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
     }, []);
-
+  
     const showdetail = (index) => {
-        console.log(index);
+      // console.log(index);
     };
-
+  
     const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     return (
@@ -46,7 +48,7 @@ const Homeque = () => {
             <section className="grid grid-cols-1 px-5 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center relative">
                 {currentData.map((destination, i) => (
                     <article
-                        className=" relative hover:scale-[1.03] transition-all ease-in-out cursor-pointer isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform"
+                        className=" relative hover:scale-[1.03] transition-all ease-in-out cursor-pointer isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg hover:shadow-2xl  duration-500  transform"
                         key={pageSum + i}
                     >
                         <img
@@ -69,7 +71,7 @@ const Homeque = () => {
                             >
                                 <button
                                     onClick={() => showdetail(pageSum + i)}
-                                    className="w-[80px] h-[30px]  border-2 rounded-xl text-[white] backdrop-blur  cursor-pointer text-[white]  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out transform"
+                                    className="w-[80px] h-[30px]  border-2 rounded-xl  backdrop-blur  cursor-pointer text-[white]  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out transform"
                                 >
                                     Explore
                                 </button>
