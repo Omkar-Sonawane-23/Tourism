@@ -11,7 +11,7 @@ export const Design = ({question,answer}) => {
     <div  className="card" style={{Width:"50%",marginBottom:"20px"}}>
       <div class="topic" style={{display:"flex",justifyContent:"space-between"}}>
       <h2 style={{color:"white",width:"100%",paddingLeft:"10px",fontSize:"20px",cursor:"pointer"}} onClick={()=>{one()}}>{"Q."+question}</h2>
-      <p style={{color:"white",background:"black",paddingRight:"10px",paddingLeft:"30px"}}>{show?"-":"+"}</p>
+      <p style={{color:"black",paddingRight:"10px",paddingLeft:"30px"}}>{show?"-":"+"}</p>
       </div>
       {
         show && <p style={{color:"black",background:"white",border:"1px solid black",paddingLeft:"10px"}}>{answer}</p>
