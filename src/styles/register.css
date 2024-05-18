@@ -1,0 +1,312 @@
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.register-box {
+    display: flex;
+    margin: auto;
+    width: 75%;
+    height: 100%;
+}
+
+.register-bg {
+    width: 60%;
+    background-image: url('../assets/bg-register.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-bg {
+    width: 60%;
+    background-image: url('../assets/bg-login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.register-input {
+    width: 40%;
+    padding: 0.5rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #06697c, #02a9ca);
+}
+
+.login-input {
+    width: 40%;
+    padding: 0.5rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, gold, goldenrod);
+}
+
+.auth-google {
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.auth-google:hover {
+    background: black;
+    color: white;
+}
+
+.sm-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    float: left;
+}
+
+.connect {
+    width: 30%;
+    margin: 10px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.connect-login {
+    width: 25%;
+    margin: 10px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.form-auth {
+    width: 90%;
+}
+
+.auth-email {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+
+    &::placeholder {
+        color: rgba(147, 156, 163, 1);
+
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.eye-icon {
+    position: absolute;
+    right: 15rem;
+    top: 58.5%;
+    transform: translateY(-60%);
+    cursor: pointer;
+}
+
+.eye-icon-login {
+    position: absolute;
+    right: 15rem;
+    top: 51.5%;
+    transform: translateY(-60%);
+    cursor: pointer;
+}
+
+.remember-checkbox {
+    margin-top: 1rem;
+    background-color: violet;
+    border-color: 1px solid blue;
+}
+
+  .custom-checkbox {
+    position: relative;
+  }
+  
+  .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    margin-top: 5px;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: rgba(247, 245, 249, 1);
+    border-radius: 2px;
+    vertical-align: middle;
+  }
+  
+  .custom-checkbox input:checked ~ .checkmark {
+    background-color: black;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .custom-checkbox .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .remember-me {
+    margin-left: 1.5rem;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+  }
+
+.forgot-password {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+}
+
+.auth-continue {
+    width: 100%;
+    margin-top: 1rem;
+    height: 2.5rem;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.auth-continue:hover {
+    background-color: black;
+    color: white;
+}
+
+.registered {
+    margin-top: 10px;
+    font-size: small;
+    color: black;
+}
+
+.connect-line {
+    width: 50%;
+    border: 1px solid black;
+    height: 0;
+}
+
+@media only screen and (max-width: 1250px) {
+    .eye-icon, .eye-icon-login {
+        visibility: hidden;
+    }
+
+    .register {
+        margin-top: 7rem;
+    }
+
+    .register-box {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        justify-content: center;
+    }
+
+    .register-input, .login-input {
+        width: 50%;
+    }
+
+    .connect-login {
+        width: 30%;
+    }
+
+    .connect {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .eye-icon, .eye-icon-login {
+        visibility: hidden;
+    }
+
+    .register {
+        margin-top: 7rem;
+    }
+
+    .register-box {
+        flex-direction: column;
+        width: 80% !important;
+    }
+
+    .register-input, .login-input {
+        width: 100%;
+    }
+
+    .connect-login {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .connect-line {
+        width: 30%;
+    }
+
+    .connect-login {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .connect-line {
+        width: 30%;
+    }
+
+    .connect {
+        width: 45%;
+    }
+
+    .connect-login {
+        width: 60%;
+    }
+}
