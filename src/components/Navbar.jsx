@@ -40,15 +40,17 @@ function Navbar() {
             <Link to="/aboutus">About Us</Link>
           </li>
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
-            <Link to="/contact">Contact Us</Link>
-          </li>
+            <Link to="/Faq">FAQs</Link>
+          </li>          
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
             <Link to="/register">Register</Link>
           </li>
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
             <Link to="/login">Login</Link>
           </li>
-          
+          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
+            <Link to="/contact">Contact Us</Link>
+          </li>          
         </ul>
       </div>
       <div className="md:hidden">
