@@ -77,7 +77,7 @@ function Navbar() {
             <Link to="/">Home</Link>
           </li>
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" onClick={toggleMenu}>
-            <Link to="/home">Places</Link>
+            <Link to="/places">Places</Link>
           </li>
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" onClick={toggleMenu}>
             <Link to="/aboutus">About Us</Link>
