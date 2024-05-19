@@ -10,6 +10,7 @@ const filterByState = (location) => {
   return data.filter((place) => place.location.includes(location));
 };
 
+
 const filterByCategory = (category) => {
   return data.filter((place) => place.category.includes(category));
 };
@@ -23,6 +24,7 @@ const Explore = () => {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [filteredPlaces, setFilteredPlaces] = useState([]);
+  const [colors,setcolor]=useState("white");
 
   useEffect(() => {
     console.log("Use effect running with", selectedState, selectedCategory);
@@ -36,10 +38,12 @@ const Explore = () => {
 
   const handleStateChange = (e) => {
     setSelectedState(e.target.value);
+    setcolor('yellow');
   };
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);
+    setcolor('yellow');
   };
 
   return (
@@ -135,7 +139,7 @@ const Explore = () => {
           <button
             value={category}
             key={index}
-            className="px-4 py-2 bg-gray-200 rounded-md"
+            className="px-4 py-2 bg-gray-200 rounded-md hover:bg-yellow-200"
             onClick={handleCategoryChange}
           >
             {category}
@@ -149,8 +153,9 @@ const Explore = () => {
           <button
             value={place}
             key={index}
-            className="px-4 py-2 bg-gray-200 rounded-md"
+            className="px-4 py-2 bg-gray-200 rounded-md hover:bg-yellow-200"
             onClick={handleStateChange}
+            style={{backgroundColor:{colors}}}
           >
             {place}
           </button>
