@@ -11,16 +11,20 @@ const Details = () => {
 
   const id = extractIdFromPathname();
   const data = Detailed.destinations;
-  const eventDetails = id !== null ? data[id].happeningEvents : [];
+
+  const isValidId = id !== null && id >= 0 && id < data.length;
+
+  const eventDetails = isValidId ? data[id].happeningEvents : [];
+  const travelTips = isValidId ? data[id].travelTips : [];
 
   return (
     <div className="pt-20 flex flex-col items-center">
       <h1 className="text-3xl sm:text-4xl mb-8 text-center font-bold text-gray-800">
         Discover Latest Events
       </h1>
-      <section className="text-gray-600 body-font w-11/12 ">
-        <div className="">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-8 mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {eventDetails.map((event, index) => (
               <div
                 key={index}
@@ -63,14 +67,20 @@ const Details = () => {
               </div>
             ))}
           </div>
-          <div className="rounded-lg w-full py-6">
-            <h1 className="text-3xl sm:text-4xl  text-center text-gray-800 font-bold mb-8">
+          <div className="border border-gray-200 hover:shadow-xl rounded-lg w-full sm:w-3/4 md:w-1/2 lg:w-1/3 mt-8 p-6 shadow-lg">
+            <h1 className="text-3xl text-gray-800 font-bold mb-4 text-center">
               Travel Tips:
             </h1>
-            <ul className=" list-disc ml-8 text-lg text-gray-700">
-              {data[id]?.travelTips.map((tip, index) => (
-                  <li key={index} className="text-lg text-gray-700">{tip}</li>
-                
+            <ul className="text-lg text-gray-700 list-disc pl-5">
+              {travelTips.map((tip, index) => (
+                <li
+                  key={index}
+                  className="mb-1 p-3 hover:bg-gray-10 transition-colors duration-300"
+                >
+                  <span className="hover:text-indigo-600 transition-colors duration-300">
+                    {tip}
+                  </span>
+                </li>
               ))}
             </ul>
           </div>
