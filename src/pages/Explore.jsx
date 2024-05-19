@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import Data from "../../Data/Detailed.json";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import GoToTop from "./GoToTop";
 
 const data = Data.destinations;
 
@@ -9,12 +10,13 @@ const filterByState = (location) => {
   return data.filter((place) => place.location.includes(location));
 };
 
+
 const filterByCategory = (category) => {
   return data.filter((place) => place.category.includes(category));
 };
 
 const categories = [...new Set(data.map((item) => item.category))];
-console.log(categories);
+// console.log(categories);
 
 const places = [...new Set(data.map((item) => item.location))];
 
@@ -22,6 +24,7 @@ const Explore = () => {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [filteredPlaces, setFilteredPlaces] = useState([]);
+  const [colors,setcolor]=useState("white");
 
   useEffect(() => {
     console.log("Use effect running with", selectedState, selectedCategory);
@@ -35,10 +38,12 @@ const Explore = () => {
 
   const handleStateChange = (e) => {
     setSelectedState(e.target.value);
+    setcolor('yellow');
   };
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);
+    setcolor('yellow');
   };
 
   return (
@@ -134,7 +139,7 @@ const Explore = () => {
           <button
             value={category}
             key={index}
-            className="px-4 py-2 bg-gray-200 rounded-md"
+            className="px-4 py-2 bg-gray-200 rounded-md hover:bg-yellow-200"
             onClick={handleCategoryChange}
           >
             {category}
@@ -148,8 +153,9 @@ const Explore = () => {
           <button
             value={place}
             key={index}
-            className="px-4 py-2 bg-gray-200 rounded-md"
+            className="px-4 py-2 bg-gray-200 rounded-md hover:bg-yellow-200"
             onClick={handleStateChange}
+            style={{backgroundColor:{colors}}}
           >
             {place}
           </button>
@@ -179,7 +185,7 @@ const Explore = () => {
               <Link to={`/detail/?id=${index}`} key={index}>
                 <button
                   onClick={() => showdetail(index)}
-                  className="w-[80px] h-[30px]  border-2 rounded-xl text-[white] backdrop-blur  cursor-pointer text-[white]  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out transform
+                  className="w-[80px] h-[30px]  border-2 rounded-xl text-white backdrop-blur  cursor-pointer  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition  ease-in-out transform
               "
                 >
                   Explore
@@ -189,7 +195,9 @@ const Explore = () => {
           </article>
         ))}
       </div>
+      <GoToTop/>
     </section>
+    
   );
 };
 
