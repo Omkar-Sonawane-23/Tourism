@@ -6,6 +6,7 @@ import jaipur from '../assets/jaipur.webp';
 import kolkata from '../assets/kolkata.jpg';
 import Loader from './Loader';
 import "../styles/home.css";
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,22 +36,30 @@ const Home = () => {
         </div>
         <div className='card'>
         <div className="home-cards">
+          <Link to="/detail/?id=2">
           <article className="home-card">
             <img src={kerala} alt="" className="home-card-img" />
             <h3 className="home-card-title">Kerala</h3>
           </article>
+          </Link>
+          <Link to="/detail/?id=3">
           <article className="home-card">
             <img src={varanasi} alt="" className="home-card-img" />
             <h3 className="home-card-title">Varanasi</h3>
           </article>
+          </Link>
+          <Link to="/detail/?id=4">
           <article className="home-card">
             <img src={jaipur} alt="" className="home-card-img" />
             <h3 className="home-card-title">Jaipur</h3>
           </article>
+          </Link>
+          <Link to="/detail/?id=11">
           <article className="home-card">
             <img src={kolkata} alt="" className="home-card-img" />
             <h3 className="home-card-title">Kolkata</h3>
           </article>
+          </Link>
         </div>
         </div>
       </div>
