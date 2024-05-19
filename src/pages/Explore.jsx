@@ -161,7 +161,7 @@ const Explore = () => {
         {filteredPlaces.map((place, index) => (
           <article
             key={index}
-            className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform"
+            className="relative hover:scale-[1.05] hover:blur-shadow-xl hover:border-2 hover:border-slate-400 isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform"
           >
             <img
               src={place.image}

@@ -45,9 +45,9 @@ const Homeque = () => {
 
   return (
   <>
-    <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center relative">
+    <section className="grid grid-cols-1 px-5 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center relative">
       {currentData.map((destination, i) => (
-        <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform"
+        <article className="relative hover:scale-[1.03] transition-all ease-in-out cursor-pointer isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform"
           key={pageSum + i}>
           <img
             src={destination.image[currentImageIndex]}
