@@ -1,0 +1,36 @@
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.auth-google {
+  width: 90%;
+  margin-top: 20px;
+  font-size: 24px;
+  padding: 10px;
+  font-weight: 450;
+  text-align: center;
+} 
+.r , .fp{
+  font-size: 15px;
+}
+
+.si{
+ background: linear-gradient(45deg , orange,yellow);
+}
+
+input::placeholder{
+  color: rgb(130, 129, 127);
+}
+
+.eye-icon-login {
+  position: absolute;
+  right: 14.5rem;
+  top: 42.9%;
+  transform: translateY(-60%);
+  cursor: pointer;
+}
+
