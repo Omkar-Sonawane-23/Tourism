@@ -1,18 +1,47 @@
 import React, { useState, useEffect } from 'react';
 import Places from './Places';
-import data from '../../Data/Data.json'
+import axios from "axios";
+
+const PEXELS_API_URL = 'https://api.pexels.com/v1/search';
+const PEXELS_API_KEY = 'Vk1TUd2JrCAb7Un9LggmZ2ATwAaU6UU1mjacRVjX8glSDXpqcbdJDKLX'; 
+const SEARCH_QUERY = 'Historic';
+
 
 const Explore = () => {
   const [selectedFilter, setSelectedFilter] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [images, setImages] = useState([]);
+
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const response = await axios.get(PEXELS_API_URL, {
+          headers: {
+            Authorization: PEXELS_API_KEY,
+          },
+          params: {
+            query: SEARCH_QUERY,
+            per_page: 10, // Number of images to fetch
+          },
+        });
+        const fetchedImages = response.data.photos.map((item) => item.src.landscape);
+        setImages(fetchedImages);
+      } catch (error) {
+        console.error('Error fetching images from Pexels:', error);
+      }
+    };
+
+    fetchImages();
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % data.destinations.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 5000); // Change image every 5 seconds (adjust as needed)
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images]);
 
   const handleFilterChange = (event) => {
     setSelectedFilter(event.target.value);
@@ -24,7 +53,7 @@ const Explore = () => {
     <section className="flex flex-col justify-center items-center h-screen mt-[500px] md:mt-8">
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-70"
-        style={{ backgroundImage: `url(${data.destinations[currentIndex]?.image[0]})` }}
+        style={{ backgroundImage: `url(${images[currentIndex]})` }}
       >
       </div>
       <div className="max-w-screen-lg w-full">
