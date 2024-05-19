@@ -1,50 +1,61 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, {useState, useEffect} from 'react';
+import bg from '../assets/bg-home1.webp';
+import kerala from '../assets/kerala.jpg';
+import varanasi from '../assets/varanasi.jpg';
+import jaipur from '../assets/jaipur.webp';
+import kolkata from '../assets/kolkata.jpg';
+import Loader from './Loader';
+import "../styles/home.css";
 
 const Home = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
+  } else {
+
   return (
-    <div className="relative flex flex-col items-center">
-      <div className="w-full h-screen flex justify-center items-center">
-        <img
-          src="https://img.freepik.com/premium-vector/mumbai-skyline-landscape-view-city-mumbai-with-characteristics-buildings-monuments_743272-109.jpg?w=4320"
-          className="w-full h-full object-cover"
-          alt="Mumbai skyline, a view of the city with its characteristic buildings and monuments"
-        />
-        <div className="absolute inset-0 flex flex-col justify-center items-center">
-          <div className="mb-10 text-center">
-            <span className="text-3xl md:text-4xl lg:text-5xl">Welcome,</span>
-            <span className="text-2xl md:text-3xl lg:text-4xl">to</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl ml-6 font-[Agbalumo]">
-              Bharat <span id="samarkand">Yatra</span>
-            </h1>
-          </div>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
-            <Link to="/explore">
-              <button
-                className="text-lg md:text-xl lg:text-2xl w-40 md:w-48 lg:w-64 h-8 md:h-10 lg:h-14 rounded-xl bg-black text-white hover:text-[green] duration-[0.4s]"
-                type="button"
-              >
-                Explore
-              </button>
-            </Link>
-            <Link to="/home">
-              <button
-                className="text-lg md:text-xl lg:text-2xl w-40 md:w-48 lg:w-64 h-8 md:h-10 lg:h-14 rounded-xl bg-black text-white hover:text-[green] duration-[0.4s]"
-                type="button"
-              >
-                Places
-              </button>
-            </Link>
-          </div>
+    <div className='home' id="home-page">
+      <img src={bg} alt="" className="home-bg" />
+      <div className="home-container grid">
+        <div className="home-data">
+          <h3 className="home-subtitle">Welcome To <span className="text-[1.4rem] font-[Agbalumo]" id="loadLogo">Bharat <span id="samarkand">Yatra</span></span></h3>
+          <h1 className="home-title">Discover India</h1>
+          <p className='home-description'>One Stop Destination for Exploring India's Diverse Wonders!</p>
+          <a href="/home" className='button'>Explore</a>
+        </div>
+        <div className='card'>
+        <div className="home-cards">
+          <article className="home-card">
+            <img src={kerala} alt="" className="home-card-img" />
+            <h3 className="home-card-title">Kerala</h3>
+          </article>
+          <article className="home-card">
+            <img src={varanasi} alt="" className="home-card-img" />
+            <h3 className="home-card-title">Varanasi</h3>
+          </article>
+          <article className="home-card">
+            <img src={jaipur} alt="" className="home-card-img" />
+            <h3 className="home-card-title">Jaipur</h3>
+          </article>
+          <article className="home-card">
+            <img src={kolkata} alt="" className="home-card-img" />
+            <h3 className="home-card-title">Kolkata</h3>
+          </article>
+        </div>
         </div>
       </div>
-      <footer style={{ backgroundColor: '#f8f9fa', padding: '20px', textAlign: 'center', position: 'absolute', bottom: '0', width: '100%' }}>
-        <p>&copy; 2024 Bharat Yatra. All rights reserved.</p>
-        <p>Contact Us:1234567892</p>
-      </footer>
     </div>
-  )
+  )}
 }
 
 export default Home
-
