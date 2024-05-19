@@ -8,7 +8,7 @@ export const Accordion = ({ title, content }) => {
   };
 
   return (
-    <div className="border-b border-gray-200">
+    <div className="border-b shadow-md px-8 py-4 border-gray-200">
       <button
         className="w-full flex justify-between items-center p-4 focus:outline-none"
         onClick={toggleAccordion}
@@ -36,7 +36,7 @@ export const Accordion = ({ title, content }) => {
           isOpen ? "max-h-screen" : "max-h-0"
         }`}
       >
-        <div className="p-4 pt-0">{content}</div>
+        <div className="p-4 pt-0 text-gray-600">{content}</div>
       </div>
     </div>
   );
