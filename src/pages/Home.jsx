@@ -25,7 +25,7 @@ const Home = () => {
         <Navbar />
         <section className="mt-[5px]">
           <img
-            src="https://img.freepik.com/premium-vector/mumbai-skyline-landscape-view-city-mumbai-with-characteristics-buildings-monuments_743272-109.jpg?w=4320"
+            src="https://i.ibb.co/HhSfWVP/india.png"
             className="w-[100vw] h-[100vh] fixed"
             alt=""
           />
