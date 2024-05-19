@@ -180,7 +180,7 @@ const Explore = () => {
               <Link to={`/detail/?id=${index}`} key={index}>
                 <button
                   onClick={() => showdetail(index)}
-                  className="w-[80px] h-[30px]  border-2 rounded-xl text-[white] backdrop-blur  cursor-pointer text-[white]  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out transform
+                  className="w-[80px] h-[30px]  border-2 rounded-xl text-white backdrop-blur  cursor-pointer  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition  ease-in-out transform
               "
                 >
                   Explore
