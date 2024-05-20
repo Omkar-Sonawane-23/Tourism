@@ -17,7 +17,7 @@ export const Faq = () => {
     }}
     >
       <div
-        className="faq-card  shadow-xl"
+        className="faq-card  shadow-xl w-full"
         
       >
           
