@@ -35,6 +35,12 @@
           "description": "Diwali, the Festival of Lights, is celebrated with fireworks and cultural performances.",
           "image": "https://resize.indiatvnews.com/en/resize/oldbucket/730_-/mainnational/IndiaTv7e48b1_Taj.jpg"
         }
+      ],
+      "famousFood": [
+        "Mughlai cuisine",
+        "Petha",
+        "Bedai and Kachori"
+  
       ]
     },
     {
@@ -59,6 +65,11 @@
         "Try Goan cuisine.",
         "Explore vibrant nightlife."
       ],
+      "famousFood": [
+        "Goan cuisine",
+        "Bebinca",
+        "Sorpotel"
+      ],
       "happeningEvents": [
         {
           "eventName": "Sunburn Festival",
@@ -73,6 +84,7 @@
           "image": "https://www.desicomments.com/wp-content/uploads/2017/01/Local-Men-Performing-Tradtional-Godemodni-Dance-Of-Goa-Carnival.jpg"
         }
       ]
+      
     },
     {
       "name": "Kerala Backwaters",
@@ -94,7 +106,8 @@
       "travelTips": [
         "Book a houseboat in advance.",
         "Indulge in Kerala cuisine.",
-        "Attend local temple festivals."
+        "Attend local temple festivals.",
+        "Carry Mosquito Repellent"
       ],
       "happeningEvents": [
         {
@@ -109,6 +122,12 @@
           "description": "A grand temple festival featuring a colorful procession of elephants and traditional music.",
           "image": "https://i1.wp.com/pinklungi.com/wp-content/uploads/2019/05/untitled-design-1-1.png?resize=1068%2C712&ssl=1"
         }
+      ],
+      "famousFood": [
+        "Kerala cuisine",
+        "Appam with Stew",
+        "Puttu and Kadala Curry",
+        "Malabar Parotta"
       ]
     },
     {
@@ -146,6 +165,11 @@
           "description": "The 'Festival of Lights of the Gods,' celebrated with illuminated ghats and cultural performances.",
           "image": "https://www.filmingindo.com/wp-content/uploads/2018/04/dev-dipawali-varanasi.jpeg"
         }
+      ],
+      "famousFood": [
+        "Banarasi Paan",
+        "Malaiyyo",
+        "Tamatar Chaat"
       ]
     },
     {
@@ -179,6 +203,11 @@
           "description": "A colorful and important festival dedicated to Goddess Gauri, marked by processions and cultural events.",
           "image": "https://www.pinkpedia.com/wp-content/uploads/2020/04/gangaur4-2048x1365.jpg"
         }
+      ],
+      "famousFood": [
+        "Dal Baati Churma",
+        "Gatte ki Sabzi",
+        "Laal Maas"
       ]
     },
     {
@@ -216,6 +245,11 @@
           "description": "A festival celebrating the descent of the Ganges to Earth, marked by religious ceremonies and rituals.",
           "image": "https://www.tourmyindia.com/states/uttarpradesh/images/ganga-dussehra-1.jpg"
         }
+      ],
+      "famousFood": [
+        "Aloo Puri",
+        "Kachori",
+        "Thepla"
       ]
     },
     {
@@ -249,6 +283,11 @@
           "description": "A festival commemorating the birth anniversary of Netaji Subhas Chandra Bose, with cultural programs and exhibitions.",
           "image": "https://www.andamantourism.gov.in/images/slider_images/subhas-mela-pic1.jpg"
         }
+      ],
+      "famousFood": [
+        "Andamanese Fish Curry",
+        "Coconut Prawn Curry",
+        "Seafood Platter"
       ]
     },
     {
@@ -282,6 +321,11 @@
           "description": "Diwali festivities with illuminated palaces, cultural performances, and fireworks.",
           "image": "https://www.holidify.com/images/cmsuploads/compressed/Udaipur_City_Palace_Flickr_Tyler_Dunlavy_20191118192934.jpg"
         }
+      ],
+      "famousFood": [
+        "Dal Baati Churma",
+        "Gatte ki Sabzi",
+        "Laal Maas"
       ]
     },
     {
@@ -315,6 +359,11 @@
           "description": "Tibetan New Year celebrations with traditional dances, rituals, and cultural programs.",
           "image": "https://www.nativeplanet.com/img/2020/02/darjeeling-1582531461.jpg"
         }
+      ],
+      "famousFood": [
+        "Momos",
+        "Thukpa",
+        "Gundruk"
       ]
     },
     {
@@ -352,6 +401,11 @@
           "description": "The vibrant and grand celebration of Lord Ganesha's festival with processions, music, and decorations.",
           "image": "https://images.indianexpress.com/2021/09/ganesh-chaturthi-2021.jpg"
         }
+      ],
+      "famousFood": [
+        "Mutton Bhakri",
+        "Tambda Rassa",
+        "Thalipeeth"
       ]
     },
     {
@@ -391,8 +445,14 @@
           "description": "The grand procession and immersion of Lord Ganesha idols in the Arabian Sea, marking the end of Ganesh Chaturthi festival.",
           "image": "https://static.toiimg.com/photo/msid-70507601/70507601.jpg"
         }
+      ],
+      "famousFood": [
+        "Vada Pav",
+        "Pav Bhaji",
+        "Bombil Fry"
       ]
     },
+    
     {
       "name": "Kolkata",
       "category": "Cultural and Culinary",
@@ -429,6 +489,11 @@
           "description": "A prestigious film festival showcasing acclaimed movies and hosting renowned filmmakers from across the globe.",
           "image": "https://1.bp.blogspot.com/-BvIaYpBKw0Y/Xc6mST_g7vI/AAAAAAAABE0/D5bJ50KHq_AgYZ3GSYcr4qM2z6_ZTnZrwCEwYBhgL/s1600/Kolkata%2BInternational%2BFilm%2BFestival.jpg"
         }
+      ],
+      "famousFood": [
+        "Rasgulla",
+        "Sandesh",
+        "Kathi Roll"
       ]
     },
     {
@@ -467,8 +532,14 @@
           "description": "A celebration of classical dance forms against the backdrop of the magnificent Sun Temple, showcasing India's rich cultural heritage.",
           "image": "https://odishatourguide.com/wp-content/uploads/2019/08/Konark-Dance-Festival-2021-5.jpg"
         }
+      ],
+      "famousFood": [
+        "Dahibara Aloodum",
+        "Chhena Poda",
+        "Pakhala Bhata"
       ]
     },
+    
     {
       "name": "Shimla",
       "category": "Hill Station",
@@ -501,6 +572,11 @@
           "description": "One of the oldest ice skating carnivals in Asia, held at the natural ice rink in Shimla.",
           "image": "https://i.ytimg.com/vi/31E4eY-1pQc/maxresdefault.jpg"
         }
+      ],
+      "famousFood": [
+        "Sidu",
+        "Babru",
+        "Chana Madra"
       ]
     },
     {
@@ -535,6 +611,11 @@
           "description": "A celebration of the traditional Shikara boats with cultural events, handicraft displays, and boat races on Dal Lake.",
           "image": "https://www.tourmyindia.com/jammu-kashmir/uploads/2016/08/Srinagar-Shikara-Festival.jpg"
         }
+      ],
+      "famousFood": [
+        "Rogan Josh",
+        "Wazwan",
+        "Kahwa"
       ]
     },
     {
@@ -573,6 +654,11 @@
           "description": "A colorful event showcasing a variety of flowers, including rare orchids and blooming hybrids, attracting nature enthusiasts and gardeners.",
           "image": "https://www.keralatourism.org/images/flower-show-munnar.jpg"
         }
+      ],
+      "famousFood": [
+        "Appam with Stew",
+        "Puttu and Kadala Curry",
+        "Idiyappam with Egg Curry"
       ]
     },
     {
@@ -611,8 +697,15 @@
           "description": "The harvest festival of Tamil Nadu celebrated with traditional rituals, cooking of Pongal dish, and cultural events.",
           "image": "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/11/Pongal-festival-Chennai.jpg"
         }
+      ],
+      "famousFood": [
+        "Masala Dosa",
+        "Idli and Sambar",
+        "Chettinad Chicken",
+        "Filter Coffee"
       ]
     },
+    
     {
       "name": "Leh Ladakh",
       "category": "Adventure and Scenic Beauty",
@@ -649,8 +742,14 @@
           "description": "One of the world's highest marathon events, it offers runners a unique opportunity to traverse through the breathtaking landscapes of Ladakh while promoting awareness about sustainable tourism.",
           "image": "https://www.truerevo.com/cdn/shop/articles/edited_1_of_1.jpg?v=1549368755"
         }
+      ],
+      "famousFood": [
+        "Thukpa",
+        "Momos",
+        "Chhang (Local Beer)"
       ]
-    },
+    }
+    ,
 
     {
       "name": "Pondicherry (Puducherry)",
@@ -688,6 +787,11 @@
           "description": "A celebration of Pondicherry's rich cultural heritage through art exhibitions, heritage walks, music concerts, and culinary events.",
           "image": "https://cdn.yehaindia.com/wp-content/uploads/2021/03/Pondicherry_cover.jpg"
         }
+      ],
+      "famousFood": [
+        "French Baguette",
+        "Croissants",
+        "Tandoori Fish"
       ]
     },
     {
@@ -726,6 +830,11 @@
           "description": "A harvest festival celebrated with great enthusiasm in Punjab, marking the Sikh New Year. It includes vibrant processions, traditional dances (Bhangra and Gidda), and special prayers at Gurudwaras.",
           "image": "https://www.aljazeera.com/wp-content/uploads/2024/04/AFP__20240413__34PC8GC__v1__HighRes__IndiaReligionSikhism-1713003408.jpg?fit=1170%2C780&quality=80"
         }
+      ],
+      "famousFood": [
+        "Amritsari Kulcha",
+        "Makki di Roti with Sarson da Saag",
+        "Lassi"
       ]
     },
     {
@@ -741,7 +850,11 @@
         "Panna National Park Safari",
         "Raneh Falls"
       ],
-      "nearbyAttractions": ["Ajaygarh Fort", "Beni Sagar Dam", "Ranguan Lake"],
+      "nearbyAttractions": [
+        "Ajaygarh Fort",
+        "Beni Sagar Dam",
+        "Ranguan Lake"
+      ],
       "travelTips": [
         "Attend the mesmerizing Light and Sound Show at the Western Group of Temples for a deeper understanding of Khajuraho's history and mythology.",
         "Carry sufficient water and snacks while exploring the temples and nearby attractions, as facilities may be limited.",
@@ -760,13 +873,17 @@
           "description": "A Hindu festival dedicated to Lord Shiva, celebrated with fervor at Khajuraho's temples with special prayers, rituals, and processions.",
           "image": "https://c8.alamy.com/comp/ERYM8C/lord-shiva-temple-khajuraho-madhya-pradesh-india-asia-ERYM8C.jpg"
         }
+      ],
+      "famousFood": [
+        "Khajuraho Ke Laddu",
+        "Korma",
+        "Palak Puri"
       ]
     },
     {
       "name": "Gangtok, Sikkim",
       "category": "Hill Station and Adventure",
       "image": "https://www.esikkimtourism.in/wp-content/uploads/2019/04/3rd-image.jpg",
-
       "description": "Gangtok, the capital of Sikkim, offers breathtaking views of the Himalayas, lush green valleys, and Buddhist monasteries. It's a paradise for trekking, mountain biking, and exploring Tibetan culture.",
       "location": "Gangtok, Sikkim, India",
       "bestTimeToVisit": "March to June, September to November",
@@ -799,8 +916,14 @@
           "description": "A major Buddhist festival commemorating the birth, enlightenment, and death of Buddha, observed with prayers, processions, and religious rituals.",
           "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbhZPEGtXjOOpGlT0F6guRow3gfU-jLs0rAm8teUdCng&s"
         }
+      ],
+      "famousFood": [
+        "Momos",
+        "Thukpa",
+        "Gyathuk"
       ]
-    },
+    }
+    ,
     {
       "name": "Chandigarh",
       "category": "Urban Planning and Gardens",
@@ -833,13 +956,17 @@
           "description": "Held at Zakir Hussain Rose Garden, this festival showcases a variety of roses along with cultural performances, competitions, and exhibitions.",
           "image": "https://images.indianexpress.com/2020/02/rose-festival.jpg"
         }
+      ],
+      "famousFood": [
+        "Butter Chicken",
+        "Chole Bhature",
+        "Amritsari Kulcha"
       ]
     },
     {
       "name": "Mysore, Karnataka",
       "category": "Heritage and Cultural",
       "image": "https://www.holidaymonk.com/wp-content/uploads/2022/05/Mysore-Palace.webp",
-
       "description": "Mysore, often called the City of Palaces, is famous for the opulent Mysore Palace, vibrant Dasara festival, and rich cultural heritage. It also boasts intricately carved temples and lush gardens.",
       "location": "Mysore, Karnataka, India",
       "bestTimeToVisit": "October to March",
@@ -872,7 +999,19 @@
           "description": "A religious festival where the deity at the Cheluvanarayana Swamy Temple is adorned with a diamond-studded crown and taken on a grand procession.",
           "image": "https://images.deccanherald.com/deccanherald/import/sites/dh/files/articleimages/2021/03/24/vairamudi-dh-965911-1616583877.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true"
         }
+      ],
+      "famousFood": [
+        "Mysore Pak",
+        "Masala Dosa",
+        "Filter Coffee"
       ]
     }
+    
+    
+    
+    
+    
+    
+    
   ]
 }

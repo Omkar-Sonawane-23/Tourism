@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Data from "../../Data/Detailed.json";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -15,15 +15,14 @@ const filterByCategory = (category) => {
 };
 
 const categories = [...new Set(data.map((item) => item.category))];
-console.log(categories);
-
 const places = [...new Set(data.map((item) => item.location))];
 
 const Explore = () => {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [filteredPlaces, setFilteredPlaces] = useState([]);
-  const [active, setActive] = useState(false);
+  const [buttonColor, setButtonColor] = useState("white");
+
   useEffect(() => {
     console.log("Use effect running with", selectedState, selectedCategory);
     const places = data.filter(
@@ -36,11 +35,12 @@ const Explore = () => {
 
   const handleStateChange = (e) => {
     setSelectedState(e.target.value);
+    setButtonColor('yellow');
   };
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);
-    setActive((cur) => !cur);
+    setButtonColor('yellow');
   };
 
   return (
@@ -61,34 +61,11 @@ const Explore = () => {
             id="placeSelect"
           >
             <option value="">All</option>
-            <option value="Andhra Pradesh">Andhra Pradesh</option>
-            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-            <option value="Assam">Assam</option>
-            <option value="Bihar">Bihar</option>
-            <option value="Chhattisgarh">Chhattisgarh</option>
-            <option value="Goa">Goa</option>
-            <option value="Gujarat">Gujarat</option>
-            <option value="Haryana">Haryana</option>
-            <option value="Himachal Pradesh">Himachal Pradesh</option>
-            <option value="Jharkhand">Jharkhand</option>
-            <option value="Karnataka">Karnataka</option>
-            <option value="Kerala">Kerala</option>
-            <option value="Madhya Pradesh">Madhya Pradesh</option>
-            <option value="Maharashtra">Maharashtra</option>
-            <option value="Manipur">Manipur</option>
-            <option value="Meghalaya">Meghalaya</option>
-            <option value="Mizoram">Mizoram</option>
-            <option value="Nagaland">Nagaland</option>
-            <option value="Odisha">Odisha</option>
-            <option value="Punjab">Punjab</option>
-            <option value="Rajasthan">Rajasthan</option>
-            <option value="Sikkim">Sikkim</option>
-            <option value="Tamil Nadu">Tamil Nadu</option>
-            <option value="Telangana">Telangana</option>
-            <option value="Tripura">Tripura</option>
-            <option value="Uttar Pradesh">Uttar Pradesh</option>
-            <option value="Uttarakhand">Uttarakhand</option>
-            <option value="West Bengal">West Bengal</option>
+            {places.map((place, index) => (
+              <option key={index} value={place}>
+                {place}
+              </option>
+            ))}
           </select>
         </div>
         <div className="flex flex-col mb-4">
@@ -105,44 +82,26 @@ const Explore = () => {
             id="categorySelect"
           >
             <option value="">All</option>
-            <option value="Historical">Historical</option>
-            <option value="Beaches">Beaches</option>
-            <option value="Nature">Nature</option>
-            <option value="Spiritual">Spiritual</option>
-            <option value="City">City</option>
-            <option value="Adventure">Adventure</option>
-            <option value="Islands">Islands</option>
-            <option value="Heritage">Heritage</option>
-            <option value="Hill Station">Hill Station</option>
-            <option value="Metropolitan">Metropolitan</option>
-            <option value="Cultural and Culinary">Cultural and Culinary</option>
-            <option value="Spiritual and Beach">Spiritual and Beach</option>
-            <option value="Scenic Beauty and Lakes">
-              Scenic Beauty and Lakes
-            </option>
-            <option value="Hill Station and Tea Gardens">
-              Hill Station and Tea Gardens
-            </option>
-            <option value="Metropolitan and Cultural Hub">
-              Metropolitan and Cultural Hub
-            </option>
+            {categories.map((category, index) => (
+              <option key={index} value={category}>
+                {category}
+              </option>
+            ))}
           </select>
         </div>
       </div>
 
       <h2 className="text-lg font-bold mb-2">Popular Categories</h2>
       <div className="flex flex-wrap gap-2">
-        {categories.map((category, index,e) => (
+        {categories.map((category, index) => (
           <button
             value={category}
             key={index}
             className={`px-4 py-2 ${
               selectedCategory === category
-                ? active
-                  ? "bg-emerald-500 text-white"
-                  : ""
-                : ""
-            }  rounded-md`}
+                ? "bg-yellow-200 text-gray-900"
+                : "bg-gray-200 text-gray-700"
+            } rounded-md hover:bg-yellow-300`}
             onClick={handleCategoryChange}
           >
             {category}
@@ -156,7 +115,11 @@ const Explore = () => {
           <button
             value={place}
             key={index}
-            className="px-4 py-2 bg-gray-200 rounded-md"
+            className={`px-4 py-2 ${
+              selectedState === place
+                ? "bg-yellow-200 text-gray-900"
+                : "bg-gray-200 text-gray-700"
+            } rounded-md hover:bg-yellow-300`}
             onClick={handleStateChange}
           >
             {place}
@@ -186,9 +149,7 @@ const Explore = () => {
             <div className="z-10 mt-4 justify-center text-center items-center">
               <Link to={`/detail/?id=${index}`} key={index}>
                 <button
-                  onClick={() => showdetail(index)}
-                  className="w-[80px] h-[30px]  border-2 rounded-xl text-[white] backdrop-blur  cursor-pointer text-[white]  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out transform
-              "
+                  className="w-[80px] h-[30px] border-2 rounded-xl text-white backdrop-blur cursor-pointer duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition ease-in-out transform"
                 >
                   Explore
                 </button>
