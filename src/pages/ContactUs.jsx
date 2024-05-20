@@ -185,7 +185,7 @@ export const ContactUs = () => {
             <div className="w-full flex flex-col items-center justify-center">
               <div className="flex flex-col items-center justify-center p-3 shadow-lg rounded-lg">
                 <h2 className="text-lg font-medium">Contact Information</h2>
-                <div className="pt-5 pb-5 pl-5 pr-5 mt-3 mb-5 shadow-lg rounded-lg">
+                <div className="pt-5 pb-5 pl-5 pr-5 mt-3 mb-5 rounded-lg">
                   <p>
                     <strong>Address:</strong> 123 Tourism Street, Jahanpanah ,
                     New Delhi, India
@@ -254,6 +254,8 @@ export const ContactUs = () => {
                 className="w-full border-gray-300 border-2 mb-3 focus:outline-none p-2 rounded-lg"
                 id="phone"
                 name="phone"
+                placeholder="XXXXXXXXXX"
+                pattern="[0-9]{10}"
                 required
               />
 
@@ -282,7 +284,7 @@ export const ContactUs = () => {
 
               <button
                 type="submit"
-                className="bg-green-600 text-white pt-2 pb-2 pl-3.5 pr-3.5 border-none rounded-md cursor-pointer"
+                className="bg-gray-800 text-white pt-2 pb-2 pl-3.5 pr-3.5 border-none rounded-md cursor-pointer"
               >
                 Submit
               </button>
