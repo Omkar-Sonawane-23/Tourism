@@ -3,7 +3,7 @@ import '../styles/register.css';
 import Google from '../assets/google.png';
 import show from '../assets/hide-password.png';
 import eye from '../assets/show-password.png'; 
-import Lock from '../assets/forgot-password.png';
+
 import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
