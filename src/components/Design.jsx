@@ -8,6 +8,7 @@ export const Design = ({question,answer}) => {
     setShow(!show);
   }
   return (
+
     <div className="card mt-5 shadow-lg px-5 py-5">
       <div class="topic " style={{display:"flex",justifyContent:"space-between"}}>
       <h2 style={{color:"black",width:"100%",paddingLeft:"10px",fontSize:"20px",cursor:"pointer"}} onClick={()=>{one()}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#f9a826" className="w-8 h-8 float-left mr-3">
@@ -15,6 +16,7 @@ export const Design = ({question,answer}) => {
 </svg>
 {question}</h2>
       <p style={{color:"black",paddingRight:"10px",paddingLeft:"30px"}}>{show?"-":"+"}</p>
+
       </div>
       {
         show && <p className='container px-6 mt-5 text-gray-600'>{answer}</p>
