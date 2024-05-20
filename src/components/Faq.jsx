@@ -17,15 +17,13 @@ export const Faq = () => {
     }}
     >
       <div
-        className="faq-card"
+        className="faq-card  shadow-xl"
         
       >
-        <h1
-          style={{ fontSize: "40px", marginBottom: "20px", fontWeight: "bold" }}
-        >
-          FAQs about tourism in India
-        </h1>
+          
+      <h1 className=' text-4xl text-[#f9a826]'>FAQ's about tourism in India</h1>
         {value.map((cur, index) => {
+
           return <Design key={index} {...cur}></Design>;
         })}
       </div>
