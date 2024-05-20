@@ -1,198 +1,93 @@
-import { React, useState, useEffect } from "react";
-import Data from "../../Data/Detailed.json";
-import { Link } from "react-router-dom";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import GoToTop from "./GoToTop";
+import React, { useState, useEffect } from 'react';
+import Places from './Places';
+import axios from "axios";
 
-const data = Data.destinations;
+const PEXELS_API_URL = 'https://api.pexels.com/v1/search';
+const PEXELS_API_KEY = 'Vk1TUd2JrCAb7Un9LggmZ2ATwAaU6UU1mjacRVjX8glSDXpqcbdJDKLX'; 
+const SEARCH_QUERY = 'Historic';
 
-const filterByState = (location) => {
-  return data.filter((place) => place.location.includes(location));
-};
-
-const filterByCategory = (category) => {
-  return data.filter((place) => place.category.includes(category));
-};
-
-const categories = [...new Set(data.map((item) => item.category))];
-console.log(categories);
-
-const places = [...new Set(data.map((item) => item.location))];
 
 const Explore = () => {
-  const [selectedState, setSelectedState] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("");
-  const [filteredPlaces, setFilteredPlaces] = useState([]);
+  const [selectedFilter, setSelectedFilter] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [images, setImages] = useState([]);
+
 
   useEffect(() => {
-    console.log("Use effect running with", selectedState, selectedCategory);
-    const places = data.filter(
-      (place) =>
-        (selectedState === "" || place.location.includes(selectedState)) &&
-        (selectedCategory === "" || place.category.includes(selectedCategory))
-    );
-    setFilteredPlaces(places);
-  }, [selectedState, selectedCategory]);
+    const fetchImages = async () => {
+      try {
+        const response = await axios.get(PEXELS_API_URL, {
+          headers: {
+            Authorization: PEXELS_API_KEY,
+          },
+          params: {
+            query: SEARCH_QUERY,
+            per_page: 10, // Number of images to fetch
+          },
+        });
+        const fetchedImages = response.data.photos.map((item) => item.src.landscape);
+        setImages(fetchedImages);
+      } catch (error) {
+        console.error('Error fetching images from Pexels:', error);
+      }
+    };
 
-  const handleStateChange = (e) => {
-    setSelectedState(e.target.value);
+    fetchImages();
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Change image every 5 seconds (adjust as needed)
+
+    return () => clearInterval(interval);
+  }, [images]);
+
+  const handleFilterChange = (event) => {
+    setSelectedFilter(event.target.value);
   };
 
-  const handleCategoryChange = (e) => {
-    setSelectedCategory(e.target.value);
-  };
+  const filteredPlaces = selectedFilter ? Places[selectedFilter] : [];
 
   return (
-    <section className="p-4 mt-20">
-      <h1 className="text-2xl font-bold mb-4">Explore More</h1>
-      <div className="flex flex-col md:flex-row gap-4">
-        <div className="flex flex-col mb-4">
-          <label
-            className="mb-2 font-bold text-lg text-gray-900"
-            htmlFor="placeSelect"
-          >
-            By Place
-          </label>
-          <select
-            onChange={handleStateChange}
-            className="px-3 py-2 text-gray-700 bg-white border border-gray-300 rounded shadow-inner"
-            name="By Place"
-            id="placeSelect"
-          >
-            <option value="">All</option>
-            <option value="Andhra Pradesh">Andhra Pradesh</option>
-            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-            <option value="Assam">Assam</option>
-            <option value="Bihar">Bihar</option>
-            <option value="Chhattisgarh">Chhattisgarh</option>
-            <option value="Goa">Goa</option>
-            <option value="Gujarat">Gujarat</option>
-            <option value="Haryana">Haryana</option>
-            <option value="Himachal Pradesh">Himachal Pradesh</option>
-            <option value="Jharkhand">Jharkhand</option>
-            <option value="Karnataka">Karnataka</option>
-            <option value="Kerala">Kerala</option>
-            <option value="Madhya Pradesh">Madhya Pradesh</option>
-            <option value="Maharashtra">Maharashtra</option>
-            <option value="Manipur">Manipur</option>
-            <option value="Meghalaya">Meghalaya</option>
-            <option value="Mizoram">Mizoram</option>
-            <option value="Nagaland">Nagaland</option>
-            <option value="Odisha">Odisha</option>
-            <option value="Punjab">Punjab</option>
-            <option value="Rajasthan">Rajasthan</option>
-            <option value="Sikkim">Sikkim</option>
-            <option value="Tamil Nadu">Tamil Nadu</option>
-            <option value="Telangana">Telangana</option>
-            <option value="Tripura">Tripura</option>
-            <option value="Uttar Pradesh">Uttar Pradesh</option>
-            <option value="Uttarakhand">Uttarakhand</option>
-            <option value="West Bengal">West Bengal</option>
-          </select>
-        </div>
-        <div className="flex flex-col mb-4">
-          <label
-            className="mb-2 font-bold text-lg text-gray-900"
-            htmlFor="categorySelect"
-          >
-            By Category
-          </label>
-          <select
-            onChange={handleCategoryChange}
-            className="px-3 py-2 text-gray-700 bg-white border border-gray-300 rounded shadow-inner"
-            name="By Category"
-            id="categorySelect"
-          >
-            <option value="">All</option>
-            <option value="Historical">Historical</option>
-            <option value="Beaches">Beaches</option>
-            <option value="Nature">Nature</option>
-            <option value="Spiritual">Spiritual</option>
-            <option value="City">City</option>
-            <option value="Adventure">Adventure</option>
-            <option value="Islands">Islands</option>
-            <option value="Heritage">Heritage</option>
-            <option value="Hill Station">Hill Station</option>
-            <option value="Metropolitan">Metropolitan</option>
-            <option value="Cultural and Culinary">Cultural and Culinary</option>
-            <option value="Spiritual and Beach">Spiritual and Beach</option>
-            <option value="Scenic Beauty and Lakes">
-              Scenic Beauty and Lakes
-            </option>
-            <option value="Hill Station and Tea Gardens">
-              Hill Station and Tea Gardens
-            </option>
-            <option value="Metropolitan and Cultural Hub">
-              Metropolitan and Cultural Hub
-            </option>
-          </select>
-        </div>
+    <section className="flex flex-col justify-center items-center h-screen mt-[500px] md:mt-8">
+      <div
+        className="absolute top-0 left-0 w-full h-full bg-cover bg-center opacity-70"
+        style={{ backgroundImage: `url(${images[currentIndex]})` }}
+      >
       </div>
-
-      <h2 className="text-lg font-bold mb-2">Popular Categories</h2>
-      <div className="flex flex-wrap gap-2">
-        {categories.map((category, index) => (
-          <button
-            value={category}
-            key={index}
-            className="px-4 py-2 bg-gray-200 rounded-md"
-            onClick={handleCategoryChange}
-          >
-            {category}
-          </button>
-        ))}
+      <div className="max-w-screen-lg w-full">
+        <h2 className="text-2xl text-center font-semibold mb-4 relative z-10">Explore</h2>
       </div>
-      <br />
-      <h2 className="text-lg font-bold mb-2 block">Popular Places</h2>
-      <div className="flex flex-wrap gap-2">
-        {places.map((place, index) => (
-          <button
-            value={place}
-            key={index}
-            className="px-4 py-2 bg-gray-200 rounded-md"
-            onClick={handleStateChange}
-          >
-            {place}
-          </button>
-        ))}
+      <div className="max-w-screen-lg w-full mb-4 relative z-10">
+        <select
+          value={selectedFilter}
+          onChange={handleFilterChange}
+          className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-300 rounded-md focus:border-blue-500 focus:outline-none focus:ring"
+        >
+          <option value="">Select Category</option>
+          <option value="Historical">Historical</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Calmer">Calmer</option>
+        </select>
       </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center">
+      <div className="max-w-screen-lg w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredPlaces.map((place, index) => (
-          <article
+          <div
             key={index}
-            className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform"
+            className="bg-white rounded-md shadow-md p-4 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105"
           >
             <img
-              src={place.image}
-              alt=""
-              className="absolute inset-0 h-full w-full object-cover"
+              src={place.img}
+              alt={place.title}
+              className="w-full h-48 object-cover rounded-md mb-4"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-            <h3 className="z-10 mt-3 text-4xl  font-bold text-white text-center">
-              {place.name}
-            </h3>
-            <div className="z-10 gap-y-1 pt-4 overflow-hidden text-center text-sm leading-6 text-gray-300">
-              {place.description}
-            </div>
-
-            <div className="z-10 mt-4 justify-center text-center items-center">
-              <Link to={`/detail/?id=${index}`} key={index}>
-                <button
-                  onClick={() => showdetail(index)}
-                  className="w-[80px] h-[30px]  border-2 rounded-xl text-[white] backdrop-blur  cursor-pointer text-[white]  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out transform
-              "
-                >
-                  Explore
-                </button>
-              </Link>
-            </div>
-          </article>
+            <h3 className="text-lg font-semibold mb-2">{place.title}</h3>
+            <p className="text-gray-600">{place.desc}</p>
+          </div>
         ))}
       </div>
-      <GoToTop/>
     </section>
-    
   );
 };
 
