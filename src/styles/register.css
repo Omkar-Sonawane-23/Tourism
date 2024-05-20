@@ -2,7 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
 }
 
 .register-box {
@@ -14,16 +16,15 @@
 
 .register-bg {
     width: 60%;
-    background-image: url('../assets/bg-register.jpg');
-    background-size: cover;
+    background-image: url('../assets/new.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .login-bg {
     width: 60%;
-    background-image: url('../assets/bg-login.jpg');
+    background-image: url('../assets/new1.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .register-input {
@@ -33,7 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #06697c, #02a9ca);
+    background: linear-gradient(45deg, #06697c, #10c2e5);
 }
 
 .login-input {
@@ -49,21 +50,27 @@
 .auth-google {
     width: 90%;
     margin-top: 20px;
-    border-radius: 8px;
-    border: 2px solid black;
-    font-size: 14px;
+    font-size: 24px;
     padding: 10px;
-    font-weight: 600;
-    line-height: 16px;
-    letter-spacing: 0em;
+    font-weight: 450;
     text-align: center;
-}
+} 
+.auth-google {
+    width: 90%;
+    margin-top: 20px;
+    font-size: 24px;
+    padding: 10px;
+    font-weight: 450;
+    text-align: center;
+} 
+ .r , .fp{
+    font-size: 15px;
+ }
 
-.auth-google:hover {
-    background: black;
-    color: white;
-}
-
+ .sir{
+   background: linear-gradient(45deg , rgb(0, 87, 168),aqua);
+ }
+   
 .sm-icon {
     width: 16px;
     height: 16px;
@@ -97,6 +104,10 @@
     width: 90%;
 }
 
+::placeholder{
+    color: white;
+}
+
 .auth-email {
     width: 100%;
     padding: 10px;
@@ -108,29 +119,21 @@
     line-height: 16px;
     letter-spacing: 0em;
 
-    &::placeholder {
-        color: rgba(147, 156, 163, 1);
+    /* &::placeholder {
+        color: rgb(62, 155, 221);
 
         font-size: 12px;
         font-weight: 400;
         line-height: 16px;
         letter-spacing: 0em;
         text-align: left;
-    }
+    } */
 }
 
 .eye-icon {
     position: absolute;
     right: 15rem;
-    top: 58.5%;
-    transform: translateY(-60%);
-    cursor: pointer;
-}
-
-.eye-icon-login {
-    position: absolute;
-    right: 15rem;
-    top: 51.5%;
+    top: 57.3%;
     transform: translateY(-60%);
     cursor: pointer;
 }
@@ -224,6 +227,8 @@
 }
 
 .registered {
+    text-align: center;
+    font-size: 18px;
     margin-top: 10px;
     font-size: small;
     color: black;

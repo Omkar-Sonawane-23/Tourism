@@ -46,7 +46,7 @@ const Home = () => {
                   Explore
                 </button>
               </Link>
-              <Link to="/home">
+              <Link to="/places">
                 <button
                   className="text-[25px] w-[10rem] h-[2.9rem] rounded-xl bg-[black] text-[white] hover:text-[green] duration-[0.4s]"
                   type="button"

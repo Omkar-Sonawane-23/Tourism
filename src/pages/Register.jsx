@@ -1,3 +1,4 @@
+
 import React, {useState} from 'react';
 import '../styles/register.css';
 import Google from '../assets/google.png';
@@ -56,8 +57,9 @@ const Register = () => {
             <div className='registered'>Already registered? <span style={{fontWeight: 'bold', cursor: 'pointer'}}><Link to='/login'>Login</Link></span></div>
             </div>
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Register
+export default Register;
