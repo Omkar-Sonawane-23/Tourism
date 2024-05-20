@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Loader from "./Loader";
-import Navbar from "../components/Navbar";
 import bg from "../assets/bg.jpg";
+import { useSelector } from 'react-redux';
 
 const Home = () => {
+  const theme = useSelector((state) => state.theme.theme);
+
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     // Simulate a data fetching process
@@ -22,7 +24,6 @@ const Home = () => {
   } else {
     return (
       <div>
-        <Navbar />
         <section className="mt-[5px]">
           <img
             src="https://img.freepik.com/premium-vector/mumbai-skyline-landscape-view-city-mumbai-with-characteristics-buildings-monuments_743272-109.jpg?w=4320"
@@ -59,7 +60,9 @@ const Home = () => {
         </section>
         <footer
           style={{
-            backgroundColor: "#f8f9fa",
+            backgroundColor: theme === "dark" ? "#1f2937" : "#f3f4f6",
+            color: theme === "dark" ? "#f3f4f6" : "#1f2937",
+
             padding: "20px",
             textAlign: "center",
             position: "absolute",

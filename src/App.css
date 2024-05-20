@@ -12,13 +12,13 @@
 }
 
 #loader {
-  margin-top: 32vh;
-  display: flex;
+  /* margin-top: 32vh; */
+  /* display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
   align-content: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 #fact{

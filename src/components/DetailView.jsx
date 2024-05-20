@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Details from "./Details";
 import Detailed from "../../Data/Detailed.json";
+import { useSelector } from "react-redux";
 
 const DetailView = () => {
   const [data, setData] = useState(null);
+  const theme = useSelector((state) => state.theme.theme);
 
   useEffect(() => {
     const id = extractIdFromPathname();
@@ -19,7 +21,12 @@ const DetailView = () => {
   }
 
   return (
-    <section className="flex flex-col mt-20 items-center justify-center w-full h-full">
+    <section className="flex flex-col pt-20 items-center justify-center w-full h-full"
+    style={{
+      backgroundColor: theme === "dark" ? "#1f2937" : "#f3f4f6",
+      color: theme === "dark" ? "#f3f4f6" : "#1f2937",
+    }}
+    >
       {data && (
         <div className="flex flex-col items-center  justify-center w-11/12 h-full">
           <img src={data.image} alt={data.title} />

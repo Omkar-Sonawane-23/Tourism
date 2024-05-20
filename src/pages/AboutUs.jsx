@@ -8,15 +8,20 @@ import explore from '../assets/explore.png'
 import explorehover from '../assets/explorehover.png'
 import season from '../assets/season.png'
 import seasonhover from '../assets/seasonhover.png'
+import { useSelector } from 'react-redux';
 
 const AboutUs = () => {
     const [exploreHover, setExploreHover] = useState(false);
     const [activityHover, setActivityHover] = useState(false);
     const [eventHover, setEventHover] = useState(false);
     const [seasonHover, setSeasonHover] = useState(false);
-
+    const theme = useSelector((state) => state.theme.theme);
   return (
-    <div id='about-us' style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
+    <div id='about-us' style={{display: 'flex', flexDirection: 'column', gap: '1rem',
+        backgroundColor: theme === "dark" ? "#1f2937" : "#f3f4f6",
+        color: theme === "dark" ? "#f3f4f6" : "#1f2937",
+    }}
+    >
     <h1 className='about-us-heading'>About Us</h1>
     <div className='about-us-block'>
         <div className='about-us-community' onMouseOver={()=>setExploreHover(true)} onMouseLeave={()=>setExploreHover(false)}>
