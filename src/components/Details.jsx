@@ -16,7 +16,6 @@ const Details = () => {
 
   const eventDetails = isValidId ? data[id].happeningEvents : [];
   const travelTips = isValidId ? data[id].travelTips : [];
-
   return (
     <div className="pt-20 flex flex-col items-center">
       <h1 className="text-3xl sm:text-4xl mb-8 text-center font-bold text-gray-800">
@@ -67,7 +66,8 @@ const Details = () => {
               </div>
             ))}
           </div>
-          <div className="border border-gray-200 hover:shadow-xl rounded-lg w-full sm:w-3/4 md:w-1/2 lg:w-1/3 mt-8 p-6 shadow-lg">
+          <div className="w-full flex justify-center items-center">
+          <div className="border border-gray-200 hover:shadow-xl rounded-lg w-1/2 mt-8 p-6 shadow-lg">
             <h1 className="text-3xl text-gray-800 font-bold mb-4 text-center">
               Travel Tips:
             </h1>
@@ -83,6 +83,7 @@ const Details = () => {
                 </li>
               ))}
             </ul>
+          </div>
           </div>
         </div>
       </section>
