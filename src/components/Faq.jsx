@@ -9,7 +9,9 @@ export const Faq = () => {
   const[value,setValue]=useState(questions);
   return (
     <div className="faq-card shadow-xl">
-      <h1 className=' text-4xl text-[#f9a826]'>FAQ's about tourism in India</h1>
+
+      <h1 className="text-4xl text-[#f9a826] mb-5">FAQ's about tourism in India</h1>
+
       {
         value.map((cur,index)=>{
           return <Design key={index} {...cur}></Design>;

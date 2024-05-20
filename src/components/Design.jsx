@@ -8,14 +8,18 @@ export const Design = ({question,answer}) => {
     setShow(!show);
   }
   return (
-    <div  className="card mt-5">
-      <div class="topic" style={{display:"flex",justifyContent:"space-between",cursor:"pointer"}} >
-      <h2>{question}</h2>
-      <div onClick={()=>{one()}}>
-      <p style={{color:"black",paddingRight:"10px",paddingLeft:"30px"}}>{show?"-":"+"}</p></div>
+
+    <div className="card mt-5 shadow-lg px-5 py-5">
+      <div class="topic " style={{display:"flex",justifyContent:"space-between"}}>
+      <h2 style={{color:"black",width:"100%",paddingLeft:"10px",fontSize:"20px",cursor:"pointer"}} onClick={()=>{one()}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#f9a826" className="w-8 h-8 float-left mr-3">
+  <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 0 1-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 0 1-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 0 1-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584ZM12 18a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clipRule="evenodd" />
+</svg>
+{question}</h2>
+      <p style={{color:"black",paddingRight:"10px",paddingLeft:"30px"}}>{show?"-":"+"}</p>
+
       </div>
       {
-        show && <p style={{color:"black",background:"white",border:"1px solid black",padding:"20px"}}>{answer}</p>
+        show && <p className='container px-6 mt-5 text-gray-600'>{answer}</p>
       }
       
     </div>
