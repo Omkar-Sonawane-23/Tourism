@@ -35,12 +35,12 @@ const Explore = () => {
 
   const handleStateChange = (e) => {
     setSelectedState(e.target.value);
-    setButtonColor('yellow');
+    setButtonColor("yellow");
   };
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);
-    setButtonColor('yellow');
+    setButtonColor("yellow");
   };
 
   return (
@@ -99,9 +99,9 @@ const Explore = () => {
             key={index}
             className={`px-4 py-2 ${
               selectedCategory === category
-                ? "bg-yellow-200 text-gray-900"
+                ? "bg-emerald-500 text-white"
                 : "bg-gray-200 text-gray-700"
-            } rounded-md hover:bg-yellow-300`}
+            } rounded-md hover:bg-emerald-300`}
             onClick={handleCategoryChange}
           >
             {category}
@@ -117,9 +117,9 @@ const Explore = () => {
             key={index}
             className={`px-4 py-2 ${
               selectedState === place
-                ? "bg-yellow-200 text-gray-900"
+                ? "bg-emerald-500 text-white"
                 : "bg-gray-200 text-gray-700"
-            } rounded-md hover:bg-yellow-300`}
+            } rounded-md hover:bg-emerald-300`}
             onClick={handleStateChange}
           >
             {place}
@@ -148,9 +148,7 @@ const Explore = () => {
 
             <div className="z-10 mt-4 justify-center text-center items-center">
               <Link to={`/detail/?id=${index}`} key={index}>
-                <button
-                  className="w-[80px] h-[30px] border-2 rounded-xl text-white backdrop-blur cursor-pointer duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition ease-in-out transform"
-                >
+                <button className="w-[80px] h-[30px] border-2 rounded-xl text-white backdrop-blur cursor-pointer duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition ease-in-out transform">
                   Explore
                 </button>
               </Link>
