@@ -16,68 +16,57 @@ const Register = () => {
   };
 
   return (
-    <div
-      className="h-full w-full justify-center items-center"
-      style={{
-        backgroundColor: theme === "dark" ? "#1f2937" : "#f3f4f6",
-        color: theme === "dark" ? "#f3f4f6" : "#1f2937",
-        display: "flow-root",
-      }}
-    >
-      <div className="register">
-        <div className="register-box">
-          <div className="register-bg"></div>
-          <div className="register-input text-white">
-            <div className="auth-google">
-              <h1 className="text-black">Register with Google</h1>
-            </div>
-            <div className="form-auth p-2">
-              <form action="">
-                <div className="mt-3">
-                  <label className="text-lg font-medium">Username</label>
-                  <input
-                    className="w-full border text-black border-white rounded-xl p-2.5 mt-1"
-                    placeholder="Enter your username"
-                    type="username"
-                  />
-                </div>
-                <div className="mt-4">
-                  <label className="text-lg font-medium">Email</label>
-                  <input
-                    className="w-full border text-black border-white rounded-xl p-2.5 mt-1"
-                    placeholder="Enter your email"
-                    type="email"
-                  />
-                </div>
-                <div className="mt-4">
-                  <label className="text-lg font-medium">Password</label>
-                  <input
-                    className="w-full border text-black border-white rounded-xl p-2.5 mt-1"
-                    placeholder="Enter your password"
-                    type={passwordVisible ? "text" : "password"}
-                    onClick={togglePasswordVisibility}
-                  />
-                  <i
-                    className="eye-icon text-white"
-                    onClick={togglePasswordVisibility}
-                  >
-                    <img src={passwordVisible ? show : eye} alt="" />
-                  </i>
-                </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <div className="flex items-center">
-                      <input type="checkbox" id="remember" />
-                      <label
-                        className="ml-2 text-base text-black r"
-                        htmlFor="remember"
-                      >
-                        Remember me
-                      </label>
-                    </div>
-                    <button className="text-base text-black fp">
-                      Forget password
-                    </button>
+    <div className="register">
+      <div className="register-box">
+        <div className="register-bg"></div>
+        <div className="register-input text-white">
+          <div className="auth-google">
+            <h1 className="text-black">Register with Google</h1>
+          </div>
+          <div className="form-auth p-2">
+            <form action="">
+              <div className="mt-3">
+                <label className="text-lg font-medium">Username</label>
+                <input
+                  className= " text-black/80 w-full border border-white rounded-xl p-2.5 mt-1"
+                  placeholder="Enter your username"
+                  type="username"
+                />
+              </div>
+              <div className="mt-4">
+                <label className="text-lg font-medium">Email</label>
+                <input
+                  className="text-black/80 w-full border border-white rounded-xl p-2.5 mt-1"
+                  placeholder="Enter your email"
+                  type="email"
+                />
+              </div>
+              <div className="mt-4">
+                <label className="text-lg font-medium">Password</label>
+                <input
+                  className="text-black/80 w-full border border-white rounded-xl p-2.5 mt-1"
+                  placeholder="Enter your password"
+                  type={passwordVisible ? "text" : "password"}
+                  
+                />
+                <i
+                  className="eye-icon text-white"
+                  onClick={togglePasswordVisibility}
+                >
+                  <img src={passwordVisible ? show : eye} alt="" />
+                </i>
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <div className="flex items-center">
+                    <input type="checkbox" id="remember" />
+                    <label
+                      className="ml-2 text-base text-black r"
+                      htmlFor="remember"
+                    >
+                      Remember me
+                    </label>
+
                   </div>
                 </div>
                 <div className="mt-8 flex flex-col gap-y-4">

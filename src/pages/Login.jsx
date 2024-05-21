@@ -17,61 +17,47 @@ const Login = () => {
   };
 
   return (
-    <div
-    
-    className="h-full w-full justify-center items-center"
-    style={{
-      backgroundColor: theme === "dark" ? "#1f2937" : "#f3f4f6",
-      color: theme === "dark" ? "#f3f4f6" : "#1f2937",
-      display:'flow-root'
-      
-    }}
-    >
-      <div
-      className="register"
-      >
-        <div className="register-box">
-          <div className="login-bg"></div>
-          <div className="login-input">
-            <div className="auth-google">
-              <h1>Login Form</h1>
-            </div>
-            <div className="form-auth">
-              <form action="">
-                <div>
-                  <label className="text-lg font-medium">Email</label>
-                  <input
-                    className="w-full border border-black rounded-xl p-3 mt-1 bg-transparent"
-                    placeholder="Enter your email"
-                    type={passwordVisible ? "text" : "password"}
-                    onClick={togglePasswordVisibility}
-                  />
-                </div>
-                <div className="mt-4 p">
-                  <label className="text-lg font-medium">Password</label>
-                  <input
-                    className="w-full border border-black rounded-xl p-3 mt-1 bg-transparent"
-                    placeholder="Enter your password"
-                    type="password"
-                  />
-                  <i
-                    className="eye-icon-login text-white"
-                    onClick={togglePasswordVisibility}
-                  >
-                    <img src={passwordVisible ? show : eye} alt="" />
-                  </i>
-                </div>
-                <div className="mt-8">
-                  <div className="flex justify-between items-center">
-                    <div className="flex items-center">
-                      <input type="checkbox" id="remember" />
-                      <label className="ml-2 text-base r" htmlFor="remember">
-                        Remember me
-                      </label>
-                    </div>
-                    <button className="text-base text-black fp">
-                      Forget password
-                    </button>
+
+    <div className="register">
+      <div className="register-box">
+        <div className="login-bg"></div>
+        <div className="login-input">
+          <div className="auth-google">
+            <h1>Login Form</h1>
+          </div>
+          <div className="form-auth">
+            <form action="">
+              <div>
+                <label className="text-lg font-medium">Email</label>
+                <input
+                  className="w-full border border-black rounded-xl p-3 mt-1 bg-transparent"
+                  placeholder="Enter your email"
+                  type= "text"
+                  
+                />
+              </div>
+              <div className="mt-4 p">
+                <label className="text-lg font-medium">Password</label>
+                <input
+                  className="w-full border border-black rounded-xl p-3 mt-1 bg-transparent"
+                  placeholder="Enter your password"
+                  type={passwordVisible ? "text" : "password"}
+                />
+                <i
+                  className="eye-icon-login text-white"
+                  onClick={togglePasswordVisibility}
+                >
+                  <img src={passwordVisible ? show : eye} alt="" />
+                </i>
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <div className="flex items-center">
+                    <input type="checkbox" id="remember" />
+                    <label className="ml-2 text-base r" htmlFor="remember">
+                      Remember me
+                    </label>
+
                   </div>
                 </div>
                 <div className="mt-8 flex flex-col gap-y-4">

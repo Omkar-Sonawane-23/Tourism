@@ -37,6 +37,7 @@ export const Design = ({ question, answer }) => {
             {show ? "-" : "+"}
           </p>
         </div>
+
       </div>
       {show && (
         <p
