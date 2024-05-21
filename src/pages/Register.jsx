@@ -40,20 +40,22 @@ const Register = () => {
                 />
               </div>
               <div className="mt-4">
-                <label className="text-lg font-medium">Password</label>
-                <input
-                  className="text-black/80 w-full border border-white rounded-xl p-2.5 mt-1"
-                  placeholder="Enter your password"
-                  type={passwordVisible ? "text" : "password"}
-                  
-                />
-                <i
-                  className="eye-icon text-white"
-                  onClick={togglePasswordVisibility}
-                >
-                  <img src={passwordVisible ? show : eye} alt="" />
-                </i>
-              </div>
+              <label className="text-lg font-medium">Password</label>
+                  <div className="relative flex items-center mt-1">
+                    <input
+                      className="text-black/80 w-full border border-white rounded-xl p-2.5 pr-10"  
+                      placeholder="Enter your password"
+                      type={passwordVisible ? "text" : "password"}
+                    />
+                    <i
+                      className="absolute right-3 cursor-pointer"
+                      onClick={togglePasswordVisibility}
+                    >
+                      <img src={passwordVisible ? show : eye} alt="Toggle visibility" />
+                    </i>
+                  </div>
+            </div>
+
               <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <div className="flex items-center">
