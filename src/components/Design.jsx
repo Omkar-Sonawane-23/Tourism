@@ -10,7 +10,7 @@ export const Design = ({question,answer}) => {
   return (
     <div  className="card mt-5">
       <div class="topic" style={{display:"flex",justifyContent:"space-between",cursor:"pointer"}} >
-      <h2>{question}</h2>
+      <h2 onClick={()=>{one()}}>{question} </h2>
       <div onClick={()=>{one()}}>
       <p style={{color:"black",paddingRight:"10px",paddingLeft:"30px"}}>{show?"-":"+"}</p></div>
       </div>
