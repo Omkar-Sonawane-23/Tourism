@@ -26,7 +26,7 @@ const Register = () => {
               <div className="mt-3">
                 <label className="text-lg font-medium">Username</label>
                 <input
-                  className="w-full border border-white rounded-xl p-2.5 mt-1"
+                  className= " text-black/80 w-full border border-white rounded-xl p-2.5 mt-1"
                   placeholder="Enter your username"
                   type="username"
                 />
@@ -34,7 +34,7 @@ const Register = () => {
               <div className="mt-4">
                 <label className="text-lg font-medium">Email</label>
                 <input
-                  className="w-full border border-white rounded-xl p-2.5 mt-1"
+                  className="text-black/80 w-full border border-white rounded-xl p-2.5 mt-1"
                   placeholder="Enter your email"
                   type="email"
                 />
@@ -42,10 +42,10 @@ const Register = () => {
               <div className="mt-4">
                 <label className="text-lg font-medium">Password</label>
                 <input
-                  className="w-full border border-white rounded-xl p-2.5 mt-1"
+                  className="text-black/80 w-full border border-white rounded-xl p-2.5 mt-1"
                   placeholder="Enter your password"
                   type={passwordVisible ? "text" : "password"}
-                  onClick={togglePasswordVisibility}
+                  
                 />
                 <i
                   className="eye-icon text-white"

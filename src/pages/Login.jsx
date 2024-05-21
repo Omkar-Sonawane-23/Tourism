@@ -29,8 +29,8 @@ const Login = () => {
                 <input
                   className="w-full border border-black rounded-xl p-3 mt-1 bg-transparent"
                   placeholder="Enter your email"
-                  type={passwordVisible ? "text" : "password"}
-                  onClick={togglePasswordVisibility}
+                  type= "text"
+                  
                 />
               </div>
               <div className="mt-4 p">
@@ -38,7 +38,7 @@ const Login = () => {
                 <input
                   className="w-full border border-black rounded-xl p-3 mt-1 bg-transparent"
                   placeholder="Enter your password"
-                  type="password"
+                  type={passwordVisible ? "text" : "password"}
                 />
                 <i
                   className="eye-icon-login text-white"
