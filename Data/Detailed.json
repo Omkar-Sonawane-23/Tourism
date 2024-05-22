@@ -22,18 +22,23 @@
         "Respect local customs.",
         "Try Mughlai cuisine."
       ],
+      "id": 0,
       "happeningEvents": [
         {
           "eventName": "Taj Mahotsav",
           "date": "February",
           "description": "A 10-day cultural festival showcasing arts, crafts, music, dance, and cuisine.",
-          "image": "https://www.tourmyindia.com/states/uttarpradesh/images/taj-mahotsav.jpg"
+          "image": "https://www.tourmyindia.com/states/uttarpradesh/images/taj-mahotsav.jpg",
+          "exploreLink": "http://www.tajmahotsav.org/" 
+        
         },
         {
           "eventName": "Diwali Celebrations",
           "date": "October/November",
           "description": "Diwali, the Festival of Lights, is celebrated with fireworks and cultural performances.",
-          "image": "https://resize.indiatvnews.com/en/resize/oldbucket/730_-/mainnational/IndiaTv7e48b1_Taj.jpg"
+          "image": "https://resize.indiatvnews.com/en/resize/oldbucket/730_-/mainnational/IndiaTv7e48b1_Taj.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Diwali"
+        
         }
       ],
       "famousFood": [
@@ -70,18 +75,21 @@
         "Bebinca",
         "Sorpotel"
       ],
+      "id":1,
       "happeningEvents": [
         {
           "eventName": "Sunburn Festival",
           "date": "December",
           "description": "One of Asia's biggest electronic dance music festivals held on the beaches of Goa.",
-          "image": "https://d12ld5anqxokoc.cloudfront.net/wp-content/uploads/2019/06/21120932/49761376_10156389879964608_2023743621567610880_o.jpg"
+          "image": "https://d12ld5anqxokoc.cloudfront.net/wp-content/uploads/2019/06/21120932/49761376_10156389879964608_2023743621567610880_o.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Sunburn_Festival"
         },
         {
           "eventName": "Carnival",
           "date": "February/March",
           "description": "A lively, colorful event featuring parades, music, and dancing.",
-          "image": "https://www.desicomments.com/wp-content/uploads/2017/01/Local-Men-Performing-Tradtional-Godemodni-Dance-Of-Goa-Carnival.jpg"
+          "image": "https://www.desicomments.com/wp-content/uploads/2017/01/Local-Men-Performing-Tradtional-Godemodni-Dance-Of-Goa-Carnival.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Carnival"
         }
       ]
       
@@ -109,18 +117,21 @@
         "Attend local temple festivals.",
         "Carry Mosquito Repellent"
       ],
+      "id":2,
       "happeningEvents": [
         {
           "eventName": "Nehru Trophy Boat Race",
           "date": "August",
           "description": "An annual snake boat race held in the Punnamada Lake in Alleppey.",
-          "image": "https://images.indulgexpress.com/uploads/user/imagelibrary/2020/8/7/original/Aranmula-boat_race-_Kerala-India-1.jpg"
+          "image": "https://images.indulgexpress.com/uploads/user/imagelibrary/2020/8/7/original/Aranmula-boat_race-_Kerala-India-1.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Nehru_Trophy_Boat_Race"
         },
         {
           "eventName": "Thrissur Pooram",
           "date": "April/May",
           "description": "A grand temple festival featuring a colorful procession of elephants and traditional music.",
-          "image": "https://i1.wp.com/pinklungi.com/wp-content/uploads/2019/05/untitled-design-1-1.png?resize=1068%2C712&ssl=1"
+          "image": "https://i1.wp.com/pinklungi.com/wp-content/uploads/2019/05/untitled-design-1-1.png?resize=1068%2C712&ssl=1",
+          "exploreLink": "https://en.wikipedia.org/wiki/Thrissur_Pooram"
         }
       ],
       "famousFood": [
@@ -152,18 +163,21 @@
         "Participate in yoga sessions.",
         "Explore narrow alleys for hidden temples."
       ],
+      "id":3,
       "happeningEvents": [
         {
           "eventName": "Mahashivaratri",
           "date": "February/March",
           "description": "A major Hindu festival dedicated to Lord Shiva, celebrated with fasting and night-long vigils.",
-          "image": "https://th.bing.com/th/id/OIP.Rrt8yXyWJfRYxtsTnz0zMAHaFj?pid=ImgDet&rs=1"
+          "image": "https://th.bing.com/th/id/OIP.Rrt8yXyWJfRYxtsTnz0zMAHaFj?pid=ImgDet&rs=1",
+          "exploreLink": "https://en.wikipedia.org/wiki/Maha_Shivaratri"
         },
         {
           "eventName": "Dev Deepawali",
           "date": "November",
           "description": "The 'Festival of Lights of the Gods,' celebrated with illuminated ghats and cultural performances.",
-          "image": "https://www.filmingindo.com/wp-content/uploads/2018/04/dev-dipawali-varanasi.jpeg"
+          "image": "https://www.filmingindo.com/wp-content/uploads/2018/04/dev-dipawali-varanasi.jpeg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Dev_Deepavali_(Varanasi)"
         }
       ],
       "famousFood": [
@@ -190,18 +204,21 @@
         "Attend traditional dance performances.",
         "Visit during Jaipur Literature Festival."
       ],
+      "id":4,
       "happeningEvents": [
         {
           "eventName": "Jaipur Literature Festival",
           "date": "January",
           "description": "The world's largest free literary festival featuring renowned authors, thinkers, and cultural performances.",
-          "image": "https://cdn.lifestyleasia.com/wp-content/uploads/sites/7/2020/01/17185718/JLF-1820x910-1.jpg"
+          "image": "https://cdn.lifestyleasia.com/wp-content/uploads/sites/7/2020/01/17185718/JLF-1820x910-1.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Jaipur_Literature_Festival"
         },
         {
           "eventName": "Gangaur Festival",
           "date": "March/April",
           "description": "A colorful and important festival dedicated to Goddess Gauri, marked by processions and cultural events.",
-          "image": "https://www.pinkpedia.com/wp-content/uploads/2020/04/gangaur4-2048x1365.jpg"
+          "image": "https://www.pinkpedia.com/wp-content/uploads/2020/04/gangaur4-2048x1365.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Gangaur"
         }
       ],
       "famousFood": [
@@ -232,18 +249,21 @@
         "Explore local cafes.",
         "Attend yoga retreats."
       ],
+      "id":5,
       "happeningEvents": [
         {
           "eventName": "International Yoga Festival",
           "date": "March",
           "description": "A week-long festival attracting yogis and spiritual leaders from around the world.",
-          "image": "https://www.internationalyogafestival.org/assets/images/international-yoga-festival-rishikesh.jpg"
+          "image": "https://www.internationalyogafestival.org/assets/images/international-yoga-festival-rishikesh.jpg",
+          "exploreLink": "https://internationalyogafestival.org/"
         },
         {
           "eventName": "Ganga Dussehra",
           "date": "May/June",
           "description": "A festival celebrating the descent of the Ganges to Earth, marked by religious ceremonies and rituals.",
-          "image": "https://www.tourmyindia.com/states/uttarpradesh/images/ganga-dussehra-1.jpg"
+          "image": "https://www.tourmyindia.com/states/uttarpradesh/images/ganga-dussehra-1.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Ganga_Dussehra"
         }
       ],
       "famousFood": [
@@ -270,18 +290,21 @@
         "Explore local seafood cuisine.",
         "Enjoy water activities."
       ],
+      "id":6,
       "happeningEvents": [
         {
           "eventName": "Island Tourism Festival",
           "date": "December/January",
           "description": "A celebration showcasing the cultural diversity of the Andaman and Nicobar Islands.",
-          "image": "https://www.andamantourism.gov.in/images/slider_images/itf-pic2.jpg"
+          "image": "https://www.andamantourism.gov.in/images/slider_images/itf-pic2.jpg",
+          "exploreLink": "https://www.utsav.gov.in/view-event/island-tourism-festival-1"
         },
         {
           "eventName": "Subhash Mela",
           "date": "January",
           "description": "A festival commemorating the birth anniversary of Netaji Subhas Chandra Bose, with cultural programs and exhibitions.",
-          "image": "https://www.andamantourism.gov.in/images/slider_images/subhas-mela-pic1.jpg"
+          "image": "https://www.andamantourism.gov.in/images/slider_images/subhas-mela-pic1.jpg",
+          "exploreLink": "https://tripmeandaman.com/tag/subhash-mela/"
         }
       ],
       "famousFood": [
@@ -308,18 +331,21 @@
         "Shop for local handicrafts.",
         "Experience the royal hospitality."
       ],
+      "id":7,
       "happeningEvents": [
         {
           "eventName": "Mewar Festival",
           "date": "March/April",
           "description": "A festival celebrating the arrival of spring with cultural events, processions, and performances.",
-          "image": "https://www.rajasthantourplanner.com/blog/wp-content/uploads/2016/03/Mewar-Festival-Udaipur-Rajasthan.jpg"
+          "image": "https://www.rajasthantourplanner.com/blog/wp-content/uploads/2016/03/Mewar-Festival-Udaipur-Rajasthan.jpg",
+          "exploreLink": "https://utsav.gov.in/view-event/mewar-festival#:~:text=charm%20in%20Udaipur.-,It%20is%20celebrated%20as%20the%20Mewar%20Festival%20in%20the%20month,and%20dressed%20in%20colourful%20attires."
         },
         {
           "eventName": "Diwali Celebrations",
           "date": "October/November",
           "description": "Diwali festivities with illuminated palaces, cultural performances, and fireworks.",
-          "image": "https://www.holidify.com/images/cmsuploads/compressed/Udaipur_City_Palace_Flickr_Tyler_Dunlavy_20191118192934.jpg"
+          "image": "https://www.holidify.com/images/cmsuploads/compressed/Udaipur_City_Palace_Flickr_Tyler_Dunlavy_20191118192934.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Diwali"
         }
       ],
       "famousFood": [
@@ -346,18 +372,21 @@
         "Savor Darjeeling tea.",
         "Explore the vibrant local markets."
       ],
+      "id":8,
       "happeningEvents": [
         {
           "eventName": "Darjeeling Carnival",
           "date": "December",
           "description": "A winter carnival featuring cultural events, parades, and local performances.",
-          "image": "https://www.india.com/wp-content/uploads/2016/12/Darjeeling-Carnival.jpg"
+          "image": "https://www.india.com/wp-content/uploads/2016/12/Darjeeling-Carnival.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Darjeeling_Carnival"
         },
         {
           "eventName": "Losar Festival",
           "date": "February",
           "description": "Tibetan New Year celebrations with traditional dances, rituals, and cultural programs.",
-          "image": "https://www.nativeplanet.com/img/2020/02/darjeeling-1582531461.jpg"
+          "image": "https://www.nativeplanet.com/img/2020/02/darjeeling-1582531461.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Losar"
         }
       ],
       "famousFood": [
@@ -388,18 +417,21 @@
         "Engage a local guide for a better understanding of the historical significance.",
         "Respect the cultural and religious sites."
       ],
+      "id":9,
       "happeningEvents": [
         {
           "eventName": "Ellora Ajanta Festival",
           "date": "November",
           "description": "A cultural festival featuring classical music and dance performances, celebrating the artistic heritage of the region.",
-          "image": "https://www.maharashtratourism.gov.in/sites/default/files/2021-08/Ellora_Ajanta_Festival.jpg"
+          "image": "https://www.maharashtratourism.gov.in/sites/default/files/2021-08/Ellora_Ajanta_Festival.jpg",
+          "exploreLink": "https://utsav.gov.in/view-event/ellora-ajanta-dance-festival"
         },
         {
           "eventName": "Ganesh Chaturthi",
           "date": "August/September",
           "description": "The vibrant and grand celebration of Lord Ganesha's festival with processions, music, and decorations.",
-          "image": "https://images.indianexpress.com/2021/09/ganesh-chaturthi-2021.jpg"
+          "image": "https://images.indianexpress.com/2021/09/ganesh-chaturthi-2021.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Ganesh_Chaturthi"
         }
       ],
       "famousFood": [
@@ -432,18 +464,21 @@
         "Try vada pav and pav bhaji, Mumbai's famous street food.",
         "Visit the Elephanta Caves for a historical excursion."
       ],
+      "id":10,
       "happeningEvents": [
         {
           "eventName": "Kala Ghoda Arts Festival",
           "date": "February",
           "description": "A nine-day-long celebration of arts, crafts, music, dance, and theatre, transforming the Kala Ghoda area into a cultural hub.",
-          "image": "https://www.kalaghodaassociation.com/images/overview/kala_ghoda_festival_og.jpg"
+          "image": "https://www.kalaghodaassociation.com/images/overview/kala_ghoda_festival_og.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Kala_Ghoda_Arts_Festival"
         },
         {
           "eventName": "Ganesh Visarjan",
           "date": "August/September",
           "description": "The grand procession and immersion of Lord Ganesha idols in the Arabian Sea, marking the end of Ganesh Chaturthi festival.",
-          "image": "https://static.toiimg.com/photo/msid-70507601/70507601.jpg"
+          "image": "https://static.toiimg.com/photo/msid-70507601/70507601.jpg",
+          "exploreLink": "https://en.wikipedia.org/?title=Ganesh_Visarjan&redirect=no"
         }
       ],
       "famousFood": [
@@ -476,18 +511,21 @@
         "Try sweets like Rasgulla and Sandesh.",
         "Explore the city's literary heritage at College Street."
       ],
+      "id":11,
       "happeningEvents": [
         {
           "eventName": "Durga Puja",
           "date": "October",
           "description": "The grand celebration of Goddess Durga with artistic pandals, cultural performances, and religious rituals.",
-          "image": "https://images.indianexpress.com/2020/10/Durga-Puja-Pandal-1.jpg"
+          "image": "https://images.indianexpress.com/2020/10/Durga-Puja-Pandal-1.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Durga_Puja"
         },
         {
           "eventName": "Kolkata International Film Festival",
           "date": "November",
           "description": "A prestigious film festival showcasing acclaimed movies and hosting renowned filmmakers from across the globe.",
-          "image": "https://1.bp.blogspot.com/-BvIaYpBKw0Y/Xc6mST_g7vI/AAAAAAAABE0/D5bJ50KHq_AgYZ3GSYcr4qM2z6_ZTnZrwCEwYBhgL/s1600/Kolkata%2BInternational%2BFilm%2BFestival.jpg"
+          "image": "https://1.bp.blogspot.com/-BvIaYpBKw0Y/Xc6mST_g7vI/AAAAAAAABE0/D5bJ50KHq_AgYZ3GSYcr4qM2z6_ZTnZrwCEwYBhgL/s1600/Kolkata%2BInternational%2BFilm%2BFestival.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Kolkata_International_Film_Festival"
         }
       ],
       "famousFood": [
@@ -519,18 +557,21 @@
         "Taste the local Odia cuisine.",
         "Enjoy sunrise and sunset at Puri Beach."
       ],
+      "id":12,
       "happeningEvents": [
         {
           "eventName": "Rath Yatra",
           "date": "June/July",
           "description": "The grand chariot festival of Lord Jagannath, Balabhadra, and Subhadra, where deities are taken on a procession in elaborately decorated chariots.",
-          "image": "https://www.tripsavvy.com/thmb/gxb4ReU6uE9EnTNK2JEEwvrrAFQ=/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/Puri-0cc539eef1c647f8a5b1b481877f25aa.jpg"
+          "image": "https://www.tripsavvy.com/thmb/gxb4ReU6uE9EnTNK2JEEwvrrAFQ=/1500x1000/filters:no_upscale():max_bytes(150000):strip_icc()/Puri-0cc539eef1c647f8a5b1b481877f25aa.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Ratha_Yatra"
         },
         {
           "eventName": "Konark Dance Festival",
           "date": "December",
           "description": "A celebration of classical dance forms against the backdrop of the magnificent Sun Temple, showcasing India's rich cultural heritage.",
-          "image": "https://odishatourguide.com/wp-content/uploads/2019/08/Konark-Dance-Festival-2021-5.jpg"
+          "image": "https://odishatourguide.com/wp-content/uploads/2019/08/Konark-Dance-Festival-2021-5.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Konark_Dance_Festival"
         }
       ],
       "famousFood": [
@@ -559,18 +600,21 @@
         "Try local Himachali cuisine like Sidu and Babru.",
         "Enjoy the panoramic views from Scandal Point."
       ],
+      "id":13,
       "happeningEvents": [
         {
           "eventName": "Summer Festival",
           "date": "May/June",
           "description": "A colorful festival showcasing folk music, dance performances, local handicrafts, and flower exhibitions.",
-          "image": "https://himachaltourism.gov.in/wp-content/uploads/2018/09/Summer-Festival-Shimla.jpg"
+          "image": "https://himachaltourism.gov.in/wp-content/uploads/2018/09/Summer-Festival-Shimla.jpg",
+          "exploreLink": "https://utsav.gov.in/view-event/summer-festival-1"
         },
         {
           "eventName": "Ice Skating Carnival",
           "date": "December/January",
           "description": "One of the oldest ice skating carnivals in Asia, held at the natural ice rink in Shimla.",
-          "image": "https://i.ytimg.com/vi/31E4eY-1pQc/maxresdefault.jpg"
+          "image": "https://i.ytimg.com/vi/31E4eY-1pQc/maxresdefault.jpg",
+          "exploreLink": "https://utsav.gov.in/view-event/ice-skating-carnival"
         }
       ],
       "famousFood": [
@@ -598,18 +642,21 @@
         "Taste traditional Kashmiri Wazwan cuisine.",
         "Buy Pashmina shawls and local spices as souvenirs."
       ],
+      "id":14,
       "happeningEvents": [
         {
           "eventName": "Tulip Festival",
           "date": "April",
           "description": "A vibrant festival held in Indira Gandhi Memorial Tulip Garden, showcasing a wide variety of tulips in full bloom.",
-          "image": "https://www.kashmirhills.com/wp-content/uploads/2017/04/tulip-garden-srinagar.jpg"
+          "image": "https://www.kashmirhills.com/wp-content/uploads/2017/04/tulip-garden-srinagar.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Tulip_festival"
         },
         {
           "eventName": "Shikara Festival",
           "date": "June",
           "description": "A celebration of the traditional Shikara boats with cultural events, handicraft displays, and boat races on Dal Lake.",
-          "image": "https://www.tourmyindia.com/jammu-kashmir/uploads/2016/08/Srinagar-Shikara-Festival.jpg"
+          "image": "https://www.tourmyindia.com/jammu-kashmir/uploads/2016/08/Srinagar-Shikara-Festival.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Shikara"
         }
       ],
       "famousFood": [
@@ -641,18 +688,21 @@
         "Taste freshly brewed tea at local tea factories.",
         "Enjoy the panoramic views from Top Station."
       ],
+      "id":15,
       "happeningEvents": [
         {
           "eventName": "Neelakurinji Bloom",
           "date": "Once in 12 years (next in 2030)",
           "description": "A rare natural phenomenon where the Neelakurinji flowers bloom, covering the hills in vibrant shades of blue and purple.",
-          "image": "https://www.keralatourism.org/images/neelakurinji-kerala-tourism.jpg"
+          "image": "https://www.keralatourism.org/images/neelakurinji-kerala-tourism.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Strobilanthes_kunthiana"
         },
         {
           "eventName": "Munnar Flower Show",
           "date": "April",
           "description": "A colorful event showcasing a variety of flowers, including rare orchids and blooming hybrids, attracting nature enthusiasts and gardeners.",
-          "image": "https://www.keralatourism.org/images/flower-show-munnar.jpg"
+          "image": "https://www.keralatourism.org/images/flower-show-munnar.jpg",
+          "exploreLink": "https://www.keralatourism.org/newsletter/news/2022/munnar-flower-show/2074#:~:text=Come%20to%20Munnar%20and%20visit%20one%20of%20the%20Biggest%20Flower%20Shows&text=Staged%20at%20Government%20Botanical%20Garden,are%20part%20of%20the%20show."
         }
       ],
       "famousFood": [
@@ -684,18 +734,21 @@
         "Try traditional Tamil dishes like Dosa and Sambar.",
         "Attend classical music and dance performances at cultural centers."
       ],
+      "id":16,
       "happeningEvents": [
         {
           "eventName": "Chennai Music Season",
           "date": "December to January",
           "description": "A month-long festival featuring classical music and dance concerts, attracting renowned artists and enthusiasts from around the world.",
-          "image": "https://tamilnadu-favtourism.blogspot.com/2019/01/music-season-chennai-2019-20.html"
+          "image": "https://tamilnadu-favtourism.blogspot.com/2019/01/music-season-chennai-2019-20.html",
+          "exploreLink": "https://en.wikipedia.org/wiki/Madras_Music_Season#:~:text=Chennai%20Music%20Season%20is%20an,known%20as%20Madras)%20Tamil%20Nadu."
         },
         {
           "eventName": "Pongal Festival",
           "date": "January",
           "description": "The harvest festival of Tamil Nadu celebrated with traditional rituals, cooking of Pongal dish, and cultural events.",
-          "image": "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/11/Pongal-festival-Chennai.jpg"
+          "image": "https://assets.traveltriangle.com/blog/wp-content/uploads/2018/11/Pongal-festival-Chennai.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Pongal_(festival)"
         }
       ],
       "famousFood": [
@@ -729,18 +782,21 @@
         "Carry sufficient warm clothing as temperatures can drop significantly, especially at night.",
         "Stay hydrated and avoid overexertion."
       ],
+      "id":17,
       "happeningEvents": [
         {
           "eventName": "Hemis Festival",
           "date": "June/July",
           "description": "Celebrated at Hemis Monastery, this festival features colorful masked dances, music, and cultural performances to commemorate the birth anniversary of Guru Padmasambhava.",
-          "image": "https://www.oyorooms.com/blog/wp-content/uploads/2018/08/cover-1.jpg"
+          "image": "https://www.oyorooms.com/blog/wp-content/uploads/2018/08/cover-1.jpg",
+          "exploreLink": "https://www.tourmyindia.com/states/ladakh/hemis-festival-ladakh.html"
         },
         {
           "eventName": "Ladakh Marathon",
           "date": "September",
           "description": "One of the world's highest marathon events, it offers runners a unique opportunity to traverse through the breathtaking landscapes of Ladakh while promoting awareness about sustainable tourism.",
-          "image": "https://www.truerevo.com/cdn/shop/articles/edited_1_of_1.jpg?v=1549368755"
+          "image": "https://www.truerevo.com/cdn/shop/articles/edited_1_of_1.jpg?v=1549368755",
+          "exploreLink": "https://en.wikipedia.org/wiki/Ladakh_Marathon"
         }
       ],
       "famousFood": [
@@ -774,18 +830,21 @@
         "Experience the tranquility of meditation at Auroville.",
         "Sample French-influenced cuisine at local cafes and restaurants."
       ],
+      "id":18,
       "happeningEvents": [
         {
           "eventName": "Bastille Day",
           "date": "July",
           "description": "Celebrated to mark the French Revolution, this event in Pondicherry features cultural programs, fireworks, and French cuisine.",
-          "image": "https://www.india-tours.com/images/festivals/bastille-day/bastille-day2.jpg"
+          "image": "https://www.india-tours.com/images/festivals/bastille-day/bastille-day2.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Bastille_Day"
         },
         {
           "eventName": "Pondicherry Heritage Festival",
           "date": "December/January",
           "description": "A celebration of Pondicherry's rich cultural heritage through art exhibitions, heritage walks, music concerts, and culinary events.",
-          "image": "https://cdn.yehaindia.com/wp-content/uploads/2021/03/Pondicherry_cover.jpg"
+          "image": "https://cdn.yehaindia.com/wp-content/uploads/2021/03/Pondicherry_cover.jpg",
+          "exploreLink": "https://pondicherryheritagefestival.in/"
         }
       ],
       "famousFood": [
@@ -817,18 +876,21 @@
         "Arrive early to secure a good viewing spot for the Wagah Border Ceremony.",
         "Explore the local markets for traditional Punjabi attire and handicrafts."
       ],
+      "id":19,
       "happeningEvents": [
         {
           "eventName": "Guru Nanak Jayanti",
           "date": "November",
           "description": "The birth anniversary of Guru Nanak Dev Ji, the founder of Sikhism, celebrated with religious processions (Nagar Kirtan), prayers, and community kitchens (Langar) serving free meals to all.",
-          "image": "https://images.moneycontrol.com/static-mcnews/2022/11/Collage-Maker-08-Nov-2022-07.30-PM.jpg"
+          "image": "https://images.moneycontrol.com/static-mcnews/2022/11/Collage-Maker-08-Nov-2022-07.30-PM.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Guru_Nanak_Gurpurab"
         },
         {
           "eventName": "Baisakhi",
           "date": "April",
           "description": "A harvest festival celebrated with great enthusiasm in Punjab, marking the Sikh New Year. It includes vibrant processions, traditional dances (Bhangra and Gidda), and special prayers at Gurudwaras.",
-          "image": "https://www.aljazeera.com/wp-content/uploads/2024/04/AFP__20240413__34PC8GC__v1__HighRes__IndiaReligionSikhism-1713003408.jpg?fit=1170%2C780&quality=80"
+          "image": "https://www.aljazeera.com/wp-content/uploads/2024/04/AFP__20240413__34PC8GC__v1__HighRes__IndiaReligionSikhism-1713003408.jpg?fit=1170%2C780&quality=80",
+          "exploreLink": "https://en.wikipedia.org/wiki/Vaisakhi"
         }
       ],
       "famousFood": [
@@ -860,18 +922,21 @@
         "Carry sufficient water and snacks while exploring the temples and nearby attractions, as facilities may be limited.",
         "Respect the cultural significance of the temples and dress modestly during your visit."
       ],
+      "id":20,
       "happeningEvents": [
         {
           "eventName": "Khajuraho Dance Festival",
           "date": "February",
           "description": "A week-long cultural extravaganza showcasing classical dance performances by renowned artists against the backdrop of Khajuraho's ancient temples, celebrating India's rich cultural heritage.",
-          "image": "https://cdn.siasat.com/wp-content/uploads/2022/02/Khajuraho.jpg"
+          "image": "https://cdn.siasat.com/wp-content/uploads/2022/02/Khajuraho.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Khajuraho_Dance_Festival"
         },
         {
           "eventName": "Shivratri",
           "date": "March",
           "description": "A Hindu festival dedicated to Lord Shiva, celebrated with fervor at Khajuraho's temples with special prayers, rituals, and processions.",
-          "image": "https://c8.alamy.com/comp/ERYM8C/lord-shiva-temple-khajuraho-madhya-pradesh-india-asia-ERYM8C.jpg"
+          "image": "https://c8.alamy.com/comp/ERYM8C/lord-shiva-temple-khajuraho-madhya-pradesh-india-asia-ERYM8C.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Maha_Shivaratri"
         }
       ],
       "famousFood": [
@@ -903,18 +968,21 @@
         "Apply for necessary permits in advance for Nathula Pass and other restricted areas.",
         "Try local Sikkimese cuisine, such as momos and thukpa."
       ],
+      "id":21,
       "happeningEvents": [
         {
           "eventName": "Losar Festival",
           "date": "February",
           "description": "The Tibetan New Year celebrated with traditional music, dance, and festivities in monasteries across Sikkim.",
-          "image": "https://www.hellovisit.in/uploads/0000/1/2023/02/06/losar-festival-in-sikkim-is-a-cultural-extravaganza-it-start-in-feb.png"
+          "image": "https://www.hellovisit.in/uploads/0000/1/2023/02/06/losar-festival-in-sikkim-is-a-cultural-extravaganza-it-start-in-feb.png",
+          "exploreLink": "https://en.wikipedia.org/wiki/Losar"
         },
         {
           "eventName": "Saga Dawa",
           "date": "May/June",
           "description": "A major Buddhist festival commemorating the birth, enlightenment, and death of Buddha, observed with prayers, processions, and religious rituals.",
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbhZPEGtXjOOpGlT0F6guRow3gfU-jLs0rAm8teUdCng&s"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbhZPEGtXjOOpGlT0F6guRow3gfU-jLs0rAm8teUdCng&s",
+          "exploreLink": "https://www.sikkimtourism.gov.in/Public/ExperienceSikkim/FairsAndFestivalDetails/FF20A077?type=Festival"
         }
       ],
       "famousFood": [
@@ -943,18 +1011,21 @@
         "Visit the gardens early in the morning to avoid crowds and enjoy the fresh air.",
         "Sample Punjabi cuisine at local eateries for an authentic experience."
       ],
+      "id":22,
       "happeningEvents": [
         {
           "eventName": "Chandigarh Carnival",
           "date": "November",
           "description": "An annual cultural festival featuring parades, music, dance performances, and food stalls, celebrating the city's vibrant spirit.",
-          "image": "https://images.indianexpress.com/2022/11/NL-UTcarnival1-3col.jpg"
+          "image": "https://images.indianexpress.com/2022/11/NL-UTcarnival1-3col.jpg",
+          "exploreLink": "https://utsav.gov.in/view-event/chandigarh-carnival-1#:~:text=Chandigarh%20Carnival%20is%20an%20annual,stalls%2C%20day%20cultural%20programmes%20etc."
         },
         {
           "eventName": "Rose Festival",
           "date": "February",
           "description": "Held at Zakir Hussain Rose Garden, this festival showcases a variety of roses along with cultural performances, competitions, and exhibitions.",
-          "image": "https://images.indianexpress.com/2020/02/rose-festival.jpg"
+          "image": "https://images.indianexpress.com/2020/02/rose-festival.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Rose_Festival_(Chandigarh)"
         }
       ],
       "famousFood": [
@@ -986,18 +1057,21 @@
         "Attend the musical fountain show at Brindavan Gardens.",
         "Try traditional Mysore Pak and other local delicacies."
       ],
+      "id":23,
       "happeningEvents": [
         {
           "eventName": "Mysore Dasara",
           "date": "September/October",
           "description": "A ten-day festival celebrating the victory of good over evil, featuring grand processions, cultural performances, and the illumination of Mysore Palace.",
-          "image": "https://www.hindustantimes.com/ht-img/img/2023/09/22/1600x900/Elephants-being-brought-for-Mysore-Dasara-celebrat_1695410242161.jpg"
+          "image": "https://www.hindustantimes.com/ht-img/img/2023/09/22/1600x900/Elephants-being-brought-for-Mysore-Dasara-celebrat_1695410242161.jpg",
+          "exploreLink": "https://en.wikipedia.org/wiki/Mysore_Dasara"
         },
         {
           "eventName": "Vairamudi Festival",
           "date": "March",
           "description": "A religious festival where the deity at the Cheluvanarayana Swamy Temple is adorned with a diamond-studded crown and taken on a grand procession.",
-          "image": "https://images.deccanherald.com/deccanherald/import/sites/dh/files/articleimages/2021/03/24/vairamudi-dh-965911-1616583877.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true"
+          "image": "https://images.deccanherald.com/deccanherald/import/sites/dh/files/articleimages/2021/03/24/vairamudi-dh-965911-1616583877.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true",
+          "exploreLink": "https://utsav.gov.in/view-event/vairamudi-utsava"
         }
       ],
       "famousFood": [
@@ -1005,13 +1079,6 @@
         "Masala Dosa",
         "Filter Coffee"
       ]
-    }
-    
-    
-    
-    
-    
-    
-    
+    } 
   ]
 }
