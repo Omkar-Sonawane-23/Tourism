@@ -13,8 +13,7 @@ Link to the live demo: [Tourism Peach](https://tourism-peach.vercel.app/)
  - HTML
  - CSS3 
  - JavaScript 
- - React 
- -  Any backend technologies (e.g., Node.js, Python) (yahan pe jo likhna hai wo baad me dekhungi)
+ - React
  
 ## Getting Started 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
