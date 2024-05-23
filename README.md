@@ -14,11 +14,6 @@ Link to the live demo: [Tourism Peach](https://tourism-peach.vercel.app/)
  - CSS3 
  - JavaScript 
  - React
- 
-## Getting Started 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
-When setting up a React website, the prerequisites typically involve having the right environment on your machine, which includes several software tools and technologies. Here is a list you can include in the "Prerequisites" section of a README file for a React project:
-
 
 
 ## Prerequisites
