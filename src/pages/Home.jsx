@@ -1,70 +1,32 @@
-import React, {useState, useEffect} from 'react';
-import bg from '../assets/bg-home1.webp';
-import kerala from '../assets/kerala.jpg';
+import React from 'react';
+import banner from '../assets/home-banner-background.png'
+import '../styles/home.css'
+import { FiArrowRight } from 'react-icons/fi';
 import varanasi from '../assets/varanasi.jpg';
-import jaipur from '../assets/jaipur.webp';
+import delhi from '../assets/delhi.jpg';
 import kolkata from '../assets/kolkata.jpg';
-import Loader from './Loader';
-import "../styles/home.css";
-import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  }, []);
-
-  if (isLoading) {
-    return (
-      <div>
-        <Loader />
-      </div>
-    );
-  } else {
-
   return (
-    <div className='home' id="home-page">
-      <img src={bg} alt="" className="home-bg" />
-      <div className="home-container grid">
-        <div className="home-data">
-          <h3 className="home-subtitle">Welcome To <span className="text-[1.4rem] font-[Agbalumo]" id="loadLogo">Bharat <span id="samarkand">Yatra</span></span></h3>
-          <h1 className="home-title">Discover India</h1>
-          <p className='home-description'>One Stop Destination for Exploring India's Diverse Wonders!</p>
-          <a href="/home" className='button'>Explore</a>
-        </div>
-        <div className='card'>
-        <div className="home-cards">
-          <Link to="/detail/?id=2">
-          <article className="home-card">
-            <img src={kerala} alt="" className="home-card-img" />
-            <h3 className="home-card-title">Kerala</h3>
-          </article>
-          </Link>
-          <Link to="/detail/?id=3">
-          <article className="home-card">
-            <img src={varanasi} alt="" className="home-card-img" />
-            <h3 className="home-card-title">Varanasi</h3>
-          </article>
-          </Link>
-          <Link to="/detail/?id=4">
-          <article className="home-card">
-            <img src={jaipur} alt="" className="home-card-img" />
-            <h3 className="home-card-title">Jaipur</h3>
-          </article>
-          </Link>
-          <Link to="/detail/?id=11">
-          <article className="home-card">
-            <img src={kolkata} alt="" className="home-card-img" />
-            <h3 className="home-card-title">Kolkata</h3>
-          </article>
-          </Link>
-        </div>
-        </div>
+    <div className='home-banner-container'>
+      <div className="home-bannerImage-container">
+        <img src={banner} alt="" />
+      </div>
+      <div className='home-text-section'>
+        <h3 className='primary-subheading'>Welcome to</h3>
+        <h1 className='primary-heading'><span className="text-[5rem] font-[Agbalumo]" id="loadLogo">Bharat <span id="samarkand">Yatra</span></span></h1>
+        <p className='primary-text'>One Stop Destination for Exploring India's Diverse Wonders!</p>
+        <button className='primary-button'>Explore Now <FiArrowRight/> </button>
+      </div>
+      <div className="home-image-section">
+          <img src={kolkata} alt="" className='home-image'/>
+          <div className='home-images'>
+          <img src={varanasi} alt="" className='home-image-sub'/>
+          <img src={delhi} alt="" className='home-image-sub'/>
+          </div>
       </div>
     </div>
-  )}
+  )
 }
 
 export default Home

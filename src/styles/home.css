@@ -1,138 +1,103 @@
-.home {
+.home-banner-container {
     position: relative;
-}
-
-.home-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    height: 100%;
-}
-
-.home-container {
-    position: relative;
+    display: flex;
     padding-top: 3rem;
-    row-gap: 3rem;
+    margin-top: 4rem;
 }
 
-.home-data {
-    margin-left: 4rem;
-    margin-top: 10rem;
-    color: white;
-    text-align: left;
-}
-
-.home-subtitle {
-    font-size: 20px;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-.home-title {
-    font-size: 50px;
-    margin-bottom: 1rem;
-    font-weight: bolder;
-}
-
-.home-description {
-    margin-bottom: 2rem;
-    color: var(--title-color);
-}
-
-.home-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-left: 4rem;
-    margin-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.home-card {
-    width: 80%;
-    height: auto;
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-}
-
-.home-card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s;
-}
-
-.home-card-shadow {
+.home-bannerImage-container {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(180deg,hsla(0,0%,0%,0) 50%, hsl(0,0%,0%) 125%);
+    top: -100px;
+    right: -0px;
+    z-index: -2;
+    max-width: 700px;
 }
 
-.home-card-title {
-    color: white;
-    font-weight: bold;
-    font-size: large;
-    position: absolute;
-    left: 1rem;
-    bottom: 1rem;
-    z-index: 1;
+.home-text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 7rem;
+    margin-left: 4rem;
 }
 
-.home-card:hover .home-card-img {
-    transform: scale(1.2);
-}
-
-.button {
-    background-color: hsla(0,0%,100%,.2);
-    padding: 0.8rem 2rem;
-    font-size: 18px;
-    border-radius: 25px;
-    color: var(--title-color);
-    display: inline-flex;
-    align-items: center;
-    column-gap: 0.5rem;
+.primary-subheading {
+    font-size: 24px;
     font-weight: 400;
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    color: #4c4c4c;
+    max-width: 600px;
 }
 
-.button:hover {
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.1);
-    background-color: white;
-    color: black;
-    font-size: large;
+.primary-heading {
+    font-weight: bolder;
+    color: #4c4c4c;
+    max-width: 600px;
 }
 
-@media only screen and (max-width: 1200px) {
-    .home-cards {
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: space-between;
-    }
+.primary-text {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 500px;
+    color: #6a6a6a;
+    margin: 1.5rem 0rem;
 }
 
-@media only screen and (max-width: 760px) {
-    .home-cards {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin: 0;
-        padding: 1rem;
-    }
+.primary-button {
+    padding: 1rem 2.5rem;
+    background-color: #fe9e0d;
+    outline: none;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    .home-data {
-        text-align: center;
-        margin-left: 0;
-    }
+.primary-button svg {
+    margin-left: 0.75rem;
+    font-size: 1.5rem;
+    transition: transform 0.7s ease;
+}
 
-    .home-card {
-        width: 100%;
-        height: auto;
-    }
+.primary-button svg:hover {
+    transform: translateX(15px); 
+    transition: transform 0.7s ease; 
+}
+
+.primary-button:hover {
+    background-color: #e48f0f;
+}
+
+.home-image-section {
+    height: 100%;
+    flex: 1;
+    margin-right: 6rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-image {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 10%;
+}
+
+.home-images {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-image-sub {
+    width: 15rem;
+    height: 11rem;
+    border-radius: 10%;
 }
