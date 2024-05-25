@@ -43,7 +43,7 @@ const Homeque = () => {
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center relative">
         {currentData.map((destination, i) => (
           <article
-            className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg transition duration-500 ease-in-out transform hover:shadow-2xl hover:scale-105"
+            className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg transition duration-500 ease-in-out transform hover:shadow-2xl hover:scale-105 h-[80vh]"
             key={pageSum + i}
           >
             <div>
@@ -54,10 +54,10 @@ const Homeque = () => {
               />
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-            <h3 className="z-10 mt-3 text-4xl font-bold cursor-default text-white text-center">
+            <h3 className="z-10 text-4xl font-bold cursor-default text-white text-center">
               {destination.name}
             </h3>
-            <div className="z-10 gap-y-1 pt-4 overflow-hidden cursor-default text-center text-sm leading-6 text-gray-300">
+            <div className="z-10 pt-4 overflow-hidden cursor-default text-center text-sm leading-6 text-gray-300 justify-text" style={{ minHeight: "25vh" }}>
               {destination.description}
             </div>
 
