@@ -22,7 +22,7 @@ const Home = () => {
   } else {
     return (
       <div>
-        <Navbar />
+       
         <section className="mt-[5px]">
           <img
             src="https://img.freepik.com/premium-vector/mumbai-skyline-landscape-view-city-mumbai-with-characteristics-buildings-monuments_743272-109.jpg?w=4320"
