@@ -1,7 +1,43 @@
-.faq-card{
-  margin-top:100px;
+.faq-card {
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
-  /* width:100%; */
   padding: 50px;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #e0e0e0;
+}
+
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1.5s ease;
+  background-color: #fafafa;
+  padding: 0 1rem;
+  border-left: 2px solid #e0e0e0;
+  border-right: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.max-h-96 {
+  max-height: 24rem;
 }

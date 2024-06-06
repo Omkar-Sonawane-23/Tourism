@@ -214,79 +214,80 @@ export const ContactUs = () => {
           </div>
 
           <div className="w-2/4 m-5 flex flex-col items-center justify-center max-md:w-full">
-            <h2 className="text-lg font-medium w-full text-left">
-              Contact Form
-            </h2>
+
             <form
-              className="flex flex-col items-center justify-center w-full m-5 max-md:w-11/12"
-              onSubmit={onSubmitHandler}
+                className="flex flex-col items-center justify-center w-full m-5 max-w-lg bg-white border border-gray-200 rounded-lg shadow-lg p-6"
+                onSubmit={onSubmitHandler}
             >
-              <label htmlFor="name" className="text-left w-full pb-1">
+              <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contact Us</h2>
+
+              <label htmlFor="name" className="text-left w-full pb-1 text-gray-700 font-medium">
                 Name:
               </label>
               <input
-                type="text"
-                ref={name}
-                id="name"
-                name="name"
-                className="w-full border-gray-300 border-2 mb-3 focus:outline-none p-2 rounded-lg"
-                required
+                  type="text"
+                  ref={name}
+                  id="name"
+                  name="name"
+                  className="w-full border-gray-300 border mb-4 focus:outline-none focus:ring-2 focus:ring-green-500 p-2 rounded-lg shadow-sm"
+                  required
               />
 
-              <label htmlFor="email" className="text-left w-full pb-1">
+              <label htmlFor="email" className="text-left w-full pb-1 text-gray-700 font-medium">
                 Email:
               </label>
               <input
-                type="email"
-                id="email"
-                ref={email}
-                className="w-full border-gray-300 border-2 mb-3 focus:outline-none p-2 rounded-lg"
-                name="email"
-                required
+                  type="email"
+                  id="email"
+                  ref={email}
+                  className="w-full border-gray-300 border mb-4 focus:outline-none focus:ring-2 focus:ring-green-500 p-2 rounded-lg shadow-sm"
+                  name="email"
+                  required
               />
 
-              <label htmlFor="phone" className="text-left w-full pb-1">
+              <label htmlFor="phone" className="text-left w-full pb-1 text-gray-700 font-medium">
                 Phone:
               </label>
               <input
-                type="tel"
-                ref={phone}
-                className="w-full border-gray-300 border-2 mb-3 focus:outline-none p-2 rounded-lg"
-                id="phone"
-                name="phone"
-                required
+                  type="tel"
+                  ref={phone}
+                  className="w-full border-gray-300 border mb-4 focus:outline-none focus:ring-2 focus:ring-green-500 p-2 rounded-lg shadow-sm"
+                  id="phone"
+                  name="phone"
+                  required
               />
 
-              <label htmlFor="subject" className="text-left w-full pb-1">
+              <label htmlFor="subject" className="text-left w-full pb-1 text-gray-700 font-medium">
                 Subject:
               </label>
               <input
-                type="text"
-                ref={subject}
-                className="w-full border-gray-300 border-2 mb-3 focus:outline-none p-2 rounded-lg"
-                id="subject"
-                name="subject"
-                required
+                  type="text"
+                  ref={subject}
+                  className="w-full border-gray-300 border mb-4 focus:outline-none focus:ring-2 focus:ring-green-500 p-2 rounded-lg shadow-sm"
+                  id="subject"
+                  name="subject"
+                  required
               />
 
-              <label className="text-left w-full pb-1" htmlFor="message">
+              <label className="text-left w-full pb-1 text-gray-700 font-medium" htmlFor="message">
                 Message:
               </label>
               <textarea
-                id="message"
-                ref={message}
-                name="message"
-                className="w-full border-gray-300 border-2 mb-3 focus:outline-none p-2 rounded-lg h-28"
-                required
+                  id="message"
+                  ref={message}
+                  name="message"
+                  className="w-full border-gray-300 border mb-4 focus:outline-none focus:ring-2 focus:ring-green-500 p-2 rounded-lg shadow-sm h-28"
+                  required
               ></textarea>
 
               <button
-                type="submit"
-                className="bg-green-600 text-white pt-2 pb-2 pl-3.5 pr-3.5 border-none rounded-md cursor-pointer"
+                  type="submit"
+                  className="bg-green-600 text-white py-2 px-4 border-none rounded-md cursor-pointer hover:bg-green-700 transition-colors shadow-md"
               >
                 Submit
               </button>
             </form>
+
           </div>
         </div>
 
@@ -304,16 +305,16 @@ export const ContactUs = () => {
             <h2 className="font-medium text-lg">FAQ</h2>
             <div className="flex flex-col items-start justify-center p-5">
               <Accordion
-                title={"How can I book a tour with Bharat Yatra?"}
-                content={
-                  "Booking a tour is simple. Browse our tour packages, select your preferred tour, and contact us via the form or call +91-123-456-7890. Complete your booking and payment online."
-                }
+                  title={"How can I book a tour with Bharat Yatra?"}
+                  content={
+                    "Booking a tour is simple. Browse our tour packages, select your preferred tour, and contact us via the form or call +91-123-456-7890. Complete your booking and payment online."
+                  }
               />
               <Accordion
-                title={"What are the payment options available?"}
-                content={
-                  "We accept major credit/debit cards, net banking, UPI, and digital wallets like Paytm and Google Pay. For more details, please contact our customer service."
-                }
+                  title={"What are the payment options available?"}
+                  content={
+                    "We accept major credit/debit cards, net banking, UPI, and digital wallets like Paytm and Google Pay. For more details, please contact our customer service."
+                  }
               />
             </div>
 
@@ -326,15 +327,15 @@ export const ContactUs = () => {
           <div className="w-full flex flex-col items-center justify-center">
             <p>
               <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="pl-5 pr-5"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="pl-5 pr-5"
               >
-                <FacebookIcon />
+                <FacebookIcon/>
               </a>{" "}
               <a
-                href="https://www.twitter.com"
+                  href="https://www.twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="pl-5 pr-5"
