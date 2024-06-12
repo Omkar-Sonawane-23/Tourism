@@ -24,9 +24,9 @@ const Home = () => {
       <div>
         <Navbar />
         <section className="mt-[5px]">
-          <img
-            src="https://img.freepik.com/premium-vector/mumbai-skyline-landscape-view-city-mumbai-with-characteristics-buildings-monuments_743272-109.jpg?w=4320"
-            className="w-[100vw] h-[100vh] fixed"
+         <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgF5fkatd4u5QHDVUk5bJj8-sWQXzSaQSnDA&s"
+            className="w-[100vw] h-[100vh] fixed blur"
             alt=""
           />
           <div className="absolute w-full bottom-[5rem]">
