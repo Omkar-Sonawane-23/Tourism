@@ -183,9 +183,9 @@ export const ContactUs = () => {
         <div className="flex flex-row w-full mt-10 max-md:flex-col">
           <div className="flex flex-col w-2/4 m-5  max-md:w-full">
             <div className="w-full flex flex-col items-center justify-center">
-              <div className="flex flex-col items-center justify-center p-3 shadow-lg rounded-lg">
+              <div className="flex flex-col items-center justify-center p-3 shadow-xl rounded-lg">
                 <h2 className="text-lg font-medium">Contact Information</h2>
-                <div className="pt-5 pb-5 pl-5 pr-5 mt-3 mb-5 shadow-lg rounded-lg">
+                <div className="pt-5 pb-5 pl-5 pr-5 mt-3 mb-5 rounded-lg">
                   <p>
                     <strong>Address:</strong> 123 Tourism Street, Jahanpanah ,
                     New Delhi, India
@@ -229,7 +229,7 @@ export const ContactUs = () => {
                 ref={name}
                 id="name"
                 name="name"
-                className="w-full border-gray-300 border-2 mb-3 focus:outline-none p-2 rounded-lg"
+                className="w-full border-gray-400 border-2 mb-3 focus:outline-none p-2 rounded-lg"
                 required
               />
 
@@ -240,7 +240,7 @@ export const ContactUs = () => {
                 type="email"
                 id="email"
                 ref={email}
-                className="w-full border-gray-300 border-2 mb-3 focus:outline-none p-2 rounded-lg"
+                className="w-full border-gray-400 border-2 mb-3 focus:outline-none p-2 rounded-lg"
                 name="email"
                 required
               />
@@ -251,7 +251,7 @@ export const ContactUs = () => {
               <input
                 type="tel"
                 ref={phone}
-                className="w-full border-gray-300 border-2 mb-3 focus:outline-none p-2 rounded-lg"
+                className="w-full border-gray-400 border-2 mb-3 focus:outline-none p-2 rounded-lg"
                 id="phone"
                 name="phone"
                 required
@@ -263,7 +263,7 @@ export const ContactUs = () => {
               <input
                 type="text"
                 ref={subject}
-                className="w-full border-gray-300 border-2 mb-3 focus:outline-none p-2 rounded-lg"
+                className="w-full border-gray-400 border-2 mb-3 focus:outline-none p-2 rounded-lg"
                 id="subject"
                 name="subject"
                 required
@@ -276,7 +276,7 @@ export const ContactUs = () => {
                 id="message"
                 ref={message}
                 name="message"
-                className="w-full border-gray-300 border-2 mb-3 focus:outline-none p-2 rounded-lg h-28"
+                className="w-full border-gray-400 border-2 mb-3 focus:outline-none p-2 rounded-lg h-28"
                 required
               ></textarea>
 
