@@ -10,7 +10,8 @@ const Loader = () => {
     return index;
   }
   const arrInd = randNo();
-  return ( <div id="loader">
+  return ( 
+    <div id="loader" style={{display: 'flex', width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center', marginTop: '7rem'}}>
       <div id="load">
         <img src="https://t4.ftcdn.net/jpg/00/69/53/63/360_F_69536324_PXoCItwXg8VaC1lTB0zqkE0JyFsIIO1Y.jpg" id="logo"/>
         <h6 className="text-[2.5rem] font-[Agbalumo]" id="loadLogo">
