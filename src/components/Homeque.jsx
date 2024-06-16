@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { FaArrowUp } from 'react-icons/fa';
+import { FaArrowUp } from "react-icons/fa";
 import Data from "../../Data/Data.json";
 import Pagination from "./Pagination";
+import { useSelector } from "react-redux";
 
 const Homeque = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentData, setCurrentData] = useState([]);
   const [pageSum, setPageSum] = useState(0);
   const [showScrollButton, setShowScrollButton] = useState(false);
+  const theme = useSelector((state) => state.theme.theme);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -23,10 +25,10 @@ const Homeque = () => {
       setShowScrollButton(window.pageYOffset > 100);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -35,12 +37,14 @@ const Homeque = () => {
   };
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <>
-      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center relative">
+    <div  className="h-full w-full flex flex-col justify-center items-center"
+    style={{ backgroundColor: theme === "dark" ? "#1f2937" : "#f3f4f6" }}>
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center relative"
+      >
         {currentData.map((destination, i) => (
           <article
             className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg transition duration-500 ease-in-out transform hover:shadow-2xl hover:scale-105"
@@ -86,7 +90,7 @@ const Homeque = () => {
       <div>
         <Pagination setCurrentData={setCurrentData} setPageSum={setPageSum} />
       </div>
-    </>
+    </div>
   );
 };
 

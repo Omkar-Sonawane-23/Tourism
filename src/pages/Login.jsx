@@ -6,15 +6,25 @@ import show from "../assets/hide-password.png";
 import eye from "../assets/show-password.png";
 import Lock from "../assets/forgot-password.png";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
+  const theme = useSelector((state) => state.theme.theme);
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
   };
 
   return (
+    <div
+      className="h-full w-full justify-center items-center"
+      style={{
+        backgroundColor: theme === "dark" ? "#1f2937" : "#f3f4f6",
+        color: theme === "dark" ? "#f3f4f6" : "#1f2937",
+        display: "flow-root",
+      }}
+    >
     <div className="register">
       <div className="register-box">
         <div className="login-bg"></div>
@@ -29,8 +39,7 @@ const Login = () => {
                 <input
                   className="w-full border border-black rounded-xl p-3 mt-1 bg-transparent"
                   placeholder="Enter your email"
-                  type= "text"
-                  
+                  type="text"
                 />
               </div>
               <div className="mt-4 p">
@@ -55,36 +64,34 @@ const Login = () => {
                       Remember me
                     </label>
                   </div>
-                  <button className="text-base text-black fp">
-                    Forget password
+                </div>
+                <div className="mt-8 flex flex-col gap-y-4">
+                  <button className="active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all py-3 rounded-xl text-black text-lg si">
+                    Sign in
+                  </button>
+                  <button className="flex rounded-xl py-3 border border-black items-center justify-center gap-2 active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all">
+                    <img src={Google} alt="Google logo" className="h-6 w-6" />
+                    Sign In with Google
                   </button>
                 </div>
-              </div>
-              <div className="mt-8 flex flex-col gap-y-4">
-                <button className="active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all py-3 rounded-xl text-black text-lg si">
-                  Sign in
-                </button>
-                <button className="flex rounded-xl py-3 border border-black items-center justify-center gap-2 active:scale-[.98] active:duration-75 hover:scale-[1.01] ease-in-out transition-all">
-                  <img src={Google} alt="Google logo" className="h-6 w-6" />
-                  Sign In with Google
-                </button>
-              </div>
-              <div className="registered">
-                Not yet registered?{" "}
-                <span
-                  className="ml-2"
-                  style={{
-                    fontWeight: "bold",
-                    cursor: "pointer",
-                  }}
-                >
-                  <Link to="/register">Register Here</Link>
-                </span>
+                <div className="registered">
+                  Not yet registered?{" "}
+                  <span
+                    className="ml-2"
+                    style={{
+                      fontWeight: "bold",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <Link to="/register">Register Here</Link>
+                  </span>
+                </div>
               </div>
             </form>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

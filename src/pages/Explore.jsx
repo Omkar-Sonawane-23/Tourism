@@ -3,13 +3,13 @@ import Data from "../../Data/Detailed.json";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import GoToTop from "./GoToTop";
+import { useSelector } from 'react-redux';
 
 const data = Data.destinations;
 
 const filterByState = (location) => {
   return data.filter((place) => place.location.includes(location));
 };
-
 
 const filterByCategory = (category) => {
   return data.filter((place) => place.category.includes(category));
@@ -24,7 +24,9 @@ const Explore = () => {
   const [selectedState, setSelectedState] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [filteredPlaces, setFilteredPlaces] = useState([]);
-  const [colors,setcolor]=useState("white");
+  const [colors, setcolor] = useState("white");
+
+  const theme = useSelector((state) => state.theme.theme);
 
   useEffect(() => {
     console.log("Use effect running with", selectedState, selectedCategory);
@@ -38,16 +40,21 @@ const Explore = () => {
 
   const handleStateChange = (e) => {
     setSelectedState(e.target.value);
-    setcolor('yellow');
+    setcolor("yellow");
   };
 
   const handleCategoryChange = (e) => {
     setSelectedCategory(e.target.value);
-    setcolor('yellow');
+    setcolor("yellow");
   };
 
   return (
-    <section className="p-4 mt-20">
+    <section className="p-4 pt-20"
+      style={{
+        backgroundColor: theme === "dark" ? "#1f2937" : "#f3f4f6",
+        color: theme === "dark" ? "#f9a826" : "#1f2937",
+      }}
+    >
       <h1 className="text-2xl font-bold mb-4">Explore More</h1>
       <div className="flex flex-col md:flex-row gap-4">
         <div className="flex flex-col mb-4">
@@ -155,7 +162,7 @@ const Explore = () => {
             key={index}
             className="px-4 py-2 bg-gray-200 rounded-md hover:bg-yellow-200"
             onClick={handleStateChange}
-            style={{backgroundColor:{colors}}}
+            style={{ backgroundColor: { colors } }}
           >
             {place}
           </button>
@@ -195,9 +202,8 @@ const Explore = () => {
           </article>
         ))}
       </div>
-      <GoToTop/>
+      <GoToTop />
     </section>
-    
   );
 };
 
