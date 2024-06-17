@@ -1,11 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/login.css";
 import Google from "../assets/google.png";
-import logo from "../assets/bg-register.jpg";
 import show from "../assets/hide-password.png";
 import eye from "../assets/show-password.png";
-import Lock from "../assets/forgot-password.png";
-import { Link } from "react-router-dom";
+import "./forgot-password.jsx"
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -29,8 +28,7 @@ const Login = () => {
                 <input
                   className="w-full border border-black rounded-xl p-3 mt-1 bg-transparent"
                   placeholder="Enter your email"
-                  type= "text"
-                  
+                  type="text"
                 />
               </div>
               <div className="mt-4 p">
@@ -44,7 +42,7 @@ const Login = () => {
                   className="eye-icon-login text-white"
                   onClick={togglePasswordVisibility}
                 >
-                  <img src={passwordVisible ? show : eye} alt="" />
+                  <img src={passwordVisible ? show : eye} alt="Toggle Password Visibility" />
                 </i>
               </div>
               <div className="mt-8">
@@ -55,9 +53,9 @@ const Login = () => {
                       Remember me
                     </label>
                   </div>
-                  <button className="text-base text-black fp">
+                  <Link to="/forgot-password" className="text-base text-black fp">
                     Forget password
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="mt-8 flex flex-col gap-y-4">

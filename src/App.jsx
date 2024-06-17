@@ -12,6 +12,7 @@ import {Faq} from "./components/Faq";
 import AboutUs from "./pages/AboutUs";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import ForgotPassword from "./pages/forgot-password";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/Faq" element={<Faq />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
     </BrowserRouter>
   );
