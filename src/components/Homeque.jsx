@@ -45,6 +45,9 @@ const Homeque = () => {
           <article
             className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg transition duration-500 ease-in-out transform hover:shadow-2xl hover:scale-105"
             key={pageSum + i}
+            style={{
+              boxShadow: '0 8px 30px rgba(0, 0, 0, 1.0)',
+            }}
           >
             <div>
               <img
