@@ -70,6 +70,9 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    /* modifying the body color a little bit to fit in with the dark mode component */
+    background-color: #ffffff;
+   color: #000000;
 }
 
 .pagination-container {
@@ -120,4 +123,51 @@ body {
     pointer-events: none;
     border: none;
     font-weight: 600;
+}
+
+/* adding the necessary styling components for dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.navbar {
+  background-color: #ffffff; /* Light mode background color */
+}
+
+body.dark-mode .navbar {
+  background-color: #1f1f1f; /* Dark mode background color */
+}
+
+.navbar a,
+.navbar h1,
+.navbar button {
+  color: #000000; /* Light mode text color */
+}
+
+body.dark-mode .navbar a,
+body.dark-mode .navbar h1,
+body.dark-mode .navbar button {
+  color: #ffffff; /* Dark mode text color */
+}
+
+/* Applying dark mode styles to all necessary elements */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode a,
+.dark-mode span,
+.dark-mode button {
+  color: #ffffff;
+}
+
+.dark-mode .btn {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-mode .card {
+  background-color: #1f1f1f;
+  border-color: #333333;
 }
