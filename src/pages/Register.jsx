@@ -65,9 +65,9 @@ const Register = () => {
                       Remember me
                     </label>
                   </div>
-                  <button className="text-base text-black fp">
+                  <Link to="/forgot-password" className="text-base text-black fp">
                     Forget password
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="mt-8 flex flex-col gap-y-4">
