@@ -1,19 +1,17 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 
-function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+function Navbar(props) {
 
-  const [btnclick, setBtnclick] = useState(false);
-  const btnClick = () => {
-    setBtnclick(!btnclick);
-  };
+  const logOut=()=>{
 
+      props.setRegistered(false)
+      toast.success("Logged Out Successfully")
+  }
+  
   return (
-    <nav className={` ${isOpen ? "block" : "flex"} md:flex items-center shadow-xl fixed top-0 w-full bg-white z-10 px-4 py-2 sm:px-8 md:px-12 lg:px-16 md:justify-between lg:justify-around`}>
+    <nav className={`  block  md:flex items-center shadow-xl fixed top-0 w-full bg-white z-10 px-4 py-2 sm:px-8 md:px-12 lg:px-16 md:justify-between lg:justify-around`}>
       <style>
         @import
         url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@500&display=swap');
@@ -27,9 +25,9 @@ function Navbar() {
         
 
         <div className="md:hidden">
-        <button className="focus:outline-none" onClick={toggleMenu} >
+        <button className="focus:outline-none" >
           <svg
-            className={`w-6 h-6 ${isOpen ? "hidden" : "block"}`}
+            className={`w-6 h-6 block`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -43,7 +41,7 @@ function Navbar() {
             />
           </svg>
           <svg
-            className={`w-6 h-6 ${isOpen ? "block" : "hidden"}`}
+            className={`w-6 h-6 hidden`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -66,28 +64,27 @@ function Navbar() {
 
       </div>
       <div
-        className={`${
-            isOpen ? "block text-center" : "hidden"
-          } md:flex md:items-center md:w-auto w-full`}
+        className={`block text-center`
+          }
       >
         <ul
           className={` md:flex md:justify-center md:pt-0 pt-4 list-none`}
         >
-          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" onClick={toggleMenu}>
+          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" >
             <Link to="/">Home</Link>
           </li>
-          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" onClick={toggleMenu}>
+          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" >
             <Link to="/places">Places</Link>
           </li>
-          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" onClick={toggleMenu}>
+          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" >
             <Link to="/aboutus">About Us</Link>
           </li>
-          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" onClick={toggleMenu}>
+          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" >
             <Link to="/Faq">FAQs</Link>
           </li>
-          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" onClick={toggleMenu}>
+          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" >
             <Link to="/register">
-              <button className="btn">
+              {props.registered?<li></li>:<button className="btn">
                 <img
                   src="user.png"
                   style={{
@@ -95,7 +92,7 @@ function Navbar() {
                     Height: "20px",
                   }}
                 />
-              </button>
+              </button>}
             </Link>
           </li>
           {/*<li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
@@ -104,9 +101,14 @@ function Navbar() {
           <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0">
             <Link to="/login">Login</Link>
         </li>*/}
-          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" onClick={toggleMenu}>
+          <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0" >
             <Link to="/contact">Contact Us</Link>
           </li>
+            {
+              props.registered? <li className="text-lg hover:text-gray-500 mx-5 my-2 md:my-0 cursor-pointer" onClick={logOut}>
+              Log Out
+            </li>:<li></li>
+            }
         </ul>
       </div>
     </nav>
