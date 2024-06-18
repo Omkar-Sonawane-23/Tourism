@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -14,20 +14,22 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 
 function App() {
+  const [registered, setRegistered] = useState(false);
+
   return (
     <BrowserRouter>
-    <Navbar/>
+      <Navbar registered={registered} setRegistered={setRegistered} />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/places" element={<Homeque />} />
         <Route path="/explore" element={<Explore />} />
         <Route path="/detail" element={<DetailView />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<NotFound />} />
-        <Route path="/Faq" element={<Faq />} />
+        <Route path="/register" element={<Register registered={registered} setRegistered={setRegistered} />} />
+        <Route path="/login" element={<Login registered={registered} setRegistered={setRegistered} />} />
+        <Route path="/faq" element={<Faq />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
