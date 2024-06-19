@@ -91,9 +91,7 @@ const navigate=useNavigate();
                       Remember me
                     </label>
                   </div>
-                  <button className="text-base text-black fp">
-                    Forget password
-                  </button>
+                 
                 </div>
               </div>
               <div className="mt-8 flex flex-col gap-y-4">
