@@ -59,7 +59,7 @@ const Explore = () => {
           </label>
           <select
             onChange={handleStateChange}
-            className="px-3 py-2 text-gray-700 bg-white border border-gray-300 rounded shadow-inner"
+            className="px-3 py-2 text-gray-700 bg-white border border-gray-500 rounded shadow-inner"
             name="By Place"
             id="placeSelect"
           >
@@ -139,7 +139,7 @@ const Explore = () => {
           <button
             value={category}
             key={index}
-            className="px-4 py-2 bg-gray-200 rounded-md hover:bg-yellow-200"
+            className="px-4 py-2 bg-white-100 border border-gray-300 rounded-md hover:bg-yellow-300"
             onClick={handleCategoryChange}
           >
             {category}
@@ -153,7 +153,7 @@ const Explore = () => {
           <button
             value={place}
             key={index}
-            className="px-4 py-2 bg-gray-200 rounded-md hover:bg-yellow-200"
+            className="px-4 py-2  bg-white-100 border border-gray-300 rounded-md hover:bg-yellow-300"
             onClick={handleStateChange}
             style={{backgroundColor:{colors}}}
           >
@@ -185,7 +185,7 @@ const Explore = () => {
               <Link to={`/detail/?id=${index}`} key={index}>
                 <button
                   onClick={() => showdetail(index)}
-                  className="w-[80px] h-[30px]  border-2 rounded-xl text-white backdrop-blur  cursor-pointer  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition  ease-in-out transform
+                  className="w-[80px] h-[30px]  border-2 rounded-[8px] text-white backdrop-blur  cursor-pointer  duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition  ease-in-out transform
               "
                 >
                   Explore
