@@ -46,10 +46,13 @@ const Details = () => {
                   <p className="leading-relaxed mb-3 text-gray-700">
                     {event.description}
                   </p>
-                  <Link
-                    to={event.exploreLink}
+                  <a
+                    href={event.exploreLink} // Use anchor tag for external link
+                    target="_blank" // Open in a new tab
+                    rel="noopener noreferrer" // Security best practices
                     className="text-indigo-600 inline-flex items-center hover:text-indigo-800 transition-colors duration-300"
                   >
+                   
                     Explore More
                     <svg
                       className="w-4 h-4 ml-2"
@@ -63,7 +66,7 @@ const Details = () => {
                       <path d="M5 12h14"></path>
                       <path d="M12 5l7 7-7 7"></path>
                     </svg>
-                  </Link>
+                  </a>
                 </div>
               </div>
             ))}
