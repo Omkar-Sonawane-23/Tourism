@@ -145,9 +145,9 @@
 
 import React, { useRef } from "react";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import XIcon from "@mui/icons-material/X";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { Twitter } from "@mui/icons-material";
+// import { Twitter } from "@mui/icons-material";
+import XIcon from '@mui/icons-material/X';
 import { Accordion } from "../components/Accordion";
 
 export const ContactUs = () => {
@@ -339,7 +339,7 @@ export const ContactUs = () => {
                 rel="noopener noreferrer"
                 className="pl-5 pr-5"
               >
-                <Twitter />
+                <XIcon />
               </a>{" "}
               <a
                 href="https://www.instagram.com"
