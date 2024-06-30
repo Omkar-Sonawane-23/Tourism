@@ -291,14 +291,14 @@ export const ContactUs = () => {
         </div>
 
         <div className="flex flex-row max-md:flex-col items-center justify-center w-full mt-10 mb-10">
-          <div className="flex flex-col w-2/4 items-center justify-center max-md:w-full">
-            <h2 className="font-medium text-lg">Operating Hours</h2>
-            <div className="flex flex-col items-center justify-center p-5 mt-5 shadow-lg rounded-md">
-              <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-              <p>Saturday: 10:00 AM - 4:00 PM</p>
-              <p>Sunday: Closed</p>
-            </div>
-          </div>
+  <div className="flex flex-col w-2/4 items-center justify-center max-md:w-full">
+    <h2 className="font-medium text-xl mb-4">Operating Hours</h2>
+    <div className="flex flex-col items-center justify-center p-6 shadow-lg rounded-lg bg-white w-full max-w-sm">
+      <p className="mb-2 text-gray-700"><span className="font-semibold">Monday - Friday:</span> 9:00 AM - 6:00 PM</p>
+      <p className="mb-2 text-gray-700"><span className="font-semibold">Saturday:</span> 10:00 AM - 4:00 PM</p>
+      <p className="text-gray-700"><span className="font-semibold">Sunday:</span> Closed</p>
+    </div>
+  </div>
 
           <div className="flex flex-col w-2/4 items-center justify-center max-md:w-full max-md:mt-10">
             <h2 className="font-medium text-lg">FAQ</h2>
