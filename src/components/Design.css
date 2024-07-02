@@ -1,0 +1,48 @@
+/* FAQ DESIGN */
+.card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .topic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .topic h2 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .toggle-icon {
+    font-size: 1.5em;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .answer {
+    color: black;
+    background: white;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
