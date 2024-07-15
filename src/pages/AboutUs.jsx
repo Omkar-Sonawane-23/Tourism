@@ -16,7 +16,7 @@ const AboutUs = () => {
     const [seasonHover, setSeasonHover] = useState(false);
 
   return (
-    <div id='about-us' style={{display: 'flex', flexDirection: 'column', gap: '1rem'}}>
+    <div id='about-us' >
     <h1 className='about-us-heading'>About Us</h1>
     <div className='about-us-block'>
         <div className='about-us-community' onMouseOver={()=>setExploreHover(true)} onMouseLeave={()=>setExploreHover(false)}>
