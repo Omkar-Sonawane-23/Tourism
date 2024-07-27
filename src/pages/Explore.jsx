@@ -3,6 +3,7 @@ import Data from "../../Data/Detailed.json";
 import { Link } from "react-router-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import GoToTop from "./GoToTop";
+import Footer from "./Footer";
 
 const data = Data.destinations;
 
@@ -47,6 +48,8 @@ const Explore = () => {
   };
 
   return (
+    <>
+
     <section className="p-4 mt-20">
       <h1 className="text-2xl font-bold mb-4">Explore More</h1>
       <div className="flex flex-col md:flex-row gap-4">
@@ -197,6 +200,8 @@ const Explore = () => {
       </div>
       <GoToTop/>
     </section>
+    <Footer />
+    </>
     
   );
 };

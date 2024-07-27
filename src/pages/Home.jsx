@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Loader from "./Loader";
 import Navbar from "../components/Navbar";
 import bg from "../assets/bg.jpg";
+import Footer from "./Footer";
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,6 +22,7 @@ const Home = () => {
     );
   } else {
     return (
+      <>
       <div>
         <Navbar />
         <section className="mt-[5px]">
@@ -57,20 +59,10 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <footer
-          style={{
-            backgroundColor: "#f8f9fa",
-            padding: "20px",
-            textAlign: "center",
-            position: "absolute",
-            bottom: "0",
-            width: "100%",
-          }}
-        >
-          <p>&copy; 2024 Bharat Yatra. All rights reserved.</p>
-          <p>Contact Us:1234567892</p>
-        </footer>
+       
       </div>
+<Footer />
+      </>
     );
   }
 };

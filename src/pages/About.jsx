@@ -1,6 +1,7 @@
 import React from 'react'
  function About() {
     return(
+        <>
         <div className='flex flex-col font-Poppins items-center about'>
             <div className='my-[40px] w-[650px]'>
             <h1 className='text-2xl'>About Bharat Yatra</h1>
@@ -24,7 +25,8 @@ import React from 'react'
         <p className='mt-2'>Whether you're a solo traveler, a family seeking adventure, or a group of friends exploring together, Bharat Yatra invites you to embark on a journey of discovery and wonder across the incredible landscapes of India.</p>
 </div>
         </div>
-        
+        <Footer />
+        </>
     )
  }
  export default About;

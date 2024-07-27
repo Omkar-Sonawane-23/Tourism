@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaArrowUp } from 'react-icons/fa';
 import Data from "../../Data/Data.json";
 import Pagination from "./Pagination";
-
+import Footer from "../pages/Footer";
 const Homeque = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentData, setCurrentData] = useState([]);
@@ -86,6 +86,7 @@ const Homeque = () => {
       <div>
         <Pagination setCurrentData={setCurrentData} setPageSum={setPageSum} />
       </div>
+      <Footer/>
     </>
   );
 };

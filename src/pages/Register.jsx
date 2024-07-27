@@ -5,6 +5,7 @@ import show from "../assets/hide-password.png";
 import eye from "../assets/show-password.png";
 import Lock from "../assets/forgot-password.png";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const Register = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -14,6 +15,7 @@ const Register = () => {
   };
 
   return (
+    <>
     <div className="register">
       <div className="register-box">
         <div className="register-bg"></div>
@@ -96,6 +98,8 @@ const Register = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
