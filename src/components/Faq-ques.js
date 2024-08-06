@@ -1,7 +1,8 @@
 export const questions=[
+  
   {
     id: 1,
-    question: 'What are the best places for nature lovers in India?',
+    question: 'What are the best places for nature lovers in IndiaWha?',
     answer: 'When exploring different places in India, one can visit a number of tourist destinations that are perfect for nature lovers. Some of them are mentioned in the list: Ladakh, Kashmir, Andaman & Nicobar, Kerala'
   },
   {
@@ -49,4 +50,5 @@ export const questions=[
     question: 'Is it necessary to tip in India?',
     answer: 'Tipping is not mandatory in India, but it is common to tip service staff, such as waiters and bellboys, around 10% of the bill amount.'
   }
+  
 ]

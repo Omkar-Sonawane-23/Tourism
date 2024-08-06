@@ -183,7 +183,7 @@ export const ContactUs = () => {
         <div className="flex flex-row w-full mt-10 max-md:flex-col">
           <div className="flex flex-col w-2/4 m-5  max-md:w-full">
             <div className="w-full flex flex-col items-center justify-center">
-              <div className="flex flex-col items-center justify-center p-3 shadow-lg rounded-lg">
+              <div className="flex flex-col items-center justify-center p-6 shadow-lg rounded-lg">
                 <h2 className="text-lg font-medium">Contact Information</h2>
                 <div className="pt-5 pb-5 pl-5 pr-5 mt-3 mb-5 shadow-lg rounded-lg">
                   <p>
