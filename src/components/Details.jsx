@@ -1,4 +1,4 @@
-import React from "react";
+import React , {  useState } from "react";
 import { Link } from "react-router-dom";
 import Detailed from "../../Data/Detailed.json";
 
@@ -17,6 +17,8 @@ const Details = () => {
   const eventDetails = isValidId ? data[id].happeningEvents : [];
   const travelTips = isValidId ? data[id].travelTips : [];
   const famousFood = isValidId ? data[id].famousFood : [];
+  const [mouseHovered,setMouseHovered]=useState(-1)
+
 
   return (
     <div className="pt-20 flex flex-col items-center">
@@ -28,11 +30,13 @@ const Details = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {eventDetails.map((event, index) => (
               <div
-                key={index}
+                key={index} 
+                onMouseLeave={()=>setMouseHovered(-1)}
+                onMouseEnter={()=>setMouseHovered(index)}
                 className="rounded-lg overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition duration-300"
               >
                 <img
-                  className="w-full h-48 object-cover object-center rounded-t-lg"
+                  className={`${mouseHovered==index?"scale-110 transition-transform duration-[1000]":""} w-full h-48 object-cover object-center rounded-t-lg`}
                   src={event.image}
                   alt="event"
                 />
