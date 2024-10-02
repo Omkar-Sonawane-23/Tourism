@@ -30,6 +30,7 @@
     border: 1px solid rgba(206, 212, 218, 1);
     border-radius: 8px;
     margin-bottom: 21px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; 
 }
 
 .about-us-community {

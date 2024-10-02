@@ -65,7 +65,7 @@ const Homeque = () => {
               <Link to={`/detail/?id=${pageSum + i}`} key={pageSum + i}>
                 <button
                   onClick={() => showdetail(pageSum + i)}
-                  className="w-[80px] h-[30px] border-2 rounded-xl text-white backdrop-blur cursor-pointer duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition duration-500 ease-in-out transform"
+                  className="w-[80px] h-[30px] border-2 rounded-xl text-white backdrop-blur cursor-pointer duration-[0.4s] mt-[5rem] hover:bg-[#f9a826] hover:text-[#1f2937] hover:shadow-lg hover:scale-105 transition ease-in-out transform"
                 >
                   Explore
                 </button>

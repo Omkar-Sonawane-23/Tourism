@@ -28,35 +28,34 @@ const DetailView = () => {
           <p className="text-lg sm:text-lg md:text-xl mt-5 text-justify">{data.description}</p>
 
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4  gap-5 gap-y-4 mt-5 w-full"
-          style={{alignItems:'flex-start'}}
+            style={{ alignItems: 'flex-start' }}
           >
-            <div className="flex flex-col p-4">
+            <div className="flex flex-col p-4 bg-[#70dddd] border border-gray-300 rounded-lg shadow-lg  hover:scale-105 transition duration-300">
               <h2 className="text-lg sm:text-lg md:text-xl font-bold">Category</h2>
               <p className="text-lg sm:text-lg md:text-xl mt-2">{data.category}</p>
             </div>
-            <div className="flex flex-col  p-4">
+            <div className="flex flex-col p-4 bg-[#a9f092] border border-gray-300 rounded-lg shadow-lg hover:scale-105 transition duration-300">
               <h2 className="text-xl font-bold">Best time to visit</h2>
               <p className="text-lg sm:text-lg md:text-xl mt-2">{data.bestTimeToVisit}</p>
             </div>
-            <div className="flex flex-col  p-4">
+            <div className="flex flex-col p-7 bg-[#a2d4e8] border border-gray-300 rounded-lg shadow-lg  hover:scale-105 transition duration-300">
               <h2 className="text-xl font-bold">Popular activities</h2>
               <ul className="list-disc text-justify">
-              {data.popularActivities.map((activity, index) => (
-                <li key={index} className="text-lg sm:text-lg md:text-xl mt-2">
-                  {activity}
-                </li>
-              ))}
+                {data.popularActivities.map((activity, index) => (
+                  <li key={index} className="text-lg sm:text-lg md:text-xl mt-2">
+                    {activity}
+                  </li>
+                ))}
               </ul>
             </div>
-            <div className="flex flex-col  p-4">
+            <div className="flex flex-col p-7 bg-[#f4e787] border border-gray-300 rounded-lg shadow-lg hover:scale-105 transition duration-300">
               <h2 className="text-xl font-bold">Nearby attractions</h2>
               <ul className="list-disc text-justify">
-
-              {data.nearbyAttractions.map((attraction, index) => (
-                <li key={index} className="text-lg sm:text-lg md:text-xl mt-2">
-                  {attraction}
-                </li>
-              ))}
+                {data.nearbyAttractions.map((attraction, index) => (
+                  <li key={index} className="text-lg sm:text-lg md:text-xl mt-2">
+                    {attraction}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
