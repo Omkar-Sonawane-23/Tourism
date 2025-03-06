@@ -33,20 +33,23 @@ const Login = () => {
                   
                 />
               </div>
-              <div className="mt-4 p">
-                <label className="text-lg font-medium">Password</label>
-                <input
-                  className="w-full border border-black rounded-xl p-3 mt-1 bg-transparent"
-                  placeholder="Enter your password"
-                  type={passwordVisible ? "text" : "password"}
-                />
-                <i
-                  className="eye-icon-login text-white"
-                  onClick={togglePasswordVisibility}
-                >
-                  <img src={passwordVisible ? show : eye} alt="" />
-                </i>
-              </div>
+              <div className="mt-4">
+              <label className="text-lg font-medium">Password</label>
+                    <div className="relative flex items-center mt-1">
+                      <input
+                        className="text-black/80 w-full  rounded-xl p-2.5 pr-10 bg-transparent border  border-black"  
+                        placeholder="Enter your password"
+                        type={passwordVisible ? "text" : "password"}
+                      />
+                      <i
+                        className="absolute right-3 cursor-pointer"
+                        onClick={togglePasswordVisibility}
+                      >
+                        <img src={passwordVisible ? show : eye} alt="Toggle visibility" />
+                      </i>
+                    </div>
+            </div>
+
               <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <div className="flex items-center">
