@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaArrowUp } from 'react-icons/fa';
 import Data from "../../Data/Data.json";
@@ -42,8 +43,11 @@ const Homeque = () => {
     <>
       <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 gap-y-2 justify-center items-center relative">
         {currentData.map((destination, i) => (
-          <article
-            className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg transition duration-500 ease-in-out transform hover:shadow-2xl hover:scale-105"
+          <motion.article
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
+            className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 bg-gray-900/40 shadow-lg transition duration-500 ease-in-out transform hover:shadow-2xl hover:scale-105 hover:-translate-y-2"
             key={pageSum + i}
           >
             <div>
@@ -71,7 +75,7 @@ const Homeque = () => {
                 </button>
               </Link>
             </div>
-          </article>
+          </motion.article>
         ))}
         {showScrollButton && (
           <button
