@@ -70,6 +70,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    @apply dark:bg-gray-900 dark:text-white transition-colors duration-200;
 }
 
 .pagination-container {
